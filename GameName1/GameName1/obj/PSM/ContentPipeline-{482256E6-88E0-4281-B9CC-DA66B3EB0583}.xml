@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Segoe.spritefont</Source>
+      <Name>Segoe</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\Segoe.xnb</Output>
+      <Time>2015-01-28T23:08:47.9117988-05:00</Time>
+    </Item>
+    <Item>
+      <Source>TitleScreenBackground.png</Source>
+      <Name>TitleScreenBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\TitleScreenBackground.xnb</Output>
+      <Time>2015-01-28T20:56:34.681044-05:00</Time>
+    </Item>
+    <Item>
+      <Source>StartMenuBackGround.png</Source>
+      <Name>StartMenuBackGround</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\StartMenuBackGround.xnb</Output>
+      <Time>2015-01-28T22:57:07.472736-05:00</Time>
+    </Item>
+    <Item>
+      <Source>bacon.bmp</Source>
+      <Name>bacon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\bacon.xnb</Output>
+      <Time>2015-01-29T12:17:22.0670137-05:00</Time>
+    </Item>
+    <Item>
+      <Source>MusisBoxTune.wav</Source>
+      <Name>MusisBoxTune</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\MusisBoxTune.xnb</Output>
+      <Extra>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\MusisBoxTune.wma</Extra>
+      <Time>2015-01-29T10:41:34.0832478-05:00</Time>
+    </Item>
+    <Item>
+      <Source>NewGame.png</Source>
+      <Name>NewGame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\NewGame.xnb</Output>
+      <Time>2015-02-04T23:52:01.1507838-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Continue.png</Source>
+      <Name>Continue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\Continue.xnb</Output>
+      <Time>2015-02-05T00:02:10.9776639-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Exit.png</Source>
+      <Name>Exit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\Exit.xnb</Output>
+      <Time>2015-02-05T01:23:40.7257012-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Cursor.png</Source>
+      <Name>Cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\Cursor.xnb</Output>
+      <Time>2015-02-05T01:41:08.9285305-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{482256E6-88E0-4281-B9CC-DA66B3EB0583}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>PSM</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\obj\PSM\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\MSBuild\MonoGame\v3.0\MonoGameContentProcessors.dll</Key>
+        <Value>2014-04-05T17:56:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-01-24T20:38:07.9452987-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

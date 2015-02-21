@@ -1,0 +1,10 @@
+Content\Segoe.xnb
+Content\TitleScreenBackground.xnb
+Content\StartMenuBackGround.xnb
+Content\bacon.xnb
+Content\MusisBoxTune.xnb
+Content\MusisBoxTune.wma
+Content\NewGame.xnb
+Content\Continue.xnb
+Content\Exit.xnb
+Content\Cursor.xnb
