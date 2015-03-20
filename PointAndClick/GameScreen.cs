@@ -42,29 +42,34 @@ namespace PointAndClick
         abstract public void UnloadContent();
 
         //Method to update game loogic based on gametime
-        abstract public void Update(GameTime gametime);
+        public virtual void Update(GameTime gametime)
+        {
+
+            CheckMouseInput();
+
+            UpdateObjects();
+
+        }
+       
+
 
         //Method to Draw everything to screen
         //Loops through list of drawbles and calls draw method of each
-        public void Draw()
+        public virtual void Draw()
         {
-
-            mainGame.spriteBatch.Begin();
 
             for (int i = 0; i < drawingList.Count; i++)
             {
                 drawingList[i].Draw(mainGame.spriteBatch);
             }
-
-            mainGame.spriteBatch.End();
-                 
+                          
         }
 
         //Method to update objects that respond to the mouse
         //Loops through list of objects and calls update method of each
         protected void UpdateObjects()
         {
-            
+        
             for (int i = 0; i < objectList.Count; i++)
             {
                 objectList[i].Update(currentMouseState, oldMouseState, mainGame.state);
@@ -84,15 +89,14 @@ namespace PointAndClick
        public void Transition( int mAlphaValue)
        {    
 
-           mainGame.spriteBatch.Begin();
-
            for (int i = 0; i < drawingList.Count; i++)
            {
                drawingList[i].TranitionDraw(mainGame.spriteBatch, mAlphaValue);
            }
-
-           mainGame.spriteBatch.End();
+           
        }
+       
         
     }
+
 }

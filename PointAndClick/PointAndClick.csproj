@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Background.cs" />
+    <Compile Include="InteractMenu.cs" />
     <Compile Include="ClickableObject.cs" />
     <Compile Include="Drawable.cs" />
     <Compile Include="Item.cs" />

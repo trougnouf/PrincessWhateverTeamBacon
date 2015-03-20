@@ -46,9 +46,9 @@ namespace PointAndClick
 
         public override void Update(GameTime gametime)
         {
-            UpdateTextVisibility(gametime);
+            base.Update(gametime);
 
-            CheckMouseInput();
+            UpdateTextVisibility(gametime);
 
             if (currentMouseState.LeftButton == ButtonState.Released && oldMouseState.LeftButton == ButtonState.Pressed)
             {

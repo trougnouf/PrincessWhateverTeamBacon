@@ -61,6 +61,14 @@ namespace PointAndClick
             objectList.Add(NewGame);
             objectList.Add(Continue);
             objectList.Add(Exit);
+
+            objectList.Clear();
+
+            objectList.Add(NewGame);
+            objectList.Add(Continue);
+            objectList.Add(Exit);
+
+
             //objectList.Add(Bacon);
            
             //MediaPlayer.Play(song);
@@ -77,9 +85,7 @@ namespace PointAndClick
         //update mouse states, update objects based on the mouse, move cursor
         public override void Update(GameTime gametime)
         {
-            
-            CheckMouseInput();
-            UpdateObjects();
+            base.Update(gametime);
             Wand.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));    
         }
  

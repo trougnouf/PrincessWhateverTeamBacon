@@ -19,6 +19,7 @@ namespace PointAndClick
     public class MainGame : Game
     {   
 
+
         GraphicsDeviceManager graphics;
         public SpriteBatch spriteBatch;
 
@@ -115,11 +116,15 @@ namespace PointAndClick
 
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            spriteBatch.Begin();
+
             if (transitioning)
                 Transition(gameTime);
 
             else
             currentScreen.Draw();
+
+            spriteBatch.End();
 
         }
 
