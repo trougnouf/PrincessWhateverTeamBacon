@@ -15,20 +15,20 @@ namespace PointAndClick
     class StartMenuButton : ClickableObject
     {
 
-        public StartMenuButton(Vector2 initPosition, String path, ContentManager cManager) 
-            :base(initPosition, path, cManager)
+        public StartMenuButton(Vector2 initPosition, String path, MainGame currentGame) 
+            :base(initPosition, path, currentGame)
         {
 
         }
         
         //Method for drawing the button
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw()
         {   
             //If mouse is over the button, shade it
             if (IsMouseOver)
-                spriteBatch.Draw(texture, drawRectangle, Color.Aqua);
+                maingame.spriteBatch.Draw(texture, drawRectangle, Color.Aqua);
             else
-                base.Draw(spriteBatch);
+                base.Draw();
         }
     }
 

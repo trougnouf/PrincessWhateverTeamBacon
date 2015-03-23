@@ -16,7 +16,8 @@ namespace PointAndClick
     abstract public class GameScreen
     {
         //Lists containing objects to be updated and draw to screen
-        protected List<Drawable> drawingList;
+        //protected List<Drawable> drawingList;
+        protected SortedSet<Drawable> drawingList;
         protected List<ClickableObject> objectList;
 
         //MouseStates used to update objects
@@ -26,10 +27,12 @@ namespace PointAndClick
         //Reference to main game
         protected MainGame mainGame;
 
+         //new SortedSet<string>(new ByFileExtension());
+
         protected GameScreen(MainGame game)
         {   
             mainGame = game;
-            drawingList = new List<Drawable>();
+            drawingList = new SortedSet<Drawable>(new DrawableComparer()); 
             objectList = new List<ClickableObject>();
             currentMouseState = Mouse.GetState();
             LoadContent();
@@ -46,7 +49,7 @@ namespace PointAndClick
         {
 
             CheckMouseInput();
-
+            mainGame.gameCursor.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));  
             UpdateObjects();
 
         }
@@ -58,11 +61,11 @@ namespace PointAndClick
         public virtual void Draw()
         {
 
-            for (int i = 0; i < drawingList.Count; i++)
+            foreach (Drawable obj in drawingList)
             {
-                drawingList[i].Draw(mainGame.spriteBatch);
+                obj.Draw();
             }
-                          
+                   
         }
 
         //Method to update objects that respond to the mouse
@@ -87,16 +90,14 @@ namespace PointAndClick
         
         //Drawing Method for Transitioning
        public void Transition( int mAlphaValue)
-       {    
-
-           for (int i = 0; i < drawingList.Count; i++)
+       {
+           foreach (Drawable obj in drawingList)
            {
-               drawingList[i].TranitionDraw(mainGame.spriteBatch, mAlphaValue);
+               obj.TranitionDraw(mAlphaValue);
            }
-           
+
        }
-       
-        
+              
     }
 
 }

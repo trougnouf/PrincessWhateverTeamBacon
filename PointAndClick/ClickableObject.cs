@@ -19,8 +19,8 @@ namespace PointAndClick
     {
         public bool IsMouseOver;
 
-        public ClickableObject(Vector2 initPosition, String path, ContentManager cManager) 
-            :base(initPosition, path, cManager)
+        public ClickableObject(Vector2 initPosition, String path, MainGame currentGame) 
+            :base(initPosition, path, currentGame)
         {
             IsMouseOver = false;
         } 

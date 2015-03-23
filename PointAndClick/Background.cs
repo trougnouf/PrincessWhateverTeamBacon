@@ -11,12 +11,11 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    //Class dedicated to backgrounds. Essentially a SceneImage with an initial poisition of (0,0)
+  
     class BackGround : SceneImage
-    {
-        
-         public BackGround(String path, ContentManager cManager)
-            :base(new Vector2(0, 0), path, cManager)
+    {      
+         public BackGround(Vector2 initPosition, String path, MainGame currentGame)
+            : base(initPosition, path, currentGame)
         {
 
         }

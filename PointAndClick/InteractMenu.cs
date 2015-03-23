@@ -13,6 +13,7 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace PointAndClick
 {
+    /*
     class InteractMenu : GameScreen
     {
         enum iMenuStates : int { Interact, Bag, Dialogue};
@@ -94,12 +95,12 @@ namespace PointAndClick
                                    
                     objectList.Add(useButton);
                     objectList.Add(examineButton);
-                     */
+                     
                     break;
 
                 case iMenuStates.Bag:
 
-                    drawingList.AddRange(itemsList);
+                    //drawingList.AddRange(itemsList);
 
                     break;
 
@@ -111,4 +112,5 @@ namespace PointAndClick
 
         }
     }
+ */ 
 }

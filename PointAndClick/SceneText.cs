@@ -18,24 +18,34 @@ namespace PointAndClick
         private SpriteFont font;
         private String text;
 
-        public SceneText(Vector2 initPosition, String newText, SpriteFont tFont)
-            :base(initPosition)
+        public SceneText(Vector2 initPosition, String newText, SpriteFont tFont, MainGame currentGame)
+            :base(initPosition, currentGame)
         {
+            priority = drawPriority.Foreground;
             font = tFont; 
             text = newText;
         }
 
         //Method to draw text to screen
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw()
         {
             if (visible)
-                spriteBatch.DrawString(font, text, position, Color.Azure);
+                maingame.spriteBatch.DrawString(font, text, position, Color.Azure);
         }
 
-        public override void TranitionDraw(SpriteBatch spriteBatch, int mAlphaValue)
+        public override void TranitionDraw(int mAlphaValue)
         {
             if (visible)
-            spriteBatch.DrawString(font, text, position, new Color(255, 255, 255, mAlphaValue));
+                maingame.spriteBatch.DrawString(font,
+                                          text,
+                                          new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
+                                          Color.White,
+                                          0,
+                                          new Vector2(0, 0),
+                                          maingame.ScalingFactor,
+                                          SpriteEffects.None,
+                                          0);
+            //spriteBatch.DrawString(font, text, position, new Color(255, 255, 255, mAlphaValue));
         }
 
     }

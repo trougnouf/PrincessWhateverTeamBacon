@@ -16,9 +16,8 @@ namespace PointAndClick
 
         String name; 
 
-        
-        public Item(Vector2 initPosition, String path, ContentManager cManager, string newName) 
-            :base(initPosition, path, cManager)
+        public Item(Vector2 initPosition, String path, MainGame currentGame, string newName) 
+            :base(initPosition, path, currentGame)
         {
             name = newName;
         } 

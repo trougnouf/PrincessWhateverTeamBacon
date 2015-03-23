@@ -29,6 +29,8 @@ namespace PointAndClick
         int AlphaValue;
         int FadeIncrement;
         double FadeDelay;
+        public Vector2 ScalingFactor;
+        Point OldWindowSize;
        
         //Reference to current and previous screen
         public GameScreen currentScreen;
@@ -36,6 +38,8 @@ namespace PointAndClick
 
         //State of the game
         public GameStates state;
+
+        public Cursor gameCursor;
 
         public MainGame()
             : base()
@@ -47,6 +51,7 @@ namespace PointAndClick
             AlphaValue = 255;
             FadeIncrement = -3;
             FadeDelay = .015;
+
 
         }
 
@@ -64,21 +69,26 @@ namespace PointAndClick
             currentScreen = new TitleScreen(this);
             state = GameStates.TitleScreen;
             graphics.PreferredBackBufferHeight = 720;
-            graphics.PreferredBackBufferWidth = 1280;
-            graphics.ApplyChanges();             
+            graphics.PreferredBackBufferWidth = 1280;    
+            graphics.IsFullScreen = false;
+            Window.AllowUserResizing = true;
+            graphics.ApplyChanges();
+            Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);
+            gameCursor = new Cursor(new Vector2(0,0), "Cursor", this);
         }
 
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
         /// </summary>
-        /*
+      
         protected override void LoadContent()
         {
 
-            // TODO: use this.Content to load your game content here
+            ScalingFactor = new Vector2(1, 1);
+            OldWindowSize = new Point(Window.ClientBounds.Width, Window.ClientBounds.Height);
         }
-        */
+        
 
         /// <summary>
         /// UnloadContent will be called once per game and is the place to unload
@@ -124,6 +134,8 @@ namespace PointAndClick
             else
             currentScreen.Draw();
 
+            gameCursor.Draw();
+
             spriteBatch.End();
 
         }
@@ -160,6 +172,35 @@ namespace PointAndClick
                 transitionScreen = currentScreen;           
 
             transitionScreen.Transition(AlphaValue);
+        }
+
+        void Window_ClientSizeChanged(object sender, EventArgs e)
+        {
+            // Remove this event handler, so we don't call it when we change the window size in here
+            Window.ClientSizeChanged -= new EventHandler<EventArgs>(Window_ClientSizeChanged);
+
+            if (Window.ClientBounds.Width != OldWindowSize.X)
+            { // We're changing the width
+                // Set the new backbuffer size
+                graphics.PreferredBackBufferWidth = Window.ClientBounds.Width;
+                //graphics.PreferredBackBufferHeight = (int)(Window.ClientBounds.Width / AspectRatio);
+            }
+            else if (Window.ClientBounds.Height != OldWindowSize.Y)
+            { // we're changing the height
+                // Set the new backbuffer size
+                //graphics.PreferredBackBufferWidth = (int)(Window.ClientBounds.Height * AspectRatio);
+                graphics.PreferredBackBufferHeight = Window.ClientBounds.Height;
+            }
+
+            graphics.ApplyChanges();
+
+            // Update the old window size with what it is currently
+            OldWindowSize = new Point(Window.ClientBounds.Width, Window.ClientBounds.Height);
+
+            ScalingFactor = new Vector2( (Window.ClientBounds.Width / 1280), (Window.ClientBounds.Height / 720) );
+
+            // add this event handler back
+            Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);
         }
 
     }

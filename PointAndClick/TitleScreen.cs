@@ -7,7 +7,6 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.GamerServices;
-using System.Reflection;
 #endregion
 
 
@@ -20,6 +19,8 @@ namespace PointAndClick
 
         private float timeAccumulator;
         private SpriteFont segoe;
+        private BackGround background;
+        private SceneText text;
 
         public TitleScreen(MainGame gameRef)
             :base(gameRef)
@@ -30,10 +31,11 @@ namespace PointAndClick
         //Loads background texture and font 
         public override void LoadContent()
         {
-
+            background = new BackGround(new Vector2(0,0), "TitleScreenBackground", mainGame);
             segoe = mainGame.Content.Load<SpriteFont>("Segoe");
-            drawingList.Add(new BackGround("TitleScreenBackground", mainGame.Content));
-            drawingList.Add(new SceneText(new Vector2(550, 545), "Left Click to Continue", segoe));
+            text = new SceneText(new Vector2(550, 545), "Left Click to Continue", segoe, mainGame);
+            drawingList.Add(background);
+            drawingList.Add(text);
             //PROBABLY NEED ERROR CATCHING   
         }
 
@@ -73,8 +75,8 @@ namespace PointAndClick
             if (timeAccumulator > 0.5)
             {
 
-                drawingList[(int)DrawIndex.Text].visible = !this.drawingList[(int)DrawIndex.Text].visible;
-                //textVisibility = !textVisibility;
+                text.visible = !text.visible;
+             
                 timeAccumulator = 0;
 
             }

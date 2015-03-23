@@ -37,6 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Background.cs" />
+    <Compile Include="Cursor.cs" />
+    <Compile Include="DrawableComparer.cs" />
     <Compile Include="InteractMenu.cs" />
     <Compile Include="ClickableObject.cs" />
     <Compile Include="Drawable.cs" />

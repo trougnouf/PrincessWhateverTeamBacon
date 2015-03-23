@@ -44,15 +44,15 @@ namespace PointAndClick
             //PROBABLY NEED ERROR CATCHING
             segoe = mainGame.Content.Load<SpriteFont>("Segoe");
             song = mainGame.Content.Load<Song>("MusisBoxTune");
-            background = new BackGround("StartMenuBackGround", mainGame.Content);
-            NewGame = new StartMenuButton(new Vector2(235, 545), "NewGame", mainGame.Content);
-            Continue = new StartMenuButton(new Vector2(550, 545), "Continue", mainGame.Content);
-            Exit = new StartMenuButton(new Vector2(800, 545), "Exit", mainGame.Content);
-            Bacon = new SceneImage(new Vector2(900, 250), "bacon", mainGame.Content);
-            Wand = new SceneImage(new Vector2(currentMouseState.X, currentMouseState.Y), "Cursor", mainGame.Content);
-            
-            drawingList.Add(background);
+            background = new BackGround(new Vector2(0,0),"StartMenuBackGround", mainGame);
+            NewGame = new StartMenuButton(new Vector2(235, 545), "NewGame", mainGame);
+            Continue = new StartMenuButton(new Vector2(550, 545), "Continue", mainGame);
+            Exit = new StartMenuButton(new Vector2(800, 545), "Exit", mainGame);
+            Bacon = new SceneImage(new Vector2(900, 250), "bacon", mainGame);
+            Wand = new SceneImage(new Vector2(currentMouseState.X, currentMouseState.Y), "Cursor", mainGame);
+                   
             drawingList.Add(NewGame);
+            drawingList.Add(background);
             drawingList.Add(Continue);
             drawingList.Add(Exit);
             drawingList.Add(Bacon);
@@ -61,13 +61,6 @@ namespace PointAndClick
             objectList.Add(NewGame);
             objectList.Add(Continue);
             objectList.Add(Exit);
-
-            objectList.Clear();
-
-            objectList.Add(NewGame);
-            objectList.Add(Continue);
-            objectList.Add(Exit);
-
 
             //objectList.Add(Bacon);
            
@@ -86,7 +79,7 @@ namespace PointAndClick
         public override void Update(GameTime gametime)
         {
             base.Update(gametime);
-            Wand.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));    
+            //Wand.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));    
         }
  
     }
