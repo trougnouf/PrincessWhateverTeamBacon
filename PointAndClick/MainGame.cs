@@ -31,7 +31,6 @@ namespace PointAndClick
         double FadeDelay;
         public Vector2 ScalingFactor;
         Point OldWindowSize;
-        float AspectRatio;
        
         //Reference to current and previous screen
         public GameScreen currentScreen;

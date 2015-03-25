@@ -34,3 +34,39 @@ C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\PointAndClic
 C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\PointAndClick\bin\Windows\Debug\Content\Continue.xnb
 C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\PointAndClick\bin\Windows\Debug\Content\Exit.xnb
 C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\PointAndClick\bin\Windows\Debug\Content\Cursor.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\obj\x86\Debug\PointAndClick.exe
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\obj\x86\Debug\PointAndClick.pdb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\obj\x86\Debug\PointAndClick.csprojResolveAssemblyReference.cache
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Content\Segoe.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Content\TitleScreenBackground.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Content\StartMenuBackGround.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Content\bacon.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Content\NewGame.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Content\Continue.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Content\Exit.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Content\Cursor.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Content\MusisBoxTune.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Content\MusisBoxTune.wma
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\PointAndClick.exe
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\PointAndClick.pdb
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\IgnoreMe.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\Lidgren.Network.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.xml
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Batman\Desktop\Woring Copy\trunk\PointAndClick\bin\Windows\Debug\SharpDX.Direct3D9.xml

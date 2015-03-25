@@ -15,10 +15,10 @@ namespace PointAndClick
     //class representing a anything draawable on the screen
     public abstract class Drawable
     {
-        protected Vector2 position;
-        public bool visible;
-        public drawPriority priority;
-        protected MainGame maingame;
+        public Vector2 position { get; private set; }
+        public bool visible { get; set; }
+        public drawPriority priority { get; private set; }
+        public MainGame maingame { get; private set; }
       
         protected Drawable(Vector2 initPosition, MainGame currentGame)
         {
@@ -33,22 +33,12 @@ namespace PointAndClick
             else
                 priority = drawPriority.Foreground;     
         }
-
+        
         public virtual void UpdatePosition(Vector2 newPosition)
         {
             position = newPosition;
         }
-
-        public void MakeInvisible()
-        {
-            visible = false;
-        }
-
-        public void MakeVisible()
-        {
-            visible = true;
-        }
-
+        
         abstract public void Draw();
 
         abstract public void TranitionDraw(int mAlphaValue);

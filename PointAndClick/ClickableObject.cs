@@ -17,7 +17,7 @@ namespace PointAndClick
     //Class dedicated to any image that needs to respond to the mouse
     public class ClickableObject : SceneImage
     {
-        public bool IsMouseOver;
+        public bool IsMouseOver { get; private set; }
 
         public ClickableObject(Vector2 initPosition, String path, MainGame currentGame) 
             :base(initPosition, path, currentGame)

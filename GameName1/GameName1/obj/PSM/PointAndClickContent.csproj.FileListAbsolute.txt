@@ -12,3 +12,17 @@ C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\Ga
 C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\Continue.xnb
 C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\Exit.xnb
 C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\GameName1\bin\PSM\Content\Cursor.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\Segoe.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\TitleScreenBackground.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenuBackGround.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\bacon.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\NewGame.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\Continue.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\Exit.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\Cursor.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\MusisBoxTune.xnb
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\MusisBoxTune.wma
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\IgnoreMe.dll
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\obj\PSM\PointAndClickContent.csprojResolveAssemblyReference.cache
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\obj\PSM\IgnoreMe.dll

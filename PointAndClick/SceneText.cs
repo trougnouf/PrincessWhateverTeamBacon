@@ -21,9 +21,10 @@ namespace PointAndClick
         public SceneText(Vector2 initPosition, String newText, SpriteFont tFont, MainGame currentGame)
             :base(initPosition, currentGame)
         {
-            priority = drawPriority.Foreground;
+
             font = tFont; 
             text = newText;
+
         }
 
         //Method to draw text to screen

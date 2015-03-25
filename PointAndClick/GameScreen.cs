@@ -27,8 +27,6 @@ namespace PointAndClick
         //Reference to main game
         protected MainGame mainGame;
 
-         //new SortedSet<string>(new ByFileExtension());
-
         protected GameScreen(MainGame game)
         {   
             mainGame = game;
@@ -54,8 +52,6 @@ namespace PointAndClick
 
         }
        
-
-
         //Method to Draw everything to screen
         //Loops through list of drawbles and calls draw method of each
         public virtual void Draw()
@@ -72,12 +68,12 @@ namespace PointAndClick
         //Loops through list of objects and calls update method of each
         protected void UpdateObjects()
         {
-        
-            for (int i = 0; i < objectList.Count; i++)
-            {
-                objectList[i].Update(currentMouseState, oldMouseState, mainGame.state);
-            }
 
+            foreach (ClickableObject obj in objectList)
+            {
+                obj.Update(currentMouseState, oldMouseState, mainGame.state);
+            }
+        
         }
         
         //Checks mouse input and updates states 
@@ -91,6 +87,7 @@ namespace PointAndClick
         //Drawing Method for Transitioning
        public void Transition( int mAlphaValue)
        {
+
            foreach (Drawable obj in drawingList)
            {
                obj.TranitionDraw(mAlphaValue);
