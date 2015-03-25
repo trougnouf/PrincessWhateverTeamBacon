@@ -13,14 +13,15 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace PointAndClick
 {
-    /*
-    class InteractMenu : GameScreen
+    class InteractMenu 
     {
-        enum iMenuStates : int { Interact, Bag, Dialogue};
+        //Class type is going to be replaced 
+        //InteractButtons buttons;
+        GameScreen inventory;
+        GameScreen dialogBox;
+        Item currentItem;
 
-        private ClickableObject useButton;
-        private ClickableObject takeButton;
-        private ClickableObject examineButton;
+        enum iMenuStates : int { Interact, Bag, Dialogue};
 
         private SceneImage backGround;
 
@@ -30,7 +31,6 @@ namespace PointAndClick
         iMenuStates previousState;
         
         public InteractMenu(MainGame mGame)
-            :base(mGame)
         {
             currentState = iMenuStates.Dialogue;
             previousState = iMenuStates.Dialogue;
@@ -38,36 +38,27 @@ namespace PointAndClick
             itemsList = new List<Item>();
         }
 
-        public override void LoadContent()
+        public void LoadContent()
         {   
-            //Need to know what these are (class-wise),where these go and add textures tided to the strings
-
-            //useButton = new ClickableObject(Vector2(), "UseButton", mainGame.Content);
-            //takeButton = new ClickableObject(Vector2(), "TakeButton", mainGame.Content);
-            //examineButton = new ClickableObject(Vector2(), "ExamineButton", mainGame.Content); 
-            //backGround = new SceneImage(Vector2(), "InteractMenuBG", mainGame.Content);
-
-            drawingList.Add(backGround);
-
+            
         }
 
-        public override void Update(GameTime gametime)
+        public void Update(GameTime gametime)
         {
             if (currentState != previousState)
                 updateLists();
 
-            base.Update(gametime);
 
             if (currentState != previousState)
                 updateLists();
         }
 
-        public override void Draw()
+        public void Draw()
         {
             
         }
 
-        public override void UnloadContent()
+        public void UnloadContent()
         {
             
         }
@@ -75,42 +66,9 @@ namespace PointAndClick
         private void updateLists()
         {
 
-            objectList.Clear();
-            drawingList.Clear();
-
-            drawingList.Add(backGround);
-
-            switch (currentState)
-            {
-                case iMenuStates.Interact:
-
-                    drawingList.Add(useButton);
-                    drawingList.Add(takeButton);
-                                                
-                    objectList.Add(useButton);
-                    objectList.Add(takeButton);
-                    /*
-                    drawingList.Add(useButton);
-                    drawingList.Add(examineButton);
-                                   
-                    objectList.Add(useButton);
-                    objectList.Add(examineButton);
-                     
-                    break;
-
-                case iMenuStates.Bag:
-
-                    //drawingList.AddRange(itemsList);
-
-                    break;
-
-                case iMenuStates.Dialogue:
-
-                    break;
-
-            }
+       
 
         }
+
     }
- */ 
 }

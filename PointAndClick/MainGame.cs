@@ -31,6 +31,7 @@ namespace PointAndClick
         double FadeDelay;
         public Vector2 ScalingFactor;
         Point OldWindowSize;
+        float AspectRatio;
        
         //Reference to current and previous screen
         public GameScreen currentScreen;
@@ -49,8 +50,8 @@ namespace PointAndClick
             Content.RootDirectory = "Content";
             transitioning = false;
             AlphaValue = 255;
-            FadeIncrement = -3;
-            FadeDelay = .015;
+            FadeIncrement = -6;
+            FadeDelay = .0005;
 
 
         }
@@ -75,6 +76,7 @@ namespace PointAndClick
             graphics.ApplyChanges();
             Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);
             gameCursor = new Cursor(new Vector2(0,0), "Cursor", this);
+            AspectRatio = 16/9;
         }
 
         /// <summary>
@@ -149,7 +151,7 @@ namespace PointAndClick
             if (FadeDelay <= 0)
             {
                 //reset time
-                FadeDelay = .015;
+                FadeDelay = .0005;
                 
                 //Incremement the fade value
                 AlphaValue += FadeIncrement;
@@ -197,7 +199,7 @@ namespace PointAndClick
             // Update the old window size with what it is currently
             OldWindowSize = new Point(Window.ClientBounds.Width, Window.ClientBounds.Height);
 
-            ScalingFactor = new Vector2( (Window.ClientBounds.Width / 1280), (Window.ClientBounds.Height / 720) );
+            ScalingFactor = new Vector2( (Window.ClientBounds.Width /(float)1280), (Window.ClientBounds.Height / (float)720) );     
 
             // add this event handler back
             Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);

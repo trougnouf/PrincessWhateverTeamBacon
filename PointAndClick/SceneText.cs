@@ -39,7 +39,7 @@ namespace PointAndClick
                 maingame.spriteBatch.DrawString(font,
                                           text,
                                           new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
-                                          Color.White,
+                                          new Color(255, 255, 255, mAlphaValue),
                                           0,
                                           new Vector2(0, 0),
                                           maingame.ScalingFactor,

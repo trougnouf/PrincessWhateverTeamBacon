@@ -26,9 +26,9 @@ namespace PointAndClick
             maingame = currentGame;
             visible = true;
 
-             if (this is BackGround)
+            if (this is BackGround)
                 priority = drawPriority.Background;
-            if(this is Cursor)
+            else if(this is Cursor)
                 priority = drawPriority.Cursor;
             else
                 priority = drawPriority.Foreground;     

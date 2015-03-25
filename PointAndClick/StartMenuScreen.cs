@@ -19,8 +19,6 @@ namespace PointAndClick
     public class StartMenuScreen : GameScreen
     {
 
-        enum DrawIndex : int { Background, Start, Continue, Exit, Bacon, Wand };
-   
         private SpriteFont segoe;
         private Song song;
         private BackGround background;
@@ -28,7 +26,6 @@ namespace PointAndClick
         private StartMenuButton Continue;
         private StartMenuButton Exit;
         private SceneImage Bacon;
-        private SceneImage Wand;
         
         public StartMenuScreen(MainGame gameRef)
             :base(gameRef)
@@ -49,14 +46,12 @@ namespace PointAndClick
             Continue = new StartMenuButton(new Vector2(550, 545), "Continue", mainGame);
             Exit = new StartMenuButton(new Vector2(800, 545), "Exit", mainGame);
             Bacon = new SceneImage(new Vector2(900, 250), "bacon", mainGame);
-            Wand = new SceneImage(new Vector2(currentMouseState.X, currentMouseState.Y), "Cursor", mainGame);
-                   
+            
             drawingList.Add(NewGame);
             drawingList.Add(background);
             drawingList.Add(Continue);
             drawingList.Add(Exit);
             drawingList.Add(Bacon);
-            drawingList.Add(Wand);
 
             objectList.Add(NewGame);
             objectList.Add(Continue);
@@ -72,14 +67,13 @@ namespace PointAndClick
         public override void UnloadContent()
         {
             MediaPlayer.Stop();
-            mainGame.Content.Unload();
+            //mainGame.Content.Unload();
         }
 
         //update mouse states, update objects based on the mouse, move cursor
         public override void Update(GameTime gametime)
         {
-            base.Update(gametime);
-            //Wand.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));    
+            base.Update(gametime);  
         }
  
     }

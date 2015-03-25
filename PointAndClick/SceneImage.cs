@@ -65,7 +65,7 @@ namespace PointAndClick
                 maingame.spriteBatch.Draw(texture,
                                           new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
                                           null,
-                                          Color.White,
+                                          new Color(255, 255, 255, (byte)MathHelper.Clamp(mAlphaValue, 0, 255)),
                                           0,
                                           new Vector2(0, 0),
                                           maingame.ScalingFactor,

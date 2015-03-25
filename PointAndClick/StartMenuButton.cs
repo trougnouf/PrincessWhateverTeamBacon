@@ -26,7 +26,16 @@ namespace PointAndClick
         {   
             //If mouse is over the button, shade it
             if (IsMouseOver)
-                maingame.spriteBatch.Draw(texture, drawRectangle, Color.Aqua);
+                maingame.spriteBatch.Draw(texture,
+                                          new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
+                                          null,
+                                           Color.Aqua,
+                                          0,
+                                          new Vector2(0, 0),
+                                          maingame.ScalingFactor,
+                                          SpriteEffects.None,
+                                          0);
+                //maingame.spriteBatch.Draw(texture, drawRectangle, Color.Aqua);
             else
                 base.Draw();
         }
