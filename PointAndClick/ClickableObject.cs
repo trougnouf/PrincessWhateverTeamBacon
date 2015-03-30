@@ -29,7 +29,10 @@ namespace PointAndClick
         public void Update(MouseState mouseState, MouseState previousState, GameStates state)
         {   
             //Create new rectangle that containts clickable object
-            drawRectangle = new Rectangle((int)position.X, (int)position.Y, (int)size.X, (int)size.Y);
+            drawRectangle = new Rectangle((int)(position.X * maingame.ScalingFactor.X),
+                                          (int)(position.Y * maingame.ScalingFactor.Y),
+                                          (int)(size.X * maingame.ScalingFactor.X),
+                                          (int)(size.Y * maingame.ScalingFactor.Y));
        
             //Get current and previous points of mouse cursor on screen
             Point mousePoint = new Point(mouseState.X, mouseState.Y);

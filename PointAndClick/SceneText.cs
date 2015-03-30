@@ -16,14 +16,12 @@ namespace PointAndClick
     {
         //Text to written and font of text
         private SpriteFont font;
-        private String text;
 
         public SceneText(Vector2 initPosition, String newText, SpriteFont tFont, MainGame currentGame)
-            :base(initPosition, currentGame)
+            :base(initPosition, currentGame, newText)
         {
 
             font = tFont; 
-            text = newText;
 
         }
 
@@ -31,14 +29,22 @@ namespace PointAndClick
         public override void Draw()
         {
             if (visible)
-                maingame.spriteBatch.DrawString(font, text, position, Color.Azure);
+                maingame.spriteBatch.DrawString(font,
+                                          path,
+                                          new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
+                                          Color.White,
+                                          0,
+                                          new Vector2(0, 0),
+                                          maingame.ScalingFactor,
+                                          SpriteEffects.None,
+                                          0);
         }
 
         public override void TranitionDraw(int mAlphaValue)
         {
             if (visible)
                 maingame.spriteBatch.DrawString(font,
-                                          text,
+                                          path,
                                           new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
                                           new Color(255, 255, 255, mAlphaValue),
                                           0,

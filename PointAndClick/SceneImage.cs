@@ -17,7 +17,7 @@ namespace PointAndClick
         protected Rectangle drawRectangle;
 
         public SceneImage(Vector2 initPosition, String path, MainGame currentGame)
-            : base(initPosition, currentGame)
+            : base(initPosition, currentGame, path)
         {
             texture = currentGame.Content.Load<Texture2D>(path);
             size = new Vector2(texture.Width , texture.Height);
@@ -40,8 +40,6 @@ namespace PointAndClick
                                           maingame.ScalingFactor, 
                                           SpriteEffects.None, 
                                           0);
-            //spriteBatch.Draw(texture, drawRectangle, Color.White);
-
            
         }
 
@@ -55,12 +53,12 @@ namespace PointAndClick
                                           (int)(position.Y * maingame.ScalingFactor.Y),
                                           (int)(size.X * maingame.ScalingFactor.X),
                                           (int)(size.Y * maingame.ScalingFactor.Y));
-
-            //drawRectangle = new Rectangle((int)position.X, (int)position.Y, (int)size.X, (int)size.Y); 
+ 
         }
 
         public override void TranitionDraw(int mAlphaValue)
         {
+
             if (visible)
                 maingame.spriteBatch.Draw(texture,
                                           new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
@@ -71,7 +69,7 @@ namespace PointAndClick
                                           maingame.ScalingFactor,
                                           SpriteEffects.None,
                                           0);
-                //spriteBatch.Draw(texture, drawRectangle, new Color(255, 255, 255, (byte)MathHelper.Clamp(mAlphaValue, 0, 255)));
+
         }
 
     }

@@ -13,49 +13,52 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace PointAndClick
 {
-    class InteractMenu 
+    enum iMenuStates : int { Interact, Bag, Dialogue };
+
+    public class InteractMenu 
     {
-        //Class type is going to be replaced 
-        //InteractButtons buttons;
-        GameScreen inventory;
-        GameScreen dialogBox;
-        Item currentItem;
+        public MainGame mainGame;
+        private Inventory Bag;
+        private DialogBox dBox;
+        private InteractButtons iButtons;
+        private BackGround backGround;
 
-        enum iMenuStates : int { Interact, Bag, Dialogue};
+        public GameScreen currentScreen;
+        public GameScreen previousScreen;
+        public GameScreen transitionScreen;
+        
+        private Item currentItem;
+        
+        public const int offset = 880;
 
-        private SceneImage backGround;
-
-        private List<Item> itemsList;
-
-        iMenuStates currentState;
-        iMenuStates previousState;
+        //private List<Item> itemsList;
         
         public InteractMenu(MainGame mGame)
         {
-            currentState = iMenuStates.Dialogue;
-            previousState = iMenuStates.Dialogue;
+            mainGame = mGame;
 
-            itemsList = new List<Item>();
+           //itemsList = new List<Item>();
         }
 
         public void LoadContent()
-        {   
-            
+        {
+            Bag = new Inventory(mainGame);
+            dBox = new DialogBox(mainGame);
+            iButtons = new InteractButtons(mainGame);
+            backGround = new BackGround(new Vector2(0, offset), "BlackBar", mainGame);
+            currentScreen = dBox;
+            previousScreen = dBox;
         }
 
         public void Update(GameTime gametime)
         {
-            if (currentState != previousState)
-                updateLists();
-
-
-            if (currentState != previousState)
-                updateLists();
+            currentScreen.Update(gametime);
         }
 
         public void Draw()
         {
-            
+            backGround.Draw();
+            currentScreen.Draw();
         }
 
         public void UnloadContent()
@@ -63,10 +66,8 @@ namespace PointAndClick
             
         }
 
-        private void updateLists()
+        public void Transition(int alpha)
         {
-
-       
 
         }
 

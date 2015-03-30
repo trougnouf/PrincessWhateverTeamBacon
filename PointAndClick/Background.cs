@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    //Class for a background, has highest drawing priotity(well always be drawn first)
+    //Class for a background, has highest drawing priotity(will always be drawn first)
     class BackGround : SceneImage
     {      
          public BackGround(Vector2 initPosition, String path, MainGame currentGame)

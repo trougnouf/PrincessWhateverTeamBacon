@@ -33,7 +33,7 @@ namespace PointAndClick
         {
             background = new BackGround(new Vector2(0,0), "TitleScreenBackground", mainGame);
             segoe = mainGame.Content.Load<SpriteFont>("Segoe");
-            text = new SceneText(new Vector2(550, 545), "Left Click to Continue", segoe, mainGame);
+            text = new SceneText(new Vector2(700, 750), "Left Click to Continue", segoe, mainGame);
             drawingList.Add(background);
             drawingList.Add(text);
             //PROBABLY NEED ERROR CATCHING   

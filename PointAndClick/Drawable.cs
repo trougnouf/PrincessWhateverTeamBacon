@@ -19,11 +19,13 @@ namespace PointAndClick
         public bool visible { get; set; }
         public drawPriority priority { get; private set; }
         public MainGame maingame { get; private set; }
+        public string path;
       
-        protected Drawable(Vector2 initPosition, MainGame currentGame)
+        protected Drawable(Vector2 initPosition, MainGame currentGame, string newPath)
         {
             position = initPosition;
             maingame = currentGame;
+            path = newPath; 
             visible = true;
 
             if (this is BackGround)

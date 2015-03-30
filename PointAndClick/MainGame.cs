@@ -12,34 +12,45 @@ using Microsoft.Xna.Framework.GamerServices;
 namespace PointAndClick
 {
     public enum GameStates: int { TitleScreen, StartMenu };
-
+   
     /// <summary>
     /// This is the main type for the game
     /// </summary>
+    
     public class MainGame : Game
     {   
-
-
-        GraphicsDeviceManager graphics;
-        public SpriteBatch spriteBatch;
-
-        public bool transitioning;
-
-        private GameScreen transitionScreen;
-        int AlphaValue;
-        int FadeIncrement;
-        double FadeDelay;
-        public Vector2 ScalingFactor;
-        Point OldWindowSize;
-       
-        //Reference to current and previous screen
-        public GameScreen currentScreen;
-        public GameScreen previousScreen;
+        //Graphics Manager to manipulate screen and SpriteBatch for drawing to screen
+        public GraphicsDeviceManager graphics { get; private set; }
+        public SpriteBatch spriteBatch { get; private set; }
 
         //State of the game
-        public GameStates state;
+        public GameStates state { get; set; }
 
-        public Cursor gameCursor;
+        //Initial Screen Height and Width for Scaling/Positioning/etc.
+        public const int initBufferHeight = 1080;
+        public const int initBufferWidth = 1920;
+
+        //Properties for Scaling textures
+        public Vector2 ScalingFactor { get; private set; }
+        private Point OldWindowSize;
+
+        //Reference to current and previous screen
+        public GameScreen currentScreen { get; set; }
+        public GameScreen previousScreen { get; set; }
+        public InteractMenu iMenu { get; set; }
+
+       
+
+        //Properties for transitioning
+        //Might be able to put some of these in method?
+        public bool transitioning;
+        public bool iMenuTransitioning;
+        private GameScreen transitionScreen;
+        private int AlphaValue;
+        private int FadeIncrement;
+        private double FadeDelay;
+
+        public Cursor gameCursor { get; set; }
 
         public MainGame()
             : base()
@@ -48,10 +59,10 @@ namespace PointAndClick
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             transitioning = false;
+            iMenuTransitioning = false;
             AlphaValue = 255;
             FadeIncrement = -6;
             FadeDelay = .0005;
-
 
         }
 
@@ -68,14 +79,15 @@ namespace PointAndClick
             base.Initialize();
             currentScreen = new TitleScreen(this);
             state = GameStates.TitleScreen;
-            graphics.PreferredBackBufferHeight = 720;
-            graphics.PreferredBackBufferWidth = 1280;    
+            graphics.PreferredBackBufferHeight = initBufferHeight;
+            graphics.PreferredBackBufferWidth = initBufferWidth;    
             graphics.IsFullScreen = false;
             Window.AllowUserResizing = true;
             graphics.ApplyChanges();
             Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);
             gameCursor = new Cursor(new Vector2(0,0), "Cursor", this);
-            AspectRatio = 16/9;
+            
+            
         }
 
         /// <summary>
@@ -115,6 +127,9 @@ namespace PointAndClick
 
             currentScreen.Update(gameTime);
 
+            if (iMenu != null)
+                iMenu.Update(gameTime);
+
             base.Update(gameTime);
 
         }
@@ -129,11 +144,18 @@ namespace PointAndClick
 
             spriteBatch.Begin();
 
-            if (transitioning)
+            if (transitioning || iMenuTransitioning)
                 Transition(gameTime);
-
             else
-            currentScreen.Draw();
+            {
+                currentScreen.Draw();
+
+                if (iMenu != null)
+                {
+                    iMenu.Draw();
+                }
+
+            }
 
             gameCursor.Draw();
 
@@ -143,6 +165,7 @@ namespace PointAndClick
 
         private void Transition(GameTime gameTime)
         {
+            bool trans = true;
             //Subtract elasped time from set fading delay
             FadeDelay -= gameTime.ElapsedGameTime.TotalSeconds;
             
@@ -161,18 +184,51 @@ namespace PointAndClick
                 
                 //When new Screen is completely faded in, transitioning is done
                 if ( AlphaValue > 255) 
-                    transitioning = false;
+                    trans = false;
                 
             }
 
-            //If we are fading out, draw previous screen, otherwise we are drawing the new current State
-            if (FadeIncrement < 0)
-                transitionScreen = previousScreen;
-            
-            else
-                transitionScreen = currentScreen;           
+            if(transitioning)
+            {
+                //If we are fading out, draw previous screen, otherwise we are drawing the new current State
+                if (FadeIncrement < 0)
+                    transitionScreen = previousScreen;
 
-            transitionScreen.Transition(AlphaValue);
+                else
+                    transitionScreen = currentScreen;
+
+                transitionScreen.Transition(AlphaValue);
+
+                transitioning = trans;
+            }
+
+            else
+                currentScreen.Draw();
+
+            if (iMenu != null)
+            {
+                if (iMenuTransitioning)
+                {
+                    //If we are fading out, draw previous screen, otherwise we are drawing the new current State
+                    if (FadeIncrement < 0)
+                        iMenu.transitionScreen = iMenu.previousScreen;
+
+                    else
+                        iMenu.transitionScreen = iMenu.currentScreen;
+
+                    iMenu.transitionScreen.Transition(AlphaValue);
+
+                    iMenuTransitioning = trans;
+
+                }
+
+                else
+                {
+                    iMenu.Draw();
+                }
+
+            }
+
         }
 
         void Window_ClientSizeChanged(object sender, EventArgs e)
@@ -198,7 +254,7 @@ namespace PointAndClick
             // Update the old window size with what it is currently
             OldWindowSize = new Point(Window.ClientBounds.Width, Window.ClientBounds.Height);
 
-            ScalingFactor = new Vector2( (Window.ClientBounds.Width /(float)1280), (Window.ClientBounds.Height / (float)720) );     
+            ScalingFactor = new Vector2((Window.ClientBounds.Width / (float)initBufferWidth), (Window.ClientBounds.Height / (float)initBufferHeight));     
 
             // add this event handler back
             Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);

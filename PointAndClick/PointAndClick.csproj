@@ -46,7 +46,8 @@
     <Compile Include="Drawable.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Item.cs" />
-    <Compile Include="StartMenuButton.cs" />
+    <Compile Include="SceneScreen.cs" />
+    <Compile Include="MenuButton.cs" />
     <Compile Include="SceneImage.cs" />
     <Compile Include="SceneText.cs" />
     <Compile Include="StartMenuScreen.cs" />
