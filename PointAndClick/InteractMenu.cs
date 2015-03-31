@@ -71,5 +71,10 @@ namespace PointAndClick
 
         }
 
+        public void AddItem(Item newItem)
+        {
+            Bag.AddItemToInventory(newItem);
+        }
+
     }
 }

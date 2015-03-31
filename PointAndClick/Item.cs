@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    class Item : ClickableObject
+    public class Item : ClickableObject
     {
 
         String name; 

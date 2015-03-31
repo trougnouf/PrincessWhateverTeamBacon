@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\Segoe.xnb</Output>
-      <Time>2015-01-28T23:08:47.9117988-05:00</Time>
+      <Output>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Segoe.xnb</Output>
+      <Time>2015-03-30T18:08:26-04:00</Time>
     </Item>
     <Item>
       <Source>TitleScreenBackground.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\TitleScreenBackground.xnb</Output>
-      <Time>2015-03-29T22:43:41.9943235-04:00</Time>
+      <Output>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\TitleScreenBackground.xnb</Output>
+      <Time>2015-03-30T18:08:26-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenuBackGround.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenuBackGround.xnb</Output>
-      <Time>2015-03-29T22:42:01.8195939-04:00</Time>
+      <Output>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\StartMenuBackGround.xnb</Output>
+      <Time>2015-03-30T18:08:26-04:00</Time>
     </Item>
     <Item>
       <Source>bacon.bmp</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\bacon.xnb</Output>
-      <Time>2015-01-29T12:17:22.0670137-05:00</Time>
+      <Output>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\bacon.xnb</Output>
+      <Time>2015-03-30T18:08:24-04:00</Time>
     </Item>
     <Item>
       <Source>NewGame.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\NewGame.xnb</Output>
-      <Time>2015-02-04T23:52:01.1507838-05:00</Time>
+      <Output>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\NewGame.xnb</Output>
+      <Time>2015-03-30T18:08:26-04:00</Time>
     </Item>
     <Item>
       <Source>Continue.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\Continue.xnb</Output>
-      <Time>2015-02-05T00:02:10.9776639-05:00</Time>
+      <Output>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Continue.xnb</Output>
+      <Time>2015-03-30T18:08:24-04:00</Time>
     </Item>
     <Item>
       <Source>Exit.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\Exit.xnb</Output>
-      <Time>2015-02-05T01:23:40.7257012-05:00</Time>
+      <Output>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Exit.xnb</Output>
+      <Time>2015-03-30T18:08:24-04:00</Time>
     </Item>
     <Item>
       <Source>Cursor.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\Cursor.xnb</Output>
-      <Time>2015-02-05T01:41:08.9285305-05:00</Time>
+      <Output>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Cursor.xnb</Output>
+      <Time>2015-03-30T18:08:24-04:00</Time>
     </Item>
     <Item>
       <Source>MusisBoxTune.wav</Source>
@@ -79,9 +79,9 @@
       <Importer>WavImporter</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\MusisBoxTune.xnb</Output>
-      <Extra>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\MusisBoxTune.wma</Extra>
-      <Time>2015-01-29T10:41:34.0832478-05:00</Time>
+      <Output>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\MusisBoxTune.xnb</Output>
+      <Extra>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\MusisBoxTune.wma</Extra>
+      <Time>2015-03-30T18:08:26-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -90,10 +90,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>PSM</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\obj\PSM\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1\bin\PSM\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\obj\PSM\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1\bin\PSM\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
