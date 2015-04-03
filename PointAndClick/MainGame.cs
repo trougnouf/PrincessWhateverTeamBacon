@@ -24,7 +24,7 @@ namespace PointAndClick
         public SpriteBatch spriteBatch { get; private set; }
 
         //State of the game
-        public GameStates state { get; set; }
+        public GameStates state { get; private set; }
 
         //Initial Screen Height and Width for Scaling/Positioning/etc.
         public const int initBufferHeight = 1080;
@@ -39,18 +39,19 @@ namespace PointAndClick
         public GameScreen previousScreen { get; set; }
         public InteractMenu iMenu { get; set; }
 
-       
-
         //Properties for transitioning
         //Might be able to put some of these in method?
         public bool transitioning;
-        public bool iMenuTransitioning;
         private GameScreen transitionScreen;
         private int AlphaValue;
         private int FadeIncrement;
         private double FadeDelay;
 
-        public Cursor gameCursor { get; set; }
+        //MouseStates used to update objects
+        public MouseState oldMouseState { get; private set; }
+        public MouseState currentMouseState { get; private set; }
+
+        public Cursor gameCursor { get; private set; }
 
         public MainGame()
             : base()
@@ -59,7 +60,6 @@ namespace PointAndClick
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             transitioning = false;
-            iMenuTransitioning = false;
             AlphaValue = 255;
             FadeIncrement = -6;
             FadeDelay = .0005;
@@ -75,6 +75,7 @@ namespace PointAndClick
         /// 
         protected override void Initialize()
         {
+
             spriteBatch = new SpriteBatch(GraphicsDevice);
             base.Initialize();
             currentScreen = new TitleScreen(this);
@@ -100,6 +101,7 @@ namespace PointAndClick
 
             ScalingFactor = new Vector2(1, 1);
             OldWindowSize = new Point(Window.ClientBounds.Width, Window.ClientBounds.Height);
+
         }
         
 
@@ -125,13 +127,44 @@ namespace PointAndClick
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            CheckMouseInput();
+
+            if(!transitioning)
             currentScreen.Update(gameTime);
 
-            if (iMenu != null)
+            if (iMenu != null && !iMenu.transitioning)
                 iMenu.Update(gameTime);
+
+            CheckMouseInput();
+            gameCursor.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));
 
             base.Update(gameTime);
 
+
+        }
+
+        public void UpdateState(GameStates newState)
+        {
+            state = newState;
+            UpdateScreens();
+        }
+
+        private void UpdateScreens()
+        {
+
+            previousScreen = currentScreen;
+
+            switch (state)
+            {
+                case GameStates.StartMenu:
+
+                    currentScreen = new StartMenuScreen(this);
+
+                    break;
+            }
+
+            if (previousScreen != currentScreen)
+                transitioning = true;
         }
 
         /// <summary>
@@ -144,23 +177,38 @@ namespace PointAndClick
 
             spriteBatch.Begin();
 
-            if (transitioning || iMenuTransitioning)
-                Transition(gameTime);
+            if (iMenu != null)
+            {
+                if (transitioning || iMenu.transitioning)
+                    Transition(gameTime);
+                else
+                {
+
+                    currentScreen.Draw();             
+                    iMenu.Draw();  
+                
+                }
+       
+            }
             else
             {
-                currentScreen.Draw();
-
-                if (iMenu != null)
-                {
-                    iMenu.Draw();
-                }
-
+                if (transitioning)
+                    Transition(gameTime);
+                else
+                    currentScreen.Draw();
             }
-
             gameCursor.Draw();
 
             spriteBatch.End();
 
+        }
+
+        //Checks mouse input and updates states 
+        private void CheckMouseInput()
+        {
+            oldMouseState = currentMouseState;
+
+            currentMouseState = Mouse.GetState();
         }
 
         private void Transition(GameTime gameTime)
@@ -183,9 +231,11 @@ namespace PointAndClick
                     FadeIncrement *= -1;
                 
                 //When new Screen is completely faded in, transitioning is done
-                if ( AlphaValue > 255) 
+                if ( AlphaValue > 255)
+                {
                     trans = false;
-                
+                    AlphaValue = 255;
+                }
             }
 
             if(transitioning)
@@ -207,7 +257,7 @@ namespace PointAndClick
 
             if (iMenu != null)
             {
-                if (iMenuTransitioning)
+                if (iMenu.transitioning)
                 {
                     //If we are fading out, draw previous screen, otherwise we are drawing the new current State
                     if (FadeIncrement < 0)
@@ -218,7 +268,7 @@ namespace PointAndClick
 
                     iMenu.transitionScreen.Transition(AlphaValue);
 
-                    iMenuTransitioning = trans;
+                    iMenu.transitioning = trans;
 
                 }
 
@@ -236,24 +286,23 @@ namespace PointAndClick
             // Remove this event handler, so we don't call it when we change the window size in here
             Window.ClientSizeChanged -= new EventHandler<EventArgs>(Window_ClientSizeChanged);
 
+            //Check Dimensions for changes
             if (Window.ClientBounds.Width != OldWindowSize.X)
-            { // We're changing the width
+            { 
                 // Set the new backbuffer size
                 graphics.PreferredBackBufferWidth = Window.ClientBounds.Width;
-                //graphics.PreferredBackBufferHeight = (int)(Window.ClientBounds.Width / AspectRatio);
+              
             }
             else if (Window.ClientBounds.Height != OldWindowSize.Y)
-            { // we're changing the height
+            { 
                 // Set the new backbuffer size
-                //graphics.PreferredBackBufferWidth = (int)(Window.ClientBounds.Height * AspectRatio);
                 graphics.PreferredBackBufferHeight = Window.ClientBounds.Height;
             }
 
             graphics.ApplyChanges();
 
-            // Update the old window size with what it is currently
+            // Update the old window size with what it is currently and ScalingFactor
             OldWindowSize = new Point(Window.ClientBounds.Width, Window.ClientBounds.Height);
-
             ScalingFactor = new Vector2((Window.ClientBounds.Width / (float)initBufferWidth), (Window.ClientBounds.Height / (float)initBufferHeight));     
 
             // add this event handler back

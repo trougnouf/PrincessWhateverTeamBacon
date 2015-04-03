@@ -52,13 +52,10 @@ namespace PointAndClick
 
             UpdateTextVisibility(gametime);
 
-            if (currentMouseState.LeftButton == ButtonState.Released && oldMouseState.LeftButton == ButtonState.Pressed)
+            if (mainGame.currentMouseState.LeftButton == ButtonState.Released && mainGame.oldMouseState.LeftButton == ButtonState.Pressed)
             {
 
-                mainGame.currentScreen = new StartMenuScreen(mainGame);
-                mainGame.state = GameStates.StartMenu;
-                mainGame.previousScreen = this;
-                mainGame.transitioning = true;
+                mainGame.UpdateState(GameStates.StartMenu);
 
             }
 

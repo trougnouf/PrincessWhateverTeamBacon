@@ -14,17 +14,30 @@ namespace PointAndClick
     public class Item : ClickableObject
     {
 
-        String name; 
+        String name;
+        public bool inScene { get; private set; }
+        String description;
 
         public Item(Vector2 initPosition, String path, MainGame currentGame, string newName) 
             :base(initPosition, path, currentGame)
         {
             name = newName;
+            inScene = true;
+
+            //
+            switch(name)
+            {
+                default:
+                    description = "";
+                    break;
+            }
+
         } 
        
         protected override void OnClick(GameStates state)
         {
-
+            maingame.iMenu.ItemOptions(this);
+            
         }
         protected override void OnUnClick(GameStates state)
         {

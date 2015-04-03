@@ -13,7 +13,7 @@ namespace PointAndClick
     {
 
         protected Vector2 size;
-        public Texture2D texture { get; set; }
+        public Texture2D texture { get; private set; }
         protected Rectangle drawRectangle;
 
         public SceneImage(Vector2 initPosition, String path, MainGame currentGame)
@@ -25,6 +25,12 @@ namespace PointAndClick
                                           (int)(position.Y * maingame.ScalingFactor.Y), 
                                           (int)(size.X * maingame.ScalingFactor.X), 
                                           (int)(size.Y * maingame.ScalingFactor.Y));
+        }
+
+        public SceneImage(Vector2 initPosition, MainGame currentGame)
+            : base(initPosition, currentGame, "")
+        {
+           
         }
         
         //Method to draw image
@@ -70,6 +76,17 @@ namespace PointAndClick
                                           SpriteEffects.None,
                                           0);
 
+        }
+
+        public void UpdateTexture(Texture2D newTexture)
+        {
+            texture = newTexture;
+            path = texture.Name;
+            size = new Vector2(texture.Width, texture.Height);
+            drawRectangle = new Rectangle((int)(position.X * maingame.ScalingFactor.X),
+                                          (int)(position.Y * maingame.ScalingFactor.Y),
+                                          (int)(size.X * maingame.ScalingFactor.X),
+                                          (int)(size.Y * maingame.ScalingFactor.Y));
         }
 
     }
