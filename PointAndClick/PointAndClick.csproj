@@ -37,6 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Background.cs" />
+    <Compile Include="BedRoomScene.cs" />
+    <Compile Include="Conversation.cs" />
     <Compile Include="Cursor.cs" />
     <Compile Include="DialogBox.cs" />
     <Compile Include="DrawableComparer.cs" />

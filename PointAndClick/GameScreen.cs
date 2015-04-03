@@ -20,9 +20,8 @@ namespace PointAndClick
         protected SortedSet<Drawable> drawingList;
         protected List<ClickableObject> objectList;
 
-        //MouseStates used to update objects
-        protected MouseState oldMouseState;
-        protected MouseState currentMouseState;
+        //item currently targeted
+        Item currentItem;
 
         //Reference to main game
         protected MainGame mainGame;
@@ -32,7 +31,6 @@ namespace PointAndClick
             mainGame = game;
             drawingList = new SortedSet<Drawable>(new DrawableComparer()); 
             objectList = new List<ClickableObject>();
-            currentMouseState = Mouse.GetState();
             LoadContent();
             
         }
@@ -45,11 +43,7 @@ namespace PointAndClick
         //Method to update game loogic based on gametime
         public virtual void Update(GameTime gametime)
         {
-
-            CheckMouseInput();
-            mainGame.gameCursor.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));  
-            UpdateObjects();
-
+           UpdateObjects();
         }
        
         //Method to Draw everything to screen
@@ -71,19 +65,12 @@ namespace PointAndClick
 
             foreach (ClickableObject obj in objectList)
             {
-                obj.Update(currentMouseState, oldMouseState, mainGame.state);
+                obj.Update(mainGame.currentMouseState, mainGame.oldMouseState, mainGame.state);
             }
         
         }
         
-        //Checks mouse input and updates states 
-        protected void CheckMouseInput()
-        {
-            oldMouseState = currentMouseState;
-
-            currentMouseState = Mouse.GetState();
-        }
-        
+             
         //Drawing Method for Transitioning
        public void Transition( int mAlphaValue)
        {
@@ -94,7 +81,20 @@ namespace PointAndClick
            }
 
        }
-              
+
+       public void RemoveObject(ClickableObject obj)
+       {
+           //remove item from scene drawing/update lists
+           drawingList.Remove(obj);
+           objectList.Remove(obj);
+       }
+
+       public void AddObject(ClickableObject obj)
+       {
+           //remove item from scene drawing/update lists
+           drawingList.Add(obj);
+           objectList.Add(obj);
+       }
     }
 
 }

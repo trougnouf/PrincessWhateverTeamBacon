@@ -36,8 +36,7 @@ namespace PointAndClick
         //Loads resources, creates objects/images, and add them to lists
         public override void LoadContent()
         {
-            CheckMouseInput();
-
+            
             //PROBABLY NEED ERROR CATCHING
             segoe = mainGame.Content.Load<SpriteFont>("Segoe");
             song = mainGame.Content.Load<Song>("MusisBoxTune");
@@ -45,13 +44,13 @@ namespace PointAndClick
             NewGame = new MenuButton(new Vector2(300, 700), "NewGame", mainGame);
             Continue = new MenuButton(new Vector2(700, 700), "Continue", mainGame);
             Exit = new MenuButton(new Vector2(1100, 700), "Exit", mainGame);
-            //Bacon = new SceneImage(new Vector2(900, 250), "bacon", mainGame);
+            Bacon = new SceneImage(new Vector2(1400, 400), "bacon", mainGame);
             
             drawingList.Add(NewGame);
             drawingList.Add(background);
             drawingList.Add(Continue);
             drawingList.Add(Exit);
-            //drawingList.Add(Bacon);
+            drawingList.Add(Bacon);
 
             objectList.Add(NewGame);
             objectList.Add(Continue);
