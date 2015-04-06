@@ -19,13 +19,15 @@ namespace PointAndClick
         private MenuButton useButton;
         private MenuButton takeButton;
         private MenuButton examineButton;
-        //private List<Item> itemsList;
+        private MenuButton bagButton;
         public IbuttonState currentState;
+        private IbuttonState previousState;
 
 
         public InteractButtons(MainGame currentGame)
             : base(currentGame)
         {
+            previousState = IbuttonState.Take;
             currentState = IbuttonState.Take;   
         }
 
@@ -33,36 +35,14 @@ namespace PointAndClick
         public override void LoadContent()
         {
             //MenuButtons for take/examine/use 
-            useButton = new MenuButton(new Vector2(0, 0), "Use", mainGame);
-            takeButton = new MenuButton(new Vector2(0, 0), "Take", mainGame);
-            examineButton = new MenuButton(new Vector2(0, 0), "Examine", mainGame);
+            useButton = new MenuButton(new Vector2(600, InteractMenu.offset), "Use", mainGame);
+            takeButton = new MenuButton(new Vector2(1000, InteractMenu.offset), "Take", mainGame);
+            examineButton = new MenuButton(new Vector2(1400, InteractMenu.offset), "Examine", mainGame);
+            bagButton = new MenuButton(new Vector2(0, InteractMenu.offset), @"Icons\Backbag", mainGame);
 
-            drawingList.Add(useButton);
-            drawingList.Add(takeButton);
-            drawingList.Add(examineButton);
-
-            objectList.Add(useButton);
-            objectList.Add(takeButton);
-            objectList.Add(examineButton);
-
-        }
-
-       //Calls base update and then changes visibility of use/take buttons depending on current state
-        public override void Update(GameTime gametime)
-        {
-            base.Update(gametime);
-
-            if(currentState == IbuttonState.Take)
-            {
-                takeButton.visible = true;
-                examineButton.visible = false;
-            }
-            else
-            {
-                takeButton.visible = false;
-                examineButton.visible = true;
-            }
-            
+            AddObject(bagButton);
+            AddObject(takeButton);
+            AddObject(examineButton);
         }
 
         public override void UnloadContent()
@@ -70,5 +50,43 @@ namespace PointAndClick
 
         }
 
+        public void Options(Item item)
+        {   
+
+            previousState = currentState;
+
+            if (item.takeable && item.inScene)
+                currentState = IbuttonState.Take;
+            else
+                currentState = IbuttonState.Use;
+
+            UpdateLists();
+            
+        }
+
+        private void UpdateLists()
+        {
+            drawingList.Clear();
+            objectList.Clear();
+
+            AddObject(bagButton);
+            AddObject(examineButton);
+
+          
+            if (currentState == IbuttonState.Take)
+            {
+                  
+                AddObject(takeButton);
+                    
+             }
+             else
+             {
+                  
+                AddObject(useButton);
+
+             }
+
+         }
+        
     }       
 }

@@ -13,7 +13,7 @@ namespace PointAndClick
     {
 
         protected Vector2 size;
-        public Texture2D texture { get; private set; }
+        public Texture2D texture { get; protected set; }
         protected Rectangle drawRectangle;
 
         public SceneImage(Vector2 initPosition, String path, MainGame currentGame)

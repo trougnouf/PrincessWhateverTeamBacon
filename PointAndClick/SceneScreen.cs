@@ -15,26 +15,14 @@ namespace PointAndClick
 {
     class SceneScreen : GameScreen
     {   
-        //item currently targeted
-        Item currentItem;
-
-        protected List<Tuple<Texture2D, Texture2D, string, string>> dialogList;
+        
+        //List of dialogs
+        protected List<Conversation> convoList;
        
         public SceneScreen(MainGame currentGame)
             : base(currentGame)
         {
-
-        }
-
-        //
-        public void PickUp()
-        {   
-            //remove item from scene drawing/update lists
-            drawingList.Remove(currentItem);
-            objectList.Remove(currentItem);
-
-            //add to InteractMenu inventory
-            mainGame.iMenu.AddItem(currentItem);
+            convoList = new List<Conversation>();
         }
 
         //Add initiazation of items, images, etc here

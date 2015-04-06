@@ -47,17 +47,17 @@ namespace PointAndClick
             switch(path)
             {   
                 //Cases for Start Menu
-                case "NewGame":
+                case "StartMenu/NewGame":
 
-                    //mainGame.iMenu = new InteractMenu(this);
-
-                    break;
-
-                case "Continue":
+                    maingame.UpdateState(GameStates.Bedroom);
 
                     break;
 
-                case "Exit":
+                case "StartMenu/Continue":
+
+                    break;
+
+                case "StartMenu/Exit":
 
                     maingame.Exit();
 
@@ -81,11 +81,22 @@ namespace PointAndClick
 
                 case "Take":
 
+                    maingame.iMenu.TakeItem();
+
                     break;
 
                 case "Examine":
 
+                    maingame.iMenu.ExamineItem();
+
                     break;
+
+                case @"Icons\Backbag":
+
+                    maingame.iMenu.ShowInventory();
+
+                    break;
+
                 //Need cases for options new?
                 default:
 

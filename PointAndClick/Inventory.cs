@@ -17,9 +17,9 @@ namespace PointAndClick
     class Inventory : GameScreen
     {
         //Maximum number of items you can hold
-        const int maxItemCount = 10;
+        const int maxItemCount = 20;
         private short itemCount;
-        private float itemWidth;
+        private int itemWidth;
         private SceneImage bagIcon;
 
         public Inventory(MainGame currentGame)
@@ -27,13 +27,13 @@ namespace PointAndClick
         {
             itemCount = 0;
             //the +2 is for bag icon that takes up the space of two item icons
-            itemWidth = MainGame.initBufferWidth / (maxItemCount + 2); 
+            itemWidth = 100; 
         }
 
         public override void LoadContent()
         {   
             //Initialize and Add bagIcon to drawing list
-            bagIcon = new SceneImage(new Vector2(0, InteractMenu.offset), "BagIcon", mainGame);
+            bagIcon = new SceneImage(new Vector2(0, InteractMenu.offset), @"Icons\bag", mainGame);
             drawingList.Add(bagIcon);
         }
 
@@ -47,15 +47,20 @@ namespace PointAndClick
 
             if(itemCount < Inventory.maxItemCount)
             {
+                int y, x;
+                x = 300 + (itemCount * itemWidth)%(itemWidth*maxItemCount/2);
+
+                if ((float)itemCount / itemWidth >= .5)
+                    y = InteractMenu.offset + 200;
+                else
+                    y = InteractMenu.offset; 
 
                 //Increase Item count and update position/texture of item
-                itemCount++;
-                newItem.UpdatePosition(new Vector2(itemCount * itemWidth, InteractMenu.offset));
-                //item.ChangeToBagTexture();
+                newItem.UpdatePosition(new Vector2(x, y));
+                newItem.ChangeToBagTexture();
 
-                //Add item to drawing and update list
-                drawingList.Add(newItem);
-                objectList.Add(newItem);
+                AddObject(newItem);
+                itemCount++;
 
             }
       

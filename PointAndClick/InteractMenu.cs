@@ -18,7 +18,7 @@ namespace PointAndClick
     public class InteractMenu 
     {
 
-        private iMenuStates state;
+        private iMenuStates state; 
         public bool transitioning { get; set; }
         public MainGame mainGame;
         private Inventory bag;
@@ -37,6 +37,11 @@ namespace PointAndClick
         public InteractMenu(MainGame mGame)
         {
             mainGame = mGame;
+            currentScreen = dBox;
+            previousScreen = dBox;
+            transitioning = false;
+
+            LoadContent();
         }
 
         public void LoadContent()
@@ -44,10 +49,15 @@ namespace PointAndClick
             bag = new Inventory(mainGame);
             dBox = new DialogBox(mainGame);
             iButtons = new InteractButtons(mainGame);
-            backGround = new BackGround(new Vector2(0, offset), "BlackBar", mainGame);
+            backGround = new BackGround(new Vector2(0, offset), "Backgrounds/black", mainGame);
             currentScreen = dBox;
             previousScreen = dBox;
             transitioning = false;
+        }
+
+        public bool StateDialog()
+        {
+            return state == iMenuStates.Dialogue;
         }
 
         public void Update(GameTime gametime)
@@ -55,8 +65,11 @@ namespace PointAndClick
             currentScreen.Update(gametime);
         }
 
-        private void UpdateScreens()
-        {   
+        private void UpdateState(iMenuStates newState)
+        {
+
+            state = newState;
+
             previousScreen = currentScreen;
 
             switch(state)
@@ -80,8 +93,8 @@ namespace PointAndClick
                     break;
             }
 
-            if (previousScreen != currentScreen)
-                transitioning = true;
+            //if (previousScreen != currentScreen)
+               // transitioning = true;
         }
 
         public void Draw()
@@ -92,41 +105,49 @@ namespace PointAndClick
 
         public void Transition(int alpha)
         {
+            backGround.TranitionDraw(alpha);
             transitionScreen.Transition(alpha);
         }
 
         public void TakeItem()
         {
-
-            state = iMenuStates.Bag;
-
             bag.AddItemToInventory(currentItem);
 
             mainGame.currentScreen.RemoveObject(currentItem);
 
-            UpdateScreens();
-
+            ShowInventory();
         }
 
         public void ExamineItem()
         {
-            state = iMenuStates.Dialogue;
-
             dBox.ShowItemDescription(currentItem);
 
-            UpdateScreens();
+            UpdateState(iMenuStates.Dialogue);
         }
 
-        public void ItemOptions(Item item)
+        public void NewItemOptions(Item item)
         {
             currentItem = item;
 
-            state = iMenuStates.Interact;
+            ShowOptions();
+        }
 
-            iButtons.Options(item.inScene);
+        public void StartConversation(Conversation currentConvo)
+        {
+            UpdateState(iMenuStates.Dialogue);
+            dBox.BeginDialog(currentConvo);
+        }
 
-            UpdateScreens();
+        public void ShowInventory()
+        {
+            UpdateState(iMenuStates.Bag);
+        }
 
+        public void ShowOptions()
+        {
+            iButtons.Options(currentItem);
+
+            UpdateState(iMenuStates.Interact);
         }
 
        

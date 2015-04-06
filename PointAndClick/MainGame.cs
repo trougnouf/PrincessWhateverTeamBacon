@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public enum GameStates: int { TitleScreen, StartMenu };
+    public enum GameStates: int { TitleScreen, StartMenu, Bedroom };
    
     /// <summary>
     /// This is the main type for the game
@@ -86,7 +86,7 @@ namespace PointAndClick
             Window.AllowUserResizing = true;
             graphics.ApplyChanges();
             Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);
-            gameCursor = new Cursor(new Vector2(0,0), "Cursor", this);
+            gameCursor = new Cursor(new Vector2(0,0), "Icons/Cursor", this);
             
             
         }
@@ -123,19 +123,25 @@ namespace PointAndClick
 
         protected override void Update(GameTime gameTime)
         {
+            CheckMouseInput();
 
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            CheckMouseInput();
 
-            if(!transitioning)
-            currentScreen.Update(gameTime);
-
-            if (iMenu != null && !iMenu.transitioning)
+            if (iMenu != null)
+            {
+                if (!transitioning && !iMenu.StateDialog())
+                    currentScreen.Update(gameTime);
                 iMenu.Update(gameTime);
+            }
+            else
+            {
+                if (!transitioning)
+                    currentScreen.Update(gameTime);
+            }
+            
 
-            CheckMouseInput();
             gameCursor.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));
 
             base.Update(gameTime);
@@ -161,6 +167,196 @@ namespace PointAndClick
                     currentScreen = new StartMenuScreen(this);
 
                     break;
+
+                case GameStates.Bedroom:
+                   
+                    iMenu = new InteractMenu(this);
+                    currentScreen = new BedRoomScene(this);
+
+                    break;
+
+            }
+
+            if (previousScreen != currentScreen)
+                transitioning = true;
+        }
+
+        /// <summary>
+        /// This is called when the game should draw itself.
+        /// </summary>
+        protected override void Draw(GameTime gameTime)
+        {
+
+            GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            spriteBatch.Begin();
+
+            if(transitioning)
+                Transition(gameTime);
+            else
+                currentScreen.Draw(); 
+
+            if (iMenu != null)
+                iMenu.Draw();
+            
+            gameCursor.Draw();
+
+            spriteBatch.End();
+
+        }
+
+        //Checks mouse input and updates states 
+        private void CheckMouseInput()
+        {
+            oldMouseState = currentMouseState;
+
+            currentMouseState = Mouse.GetState();
+        }
+
+        private void Transition(GameTime gameTime)
+        {
+            bool trans = true;
+            //Subtract elasped time from set fading delay
+            FadeDelay -= gameTime.ElapsedGameTime.TotalSeconds;
+            
+            //Once the set amount of time has passed, the method fades/unfades further
+            if (FadeDelay <= 0)
+            {
+                //reset time
+                FadeDelay = .001;
+                
+                //Incremement the fade value
+                AlphaValue += FadeIncrement;
+
+                //Change direction of fading incrementation when Alpha has reached its minimum
+                if(AlphaValue < 0)
+                    FadeIncrement *= -1;
+                
+                //When new Screen is completely faded in, transitioning is done
+                if ( AlphaValue > 255)
+                {
+                    trans = false;
+                    AlphaValue = 255;
+                }
+            }
+
+            if(transitioning)
+            {
+                //If we are fading out, draw previous screen, otherwise we are drawing the new current State
+                if (FadeIncrement < 0)
+                    transitionScreen = previousScreen;
+
+                else
+                    transitionScreen = currentScreen;
+
+                transitionScreen.Transition(AlphaValue);
+
+                transitioning = trans;
+               
+            }
+
+            else
+                currentScreen.Draw();
+
+            if (!trans)
+                FadeIncrement *= -1;
+
+        }
+
+        void Window_ClientSizeChanged(object sender, EventArgs e)
+        {
+            // Remove this event handler, so we don't call it when we change the window size in here
+            Window.ClientSizeChanged -= new EventHandler<EventArgs>(Window_ClientSizeChanged);
+
+            //Check Dimensions for changes
+            if (Window.ClientBounds.Width != OldWindowSize.X)
+            { 
+                // Set the new backbuffer size
+                graphics.PreferredBackBufferWidth = Window.ClientBounds.Width;
+              
+            }
+            else if (Window.ClientBounds.Height != OldWindowSize.Y)
+            { 
+                // Set the new backbuffer size
+                graphics.PreferredBackBufferHeight = Window.ClientBounds.Height;
+            }
+
+            graphics.ApplyChanges();
+
+            // Update the old window size with what it is currently and ScalingFactor
+            OldWindowSize = new Point(Window.ClientBounds.Width, Window.ClientBounds.Height);
+            ScalingFactor = new Vector2((Window.ClientBounds.Width / (float)initBufferWidth), (Window.ClientBounds.Height / (float)initBufferHeight));     
+
+            // add this event handler back
+            Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);
+        }
+
+        public bool CheckforUnClick()
+        {
+            return currentMouseState.LeftButton == ButtonState.Pressed && oldMouseState.LeftButton == ButtonState.Released;
+        }
+        
+    }
+
+}
+
+
+/*
+ *  protected override void Update(GameTime gameTime)
+        {
+            CheckMouseInput();
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
+                Exit();
+
+
+            if (iMenu != null)
+            {
+                if (!transitioning && !iMenu.StateDialog())
+                    currentScreen.Update(gameTime);
+                if(!iMenu.transitioning)
+                    iMenu.Update(gameTime);
+            }
+            else
+            {
+                if (!transitioning)
+                    currentScreen.Update(gameTime);
+            }
+            
+
+            gameCursor.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));
+
+            base.Update(gameTime);
+
+
+        }
+
+        public void UpdateState(GameStates newState)
+        {
+            state = newState;
+            UpdateScreens();
+        }
+
+        private void UpdateScreens()
+        {
+
+            previousScreen = currentScreen;
+
+            switch (state)
+            {
+                case GameStates.StartMenu:
+
+                    currentScreen = new StartMenuScreen(this);
+
+                    break;
+
+                case GameStates.Bedroom:
+                   
+                    iMenu = new InteractMenu(this);
+                    currentScreen = new BedRoomScene(this);
+
+                    break;
+
             }
 
             if (previousScreen != currentScreen)
@@ -221,7 +417,7 @@ namespace PointAndClick
             if (FadeDelay <= 0)
             {
                 //reset time
-                FadeDelay = .0005;
+                FadeDelay = .001;
                 
                 //Incremement the fade value
                 AlphaValue += FadeIncrement;
@@ -250,6 +446,7 @@ namespace PointAndClick
                 transitionScreen.Transition(AlphaValue);
 
                 transitioning = trans;
+               
             }
 
             else
@@ -266,7 +463,7 @@ namespace PointAndClick
                     else
                         iMenu.transitionScreen = iMenu.currentScreen;
 
-                    iMenu.transitionScreen.Transition(AlphaValue);
+                    iMenu.Transition(AlphaValue);
 
                     iMenu.transitioning = trans;
 
@@ -277,38 +474,11 @@ namespace PointAndClick
                     iMenu.Draw();
                 }
 
+             
             }
+
+            if (!trans)
+                FadeIncrement *= -1;
 
         }
-
-        void Window_ClientSizeChanged(object sender, EventArgs e)
-        {
-            // Remove this event handler, so we don't call it when we change the window size in here
-            Window.ClientSizeChanged -= new EventHandler<EventArgs>(Window_ClientSizeChanged);
-
-            //Check Dimensions for changes
-            if (Window.ClientBounds.Width != OldWindowSize.X)
-            { 
-                // Set the new backbuffer size
-                graphics.PreferredBackBufferWidth = Window.ClientBounds.Width;
-              
-            }
-            else if (Window.ClientBounds.Height != OldWindowSize.Y)
-            { 
-                // Set the new backbuffer size
-                graphics.PreferredBackBufferHeight = Window.ClientBounds.Height;
-            }
-
-            graphics.ApplyChanges();
-
-            // Update the old window size with what it is currently and ScalingFactor
-            OldWindowSize = new Point(Window.ClientBounds.Width, Window.ClientBounds.Height);
-            ScalingFactor = new Vector2((Window.ClientBounds.Width / (float)initBufferWidth), (Window.ClientBounds.Height / (float)initBufferHeight));     
-
-            // add this event handler back
-            Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);
-        }
-
-    }
-
-}
+*/

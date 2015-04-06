@@ -31,12 +31,14 @@ namespace PointAndClick
         //Loads background texture and font 
         public override void LoadContent()
         {
-            background = new BackGround(new Vector2(0,0), "TitleScreenBackground", mainGame);
+
+            background = new BackGround(new Vector2(0, 0), "Backgrounds/TitleScreenBackground", mainGame);
             segoe = mainGame.Content.Load<SpriteFont>("Segoe");
             text = new SceneText(new Vector2(700, 750), "Left Click to Continue", segoe, mainGame);
             drawingList.Add(background);
             drawingList.Add(text);
             //PROBABLY NEED ERROR CATCHING   
+
         }
 
         public override void UnloadContent()
@@ -52,7 +54,7 @@ namespace PointAndClick
 
             UpdateTextVisibility(gametime);
 
-            if (mainGame.currentMouseState.LeftButton == ButtonState.Released && mainGame.oldMouseState.LeftButton == ButtonState.Pressed)
+            if (mainGame.CheckforUnClick())
             {
 
                 mainGame.UpdateState(GameStates.StartMenu);

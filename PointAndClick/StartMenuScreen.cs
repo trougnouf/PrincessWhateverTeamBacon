@@ -39,12 +39,12 @@ namespace PointAndClick
             
             //PROBABLY NEED ERROR CATCHING
             segoe = mainGame.Content.Load<SpriteFont>("Segoe");
-            song = mainGame.Content.Load<Song>("MusisBoxTune");
-            background = new BackGround(new Vector2(0,0),"StartMenuBackGround", mainGame);
-            NewGame = new MenuButton(new Vector2(300, 700), "NewGame", mainGame);
-            Continue = new MenuButton(new Vector2(700, 700), "Continue", mainGame);
-            Exit = new MenuButton(new Vector2(1100, 700), "Exit", mainGame);
-            Bacon = new SceneImage(new Vector2(1400, 400), "bacon", mainGame);
+            song = mainGame.Content.Load<Song>("StartMenu/MusisBoxTune");
+            background = new BackGround(new Vector2(0, 0), "Backgrounds/StartMenuBackGround", mainGame);
+            NewGame = new MenuButton(new Vector2(300, 700), "StartMenu/NewGame", mainGame);
+            Continue = new MenuButton(new Vector2(700, 700), "StartMenu/Continue", mainGame);
+            Exit = new MenuButton(new Vector2(1100, 700), "StartMenu/Exit", mainGame);
+            Bacon = new SceneImage(new Vector2(1400, 400), "StartMenu/bacon", mainGame);
             
             drawingList.Add(NewGame);
             drawingList.Add(background);

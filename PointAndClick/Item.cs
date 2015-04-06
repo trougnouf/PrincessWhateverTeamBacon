@@ -14,34 +14,49 @@ namespace PointAndClick
     public class Item : ClickableObject
     {
 
-        String name;
-        public bool inScene { get; private set; }
-        String description;
 
-        public Item(Vector2 initPosition, String path, MainGame currentGame, string newName) 
+        public bool inScene { get; private set; }
+        public String description { get; private set; }
+        private Texture2D inBagTexture;
+        public bool takeable { get; private set; }
+
+        public Item(Vector2 initPosition, String path, MainGame currentGame, string bagTexture, bool istakable) 
             :base(initPosition, path, currentGame)
         {
-            name = newName;
-            inScene = true;
 
-            //
-            switch(name)
-            {
+            takeable = istakable;
+            inScene = true;
+            if(takeable)
+            inBagTexture = currentGame.Content.Load<Texture2D>(bagTexture);
+
+            //Fills in Item descriptions based on path
+            switch(path)
+            {   
+                case @"Objects\bedroom-pottedPlant":
+
+                    description = "A Potted Plant...";
+                    break;
+
                 default:
                     description = "";
                     break;
             }
 
-        } 
+        }
+ 
+        public void ChangeToBagTexture()
+        {
+            inScene = false;
+            texture = inBagTexture;
+        }
        
         protected override void OnClick(GameStates state)
         {
-            maingame.iMenu.ItemOptions(this);
-            
+                   
         }
         protected override void OnUnClick(GameStates state)
         {
-
+            maingame.iMenu.NewItemOptions(this);
         }
         protected override void OnMouseEnter(GameStates state)
         {
