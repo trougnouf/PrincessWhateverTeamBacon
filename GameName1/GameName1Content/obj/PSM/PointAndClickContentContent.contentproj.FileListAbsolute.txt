@@ -2,3 +2,4 @@ C:\Users\Batman\documents\visual studio 2013\Projects\PointAndClick\GameName1\Ga
 C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
 C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
 C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
+C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache

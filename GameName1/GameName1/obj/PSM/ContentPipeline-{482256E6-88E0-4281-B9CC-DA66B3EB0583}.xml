@@ -7,7 +7,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Segoe.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Segoe.xnb</Output>
       <Time>2015-03-30T18:08:26-04:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\TitleScreenBackground.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\TitleScreenBackground.xnb</Output>
       <Time>2015-03-30T18:08:26-04:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\StartMenuBackGround.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\StartMenuBackGround.xnb</Output>
       <Time>2015-03-30T18:08:26-04:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\bacon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\bacon.xnb</Output>
       <Time>2015-03-30T18:08:24-04:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\NewGame.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\NewGame.xnb</Output>
       <Time>2015-03-30T18:08:26-04:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\Continue.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\Continue.xnb</Output>
       <Time>2015-03-30T18:08:24-04:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\Exit.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\Exit.xnb</Output>
       <Time>2015-03-30T18:08:24-04:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\Cursor.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\Cursor.xnb</Output>
       <Time>2015-03-30T18:08:24-04:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bag.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bag.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magiKoiPottedIcon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magiKoiPottedIcon.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magiKoyHealthyIcon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magiKoyHealthyIcon.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\heroIcon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\heroIcon.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-jackHammerIcon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-jackHammerIcon.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-jumperCables.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-jumperCables.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-mailIcon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-mailIcon.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-pan.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-pan.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -151,7 +151,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-perfectBaconIcon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-perfectBaconIcon.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -160,7 +160,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-pottedPlantIcon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-pottedPlantIcon.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -169,7 +169,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-princessWhateverHandIcon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-princessWhateverHandIcon.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -178,7 +178,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-tongs.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-tongs.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -187,7 +187,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\parking-cockMobileIcon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\parking-cockMobileIcon.xnb</Output>
       <Time>2015-04-05T16:40:50-04:00</Time>
     </Item>
     <Item>
@@ -196,7 +196,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\bedroom.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\bedroom.xnb</Output>
       <Time>2015-04-05T16:42:00-04:00</Time>
     </Item>
     <Item>
@@ -205,7 +205,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\black.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\black.xnb</Output>
       <Time>2015-04-05T16:42:00-04:00</Time>
     </Item>
     <Item>
@@ -214,7 +214,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\groceryStoreBack.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\groceryStoreBack.xnb</Output>
       <Time>2015-04-05T16:42:00-04:00</Time>
     </Item>
     <Item>
@@ -223,7 +223,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\kitchen.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\kitchen.xnb</Output>
       <Time>2015-04-05T16:42:00-04:00</Time>
     </Item>
     <Item>
@@ -232,7 +232,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\parking.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\parking.xnb</Output>
       <Time>2015-04-05T16:42:00-04:00</Time>
     </Item>
     <Item>
@@ -241,7 +241,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiDead.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiDead.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -250,7 +250,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiHealthy.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiHealthy.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -259,7 +259,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiPotted.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiPotted.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -268,7 +268,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-pottedPlant.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-pottedPlant.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -277,7 +277,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverArmless.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverArmless.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -286,7 +286,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverHand.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverHand.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -295,7 +295,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverHealthy.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverHealthy.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -304,7 +304,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-socket.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-socket.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -313,7 +313,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroLaying.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroLaying.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -322,7 +322,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroLeft.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroLeft.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -331,7 +331,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroRight.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroRight.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -340,7 +340,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroStanding.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroStanding.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -349,7 +349,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-bacon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-bacon.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -358,7 +358,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-jackHammer.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-jackHammer.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -367,7 +367,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-mail.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-mail.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -376,7 +376,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-pan.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-pan.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -385,7 +385,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\parking-cockMobile.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\parking-cockMobile.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -394,7 +394,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Objects\parking-jumperCables.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\parking-jumperCables.xnb</Output>
       <Time>2015-04-05T16:43:50-04:00</Time>
     </Item>
     <Item>
@@ -403,7 +403,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Examine.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Examine.xnb</Output>
       <Time>2015-04-05T21:58:06-04:00</Time>
     </Item>
     <Item>
@@ -412,7 +412,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Take.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Take.xnb</Output>
       <Time>2015-04-05T21:58:06-04:00</Time>
     </Item>
     <Item>
@@ -421,7 +421,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Use.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Use.xnb</Output>
       <Time>2015-04-05T21:58:06-04:00</Time>
     </Item>
     <Item>
@@ -430,7 +430,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bedroomPrincessWhateverIcon.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bedroomPrincessWhateverIcon.xnb</Output>
       <Time>2015-04-05T22:35:34-04:00</Time>
     </Item>
     <Item>
@@ -439,7 +439,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\Icons\Backbag.xnb</Output>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\Backbag.xnb</Output>
       <Time>2015-04-06T00:52:18-04:00</Time>
     </Item>
     <Item>
@@ -448,8 +448,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.xnb</Output>
-      <Extra>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.wma</Extra>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.xnb</Output>
+      <Extra>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.wma</Extra>
       <Time>2015-03-30T18:08:26-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -459,10 +459,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>PSM</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\obj\PSM\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1\bin\PSM\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\obj\PSM\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
