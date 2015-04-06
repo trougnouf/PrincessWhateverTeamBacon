@@ -56,57 +56,274 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TitleScreenBackground.png">
+    <Compile Include="Backgrounds\TitleScreenBackground.png">
       <Name>TitleScreenBackground</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StartMenuBackGround.png">
+    <Compile Include="Backgrounds\StartMenuBackGround.png">
       <Name>StartMenuBackGround</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MusisBoxTune.wav">
+    <Compile Include="StartMenu\MusisBoxTune.wav">
       <Name>MusisBoxTune</Name>
       <Importer>WavImporter</Importer>
       <Processor>SongProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bacon.bmp">
+    <Compile Include="StartMenu\bacon.bmp">
       <Name>bacon</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NewGame.png">
+    <Compile Include="StartMenu\NewGame.png">
       <Name>NewGame</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Continue.png">
+    <Compile Include="StartMenu\Continue.png">
       <Name>Continue</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exit.png">
+    <Compile Include="StartMenu\Exit.png">
       <Name>Exit</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cursor.png">
+    <Compile Include="Icons\Cursor.png">
       <Name>Cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Icons\bag.png">
+      <Name>bag</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\bedroom-magiKoiPottedIcon.png">
+      <Name>bedroom-magiKoiPottedIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\bedroom-magiKoyHealthyIcon.png">
+      <Name>bedroom-magiKoyHealthyIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\heroIcon.png">
+      <Name>heroIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-jackHammerIcon.png">
+      <Name>inv-jackHammerIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-jumperCables.png">
+      <Name>inv-jumperCables</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-mailIcon.png">
+      <Name>inv-mailIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-pan.png">
+      <Name>inv-pan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-perfectBaconIcon.png">
+      <Name>inv-perfectBaconIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-pottedPlantIcon.png">
+      <Name>inv-pottedPlantIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-princessWhateverHandIcon.png">
+      <Name>inv-princessWhateverHandIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-tongs.png">
+      <Name>inv-tongs</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\parking-cockMobileIcon.png">
+      <Name>parking-cockMobileIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backgrounds\bedroom.jpg">
+      <Name>bedroom</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Backgrounds\black.png">
+      <Name>black</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Backgrounds\groceryStoreBack.jpg">
+      <Name>groceryStoreBack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Backgrounds\kitchen.jpg">
+      <Name>kitchen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Backgrounds\parking.jpg">
+      <Name>parking</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objects\bedroom-magikoiDead.png">
+      <Name>bedroom-magikoiDead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\bedroom-magikoiHealthy.png">
+      <Name>bedroom-magikoiHealthy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\bedroom-magikoiPotted.png">
+      <Name>bedroom-magikoiPotted</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\bedroom-pottedPlant.png">
+      <Name>bedroom-pottedPlant</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\bedroom-princessWhateverArmless.png">
+      <Name>bedroom-princessWhateverArmless</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\bedroom-princessWhateverHand.png">
+      <Name>bedroom-princessWhateverHand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\bedroom-princessWhateverHealthy.png">
+      <Name>bedroom-princessWhateverHealthy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\bedroom-socket.png">
+      <Name>bedroom-socket</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\heroLaying.png">
+      <Name>heroLaying</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\heroLeft.png">
+      <Name>heroLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\heroRight.png">
+      <Name>heroRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\heroStanding.png">
+      <Name>heroStanding</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\kitchen-bacon.png">
+      <Name>kitchen-bacon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\kitchen-jackHammer.png">
+      <Name>kitchen-jackHammer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\kitchen-mail.png">
+      <Name>kitchen-mail</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\kitchen-pan.png">
+      <Name>kitchen-pan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\parking-cockMobile.png">
+      <Name>parking-cockMobile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\parking-jumperCables.png">
+      <Name>parking-jumperCables</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Examine.png">
+      <Name>Examine</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Take.png">
+      <Name>Take</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Use.png">
+      <Name>Use</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Icons\bedroomPrincessWhateverIcon.png">
+      <Name>bedroomPrincessWhateverIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Icons\Backbag.png">
+      <Name>Backbag</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
