@@ -26,7 +26,7 @@ namespace PointAndClick
         {   
             //If mouse is over the button, shade it
             if (IsMouseOver)
-                maingame.spriteBatch.Draw(texture,
+                maingame.spriteBatch.Draw(initialTexture,
                                           new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
                                           null,
                                           Color.Aqua,
@@ -77,6 +77,8 @@ namespace PointAndClick
                 //Cases for InteractButtons
                 case "Use":
 
+                    maingame.iMenu.UseItem();
+
                     break;
 
                 case "Take":
@@ -88,6 +90,12 @@ namespace PointAndClick
                 case "Examine":
 
                     maingame.iMenu.ExamineItem();
+
+                    break;
+
+                case "Talk":
+
+                    maingame.iMenu.TalkToCharacter();
 
                     break;
 

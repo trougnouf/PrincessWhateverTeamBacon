@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public enum IbuttonState: int { Use, Take };
+    public enum IbuttonState: int { Use, Take, Talk };
 
     class InteractButtons : GameScreen
     {
@@ -20,6 +20,7 @@ namespace PointAndClick
         private MenuButton takeButton;
         private MenuButton examineButton;
         private MenuButton bagButton;
+        private MenuButton talkButton;
         public IbuttonState currentState;
         private IbuttonState previousState;
 
@@ -34,15 +35,15 @@ namespace PointAndClick
 
         public override void LoadContent()
         {
-            //MenuButtons for take/examine/use 
-            useButton = new MenuButton(new Vector2(600, InteractMenu.offset), "Use", mainGame);
-            takeButton = new MenuButton(new Vector2(1000, InteractMenu.offset), "Take", mainGame);
-            examineButton = new MenuButton(new Vector2(1400, InteractMenu.offset), "Examine", mainGame);
+            //MenuButtons for take/examine/use
+            
+            useButton = new MenuButton(new Vector2(550, InteractMenu.offset), "Use", mainGame);
+            takeButton = new MenuButton(new Vector2(900, InteractMenu.offset), "Take", mainGame);
+            examineButton = new MenuButton(new Vector2(1250, InteractMenu.offset), "Examine", mainGame);
+            talkButton = new MenuButton(new Vector2(1600, InteractMenu.offset), "Talk", mainGame);
             bagButton = new MenuButton(new Vector2(0, InteractMenu.offset), @"Icons\Backbag", mainGame);
 
-            AddObject(bagButton);
-            AddObject(takeButton);
-            AddObject(examineButton);
+            UpdateLists();
         }
 
         public override void UnloadContent()
@@ -50,7 +51,16 @@ namespace PointAndClick
 
         }
 
-        public void Options(Item item)
+        public void ShowCharacterOptions()
+        {
+            previousState = currentState;
+
+            currentState = IbuttonState.Talk;
+
+            UpdateLists();
+        }
+
+        public void ItemOptions(Item item)
         {   
 
             previousState = currentState;
@@ -72,20 +82,21 @@ namespace PointAndClick
             AddObject(bagButton);
             AddObject(examineButton);
 
-          
-            if (currentState == IbuttonState.Take)
+            switch(currentState)
             {
-                  
-                AddObject(takeButton);
-                    
-             }
-             else
-             {
-                  
-                AddObject(useButton);
+                case IbuttonState.Take:
+                    AddObject(takeButton);
+                    break;
 
-             }
+                case IbuttonState.Talk:
+                    AddObject(talkButton);
+                    break;
 
+                case IbuttonState.Use:
+                    AddObject(useButton);
+                    break;
+            }
+          
          }
         
     }       

@@ -191,3 +191,4 @@ C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\IgnoreM
 C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\obj\PSM\PointAndClickContent.csprojResolveAssemblyReference.cache
 C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\obj\PSM\IgnoreMe.dll
+C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Talk.xnb

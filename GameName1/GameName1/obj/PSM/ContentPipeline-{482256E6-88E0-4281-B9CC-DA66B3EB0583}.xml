@@ -440,7 +440,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\Backbag.xnb</Output>
-      <Time>2015-04-06T00:52:18-04:00</Time>
+      <Time>2015-04-06T19:08:27.7975197-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\MusisBoxTune.wav</Source>
@@ -451,6 +451,15 @@
       <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.xnb</Output>
       <Extra>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.wma</Extra>
       <Time>2015-03-30T18:08:26-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Talk.png</Source>
+      <Name>Talk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Talk.xnb</Output>
+      <Time>2015-04-07T00:54:59.1267157-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

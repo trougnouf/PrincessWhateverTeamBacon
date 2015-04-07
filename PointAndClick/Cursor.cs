@@ -21,7 +21,7 @@ namespace PointAndClick
         {
 
             if (visible)
-                maingame.spriteBatch.Draw(texture,
+                maingame.spriteBatch.Draw(currentTexture,
                                           new Vector2(position.X, position.Y),
                                           null,
                                           Color.White,

@@ -13,18 +13,21 @@ namespace PointAndClick
     {
 
         protected Vector2 size;
-        public Texture2D texture { get; protected set; }
+        public Texture2D currentTexture { get; protected set; }
+        public Texture2D initialTexture { get; protected set; }
         protected Rectangle drawRectangle;
 
         public SceneImage(Vector2 initPosition, String path, MainGame currentGame)
             : base(initPosition, currentGame, path)
         {
-            texture = currentGame.Content.Load<Texture2D>(path);
-            size = new Vector2(texture.Width , texture.Height);
-            drawRectangle = new Rectangle((int)(position.X * maingame.ScalingFactor.X), 
-                                          (int)(position.Y * maingame.ScalingFactor.Y), 
-                                          (int)(size.X * maingame.ScalingFactor.X), 
+            initialTexture = currentGame.Content.Load<Texture2D>(path);
+            size = new Vector2(initialTexture.Width , initialTexture.Height);
+            drawRectangle = new Rectangle((int)(position.X * maingame.ScalingFactor.X),
+                                          (int)(position.Y * maingame.ScalingFactor.Y),
+                                          (int)(size.X * maingame.ScalingFactor.X),
                                           (int)(size.Y * maingame.ScalingFactor.Y));
+
+            currentTexture = initialTexture;
         }
 
         public SceneImage(Vector2 initPosition, MainGame currentGame)
@@ -37,7 +40,7 @@ namespace PointAndClick
         public override void Draw()
         {   
             if(visible)
-                maingame.spriteBatch.Draw(texture, 
+                maingame.spriteBatch.Draw(currentTexture, 
                                           new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
                                           null, 
                                           Color.White, 
@@ -66,7 +69,7 @@ namespace PointAndClick
         {
 
             if (visible)
-                maingame.spriteBatch.Draw(texture,
+                maingame.spriteBatch.Draw(currentTexture,
                                           new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
                                           null,
                                           new Color(255, 255, 255, (byte)MathHelper.Clamp(mAlphaValue, 0, 255)),
@@ -78,11 +81,22 @@ namespace PointAndClick
 
         }
 
-        public void UpdateTexture(Texture2D newTexture)
+        public void UpdateCurrentTexture(Texture2D newTexture)
         {
-            texture = newTexture;
-            path = texture.Name;
-            size = new Vector2(texture.Width, texture.Height);
+
+            currentTexture = newTexture;
+            UpdateSizeAndRec();
+        }
+
+        public void ResetTexture()
+        {
+            currentTexture = initialTexture;
+            UpdateSizeAndRec();
+        }
+
+        private void UpdateSizeAndRec()
+        {
+            size = new Vector2(currentTexture.Width, currentTexture.Height);
             drawRectangle = new Rectangle((int)(position.X * maingame.ScalingFactor.X),
                                           (int)(position.Y * maingame.ScalingFactor.Y),
                                           (int)(size.X * maingame.ScalingFactor.X),

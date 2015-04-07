@@ -47,7 +47,7 @@ namespace PointAndClick
         public void ChangeToBagTexture()
         {
             inScene = false;
-            texture = inBagTexture;
+            currentTexture = inBagTexture;
         }
        
         protected override void OnClick(GameStates state)

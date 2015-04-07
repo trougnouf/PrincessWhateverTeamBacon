@@ -42,7 +42,7 @@ namespace PointAndClick
             segoe = mainGame.Content.Load<SpriteFont>("Segoe");
             topSpeaker = new SceneImage(new Vector2(0, InteractMenu.offset), mainGame);
             bottomSpeaker = new SceneImage(new Vector2(0, InteractMenu.offset+100), mainGame);
-            topLine = new SceneText(new Vector2(200, InteractMenu.offset), "", segoe, mainGame);
+            topLine = new SceneText(new Vector2(200, InteractMenu.offset+25), "", segoe, mainGame);
             bottomLine = new SceneText(new Vector2(200, InteractMenu.offset+100), "", segoe, mainGame);
             itemLine = new SceneText(new Vector2(200, InteractMenu.offset + 100), "", segoe, mainGame);
             examinedItem = new SceneImage(new Vector2(0, InteractMenu.offset), mainGame);
@@ -67,8 +67,8 @@ namespace PointAndClick
         public void ShowDialog(Tuple<Texture2D, Texture2D, string, string> Dialog)
         {
        
-            topSpeaker.UpdateTexture(Dialog.Item1);
-            bottomSpeaker.UpdateTexture(Dialog.Item2);
+            topSpeaker.UpdateCurrentTexture(Dialog.Item1);
+            bottomSpeaker.UpdateCurrentTexture(Dialog.Item2);
             topLine.path = Dialog.Item3;
             bottomLine.path = Dialog.Item4;
 
@@ -80,7 +80,7 @@ namespace PointAndClick
         public void ShowItemDescription(Item item)
         {
        
-            examinedItem.UpdateTexture(item.texture);
+            examinedItem.UpdateCurrentTexture(item.initialTexture);
             itemLine.path = item.description;
             UpdateState(DBoxState.Description);
 
@@ -153,7 +153,7 @@ namespace PointAndClick
                     if (mainGame.CheckforUnClick())
                     {
 
-                        mainGame.iMenu.ShowOptions();
+                        mainGame.iMenu.ShowOptions(true);
 
                     }
 

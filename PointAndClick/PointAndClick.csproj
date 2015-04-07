@@ -38,10 +38,12 @@
   <ItemGroup>
     <Compile Include="Background.cs" />
     <Compile Include="BedRoomScene.cs" />
+    <Compile Include="Character.cs" />
     <Compile Include="Conversation.cs" />
     <Compile Include="Cursor.cs" />
     <Compile Include="DialogBox.cs" />
     <Compile Include="DrawableComparer.cs" />
+    <Compile Include="Fish.cs" />
     <Compile Include="InteractButtons.cs" />
     <Compile Include="InteractMenu.cs" />
     <Compile Include="ClickableObject.cs" />

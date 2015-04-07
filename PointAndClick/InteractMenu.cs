@@ -18,8 +18,9 @@ namespace PointAndClick
     public class InteractMenu 
     {
 
-        private iMenuStates state; 
-        public bool transitioning { get; set; }
+        private iMenuStates state;
+        public bool transitioning;
+        public bool usingItem { get; private set; }
         public MainGame mainGame;
         private Inventory bag;
         private DialogBox dBox;
@@ -29,8 +30,10 @@ namespace PointAndClick
         public GameScreen currentScreen;
         public GameScreen previousScreen;
         public GameScreen transitionScreen;
-        
-        private Item currentItem;
+
+        private Character currentChar;
+
+        public Item currentItem { get; private set; }
         
         public const int offset = 880;
         
@@ -40,6 +43,7 @@ namespace PointAndClick
             currentScreen = dBox;
             previousScreen = dBox;
             transitioning = false;
+            usingItem = false;
 
             LoadContent();
         }
@@ -67,34 +71,36 @@ namespace PointAndClick
 
         private void UpdateState(iMenuStates newState)
         {
-
-            state = newState;
-
-            previousScreen = currentScreen;
-
-            switch(state)
+            if(newState != state)
             {
-                case iMenuStates.Bag :
 
-                    currentScreen = bag;
+                state = newState;
 
-                    break;
+                previousScreen = currentScreen;
 
-                case iMenuStates.Dialogue :
+                switch (state)
+                {
+                    case iMenuStates.Bag:
 
-                    currentScreen = dBox;
+                        currentScreen = bag;
 
-                    break;
+                        break;
 
-                case iMenuStates.Interact :
+                    case iMenuStates.Dialogue:
 
-                    currentScreen = iButtons;
+                        currentScreen = dBox;
 
-                    break;
+                        break;
+
+                    case iMenuStates.Interact:
+
+                        currentScreen = iButtons;
+
+                        break;
+                }
+
             }
-
-            //if (previousScreen != currentScreen)
-               // transitioning = true;
+            
         }
 
         public void Draw()
@@ -107,6 +113,13 @@ namespace PointAndClick
         {
             backGround.TranitionDraw(alpha);
             transitionScreen.Transition(alpha);
+        }
+
+        public void TalkToCharacter()
+        {
+            dBox.BeginDialog(currentChar.Chat());
+
+            UpdateState(iMenuStates.Dialogue);
         }
 
         public void TakeItem()
@@ -126,10 +139,45 @@ namespace PointAndClick
         }
 
         public void NewItemOptions(Item item)
-        {
-            currentItem = item;
+        {   
 
-            ShowOptions();
+            if(!usingItem)
+            {
+                currentItem = item;
+
+                ShowOptions(true);
+            }
+            else if(!item.inScene)
+                 {
+                    currentItem = item;
+
+                    usingItem = false;
+
+                    mainGame.gameCursor.ResetTexture();    
+
+                    ShowOptions(true);
+                 }
+           
+        }
+
+      
+        public void CharacterOptions(Character newChar)
+        {
+            
+            if (!usingItem)
+            {
+                currentChar = newChar;
+
+                ShowOptions(false);
+            }
+         
+        }
+
+        public void UseItem()
+        {
+            usingItem = true;
+            mainGame.gameCursor.UpdateCurrentTexture(currentItem.currentTexture);
+            ShowInventory();
         }
 
         public void StartConversation(Conversation currentConvo)
@@ -143,9 +191,15 @@ namespace PointAndClick
             UpdateState(iMenuStates.Bag);
         }
 
-        public void ShowOptions()
+        public void ShowOptions(bool isItem)
         {
-            iButtons.Options(currentItem);
+            if (isItem)
+            {
+                iButtons.ItemOptions(currentItem);
+            }
+            else
+                iButtons.ShowCharacterOptions();
+            
 
             UpdateState(iMenuStates.Interact);
         }
