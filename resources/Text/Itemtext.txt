@@ -56,3 +56,17 @@ U:
 - Burnt Bacon
 E:  The disgusting charred remains of what used to be bacon.
 U:  
+
+- Arm
+E: Princess Whatever's arm... Not sure what to do with this.
+U: <on giant chicken>
+  text/Chicken: Oh, is that for me?
+                *Grabs arm out of your hand and eats it in one bite*
+                Much better, now how can I help you?
+  text/Player: I am on a quest
+               I need to collect bacon in order to save the princess
+               That was her arm you just ate after all!
+  text/Chicken: Oh my!!!
+                Well thank you hero for the treat you have given me
+                As a token of my appreciation I will fly you anywhere
+                Just let me know when you are ready!
