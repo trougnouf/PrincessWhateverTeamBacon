@@ -1,0 +1,58 @@
+E  =  text on examine
+US  =  text on use while object is in the scene (not in inventory)
+U <on obj>  =  text when object in inventory is used on obj
+T  =  text on talk
+text  =  general text in dialogue box
+text/char  =  text spoken by char
+[old state  ->  new state]  =  graphical changes made
+Takable  =  item can be added to the inventory
+NT  =  Not Takable
+
+
+- Jackhammer
+E:  For all of your wall destruction needs.
+U <on socket>:
+	text / jackhammer: RRRRBBRBRBRRRBRBRBBRBRB
+	text: The wall around the socket starts to crumble.
+	text / jackhammer: BBRBRBRRRBRBRBBRRBBBRBR
+	text: The wall around the socket falls apart.
+	
+
+- Jumper Cables
+E:  A 
+U <on wall socket>:
+
+
+- Scam Letter
+E:  A stellar commendation from a respectable member of Nigerian royalty.
+U <on bank teller>:
+	text/teller: Hmm.. Seems legit.
+	[Credit Card is added to inventory or placed on bank counter where it can be picked up]
+
+
+- Credit Card
+E:  The finest in modern bacon acquisition technology.
+U <on credit card terminal>:
+       text:
+
+
+- Pack of Bacon
+E:  A package of potentially delicious bacon.
+U <on pan>:
+	text: You plop a slice of bacon into the pan.
+	[kitchen3  ->  kitchen4]
+Takable
+
+
+- Raw Bacon
+E:  Eww! It’s so slimy!
+U:  
+
+
+- Cooked Bacon
+E:  A nice crispy slice of bacon. Angel food.
+U:  
+
+- Burnt Bacon
+E:  The disgusting charred remains of what used to be bacon.
+U:  
