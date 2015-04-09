@@ -41,6 +41,11 @@ E:  A package of potentially delicious bacon.
 U <on pan>:
 	text: You plop a slice of bacon into the pan.
 	[kitchen3  ->  kitchen4]
+	Note: Stays in inventory in case more bacon is cooked
+U <on pan while cooked bacon (Not perfect) in inventory>:
+	text: And waste this perfectly good slice of bacon? 
+	      I think not. 
+	      Princess Whatever would surely disapprove.
 Takable
 
 
@@ -70,3 +75,15 @@ U: <on giant chicken>
                 Well thank you hero for the treat you have given me
                 As a token of my appreciation I will fly you anywhere
                 Just let me know when you are ready!
+
+- Pan
+E: Useful for creating delicious strips of heaven.
+U: <on stovetop (on or off)>
+  text: The pan is placed onto the stovetop
+  
+- Tongs
+E: I wonder what I can pick up with this.
+U: <on bacon in pan>
+  text: You successfully add that juicy bacon to your inventory
+  NOTE: TONGS STAY IN INVENTORY IN CASE MORE BACON IS COOKED
+  NOTE: Bacon is added to inventory based on how well it was cooked (undercooked, perfect, overcooked)
