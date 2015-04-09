@@ -19,7 +19,7 @@ U <on socket>:
 	
 
 - Jumper Cables
-E:  A 
+E:  Just some jumper cables, not a snake.
 U <on wall socket>:
 
 
@@ -45,7 +45,7 @@ Takable
 
 
 - Raw Bacon
-E:  Eww! It’s so slimy!
+E:  Eww! Itâ€™s so slimy!
 U:  
 
 
