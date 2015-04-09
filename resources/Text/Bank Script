@@ -7,3 +7,21 @@ text/char  =  text spoken by char
 [old state  ->  new state]  =  graphical changes made 
 Takable  =  item can be added to the inventory
 NT  =  Not Takable
+
+Teller (Before you get the credit card)
+E: A bank teller.
+T:
+  Text/Player: Hey, can I get some monies?
+  Text/Teller: Do you have an account here?
+  Text/Player: Um... No...
+  Text/Teller: Then I am sorry, but I cannot give away free monies.
+  
+Note: See Itemtext for script when giving the teller the scam letter
+
+Teller (After you get the credit card)
+E: A gullible bank teller.
+T:
+  Text/Teller: So how is the prince doing?
+  Text/Player: Much better, I should be hearing back from him shortly!
+  
+
