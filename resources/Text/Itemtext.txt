@@ -26,8 +26,12 @@ U <on wall socket>:
 - Scam Letter
 E:  A stellar commendation from a respectable member of Nigerian royalty.
 U <on bank teller>:
+	text/Player: I have this letter from a Nigerian prince. 
+		     He says if I send him money he will send me back 10 times as much.
+		     Any chance I could get some monies to send to him?
 	text/teller: Hmm.. Seems legit.
-	[Credit Card is added to inventory or placed on bank counter where it can be picked up]
+		     How about I give you a credit card. That should help you and the prince out!
+	Credit Card is added to inventory.
 
 
 - Credit Card
