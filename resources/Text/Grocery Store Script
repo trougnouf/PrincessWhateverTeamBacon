@@ -8,3 +8,31 @@ text/char  =  text spoken by char
 [old state  ->  new state]  =  graphical changes made 
 Takable  =  item can be added to the inventory
 NT  =  Not Takable
+
+Note: The Grocery Store has a front and back
+
+GROCERY STORE FRONT
+Credit Card Terminal
+E: This is where I can pay for the bacon
+
+Credit Card Terminal (Unpurchased Bacon in inventory)
+E: Using your new credit card you buy what is about to become juicy delicious bacon!
+(Bacon now become purchased)
+
+Credit Card Terminal (Bacon already purchased)
+E: No need to pay twice... 
+
+NOTE: If the player tries to leave the scene before purchasing the bacon:
+Text: A true hero can't just steal things...
+      I better pay for this bacon!
+
+GROCERY STORE BACK
+Bacon
+E: Wow... Look at all that bacon!!!!!!!
+
+Bacon (Credit Card NOT in inventory)
+Take: Text: But I have no way to pay for the bacon...
+            A true hero can't just steal things...
+            
+Bacon (Credit Card in inventory)
+Takable
