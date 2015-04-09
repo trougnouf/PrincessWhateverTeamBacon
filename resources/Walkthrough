@@ -1,0 +1,50 @@
+* Bedroom *
+- Click anywhere to get out of bed.
+(current goal is to defeat Magikoi who is terrorizing princess whatever)
+- Take potted plant
+- Throw potted plant at Magikoi (it's super effective!). MagikoiHealthy turns into MagikoiPotted and rips the princess' arm off.
+- Take arm.
+
+* Kitchen *
+- Take jackhammer
+- Take mail (hero actually looks through the spam and finds a physical nigerian scam letter)
+- Take pan (use/look at one of the cabinets)
+- Take tongs (use/look at one of the drawers)
+
+* Parking *
+- Take Jumper Cables
+- Give arm to giant chicken. "[chicken]: Thank you hero! As a token of my appreciation I will fly you anywhere."
+	from now on: T2chicken = "[chicken]: Where may I take you? [home][grocery store][bank]"
+
+* Room *
+- Use jackhammer with AC outlet
+- Use jumper cables with AC outlet dangling wires
+(Magikoi becomes dead. Princess tells hero that she is dying and needs bacon to survive)
+
+(if hero goes to grocery store, clerk won't let hero leave without paying
+if hero goes to bank, they will laugh at hero and not give money out)
+
+* Bank *
+- Hand over the nigerian scam to teller (teller is impressed)
+- Talk to teller, she will now open a line of credit and give hero a credit card
+
+* Grocery store back *
+- Get bacon
+* Grocery store front *
+- Use credit card on terminal
+
+* Kitchen *
+- Put pan on stovetop
+- Use stovetop control (turn on)
+- Put pack of bacon on pan
+- Use stovetop control (turn off) -> "[environment icon]: Thank you."
+- Use tongs on bacon (without tongs, hero will complain that he got burned.)
+	- bacon state will depend on # of time bacon was on stovetop while it was turned on.
+	- pack of bacon remains in the inventory (player can start over. If any kind of cooked bacon is in the inventory, hero complains that "[hero]: And waste this perfectly good slice of bacon? I think not. Princess whatever would surely disapprove."
+
+* Bedroom *
+- Give bacon to princess
+- alternatively hero can give bacon to the chicken (-> "[chicken icon]: Thank you.") and start over
+	- soggy bacon (<50s) = princess dumps hero (-> "[princess]: This is not crispy! I am leaving you.") (princess fades out, cat fades in). The end
+	- good bacon (50-60s) = princess is happy. The end
+	- burned bacon (>60s) = (-> "[princess icon]: This burned bacon gave me cancer. Goodbye.") (princess turns into dead princess, cat fades in). The end

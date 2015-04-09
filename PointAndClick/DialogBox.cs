@@ -25,7 +25,6 @@ namespace PointAndClick
         DBoxState previousState;
         DBoxState currentState;
         Conversation currentConversation;
-        private float timeAccumulator;
 
         //Hard code in coorinates for thumbnails and scenetexts 
         public DialogBox(MainGame currentGame)
@@ -33,7 +32,6 @@ namespace PointAndClick
         {
             previousState = DBoxState.Conversation;
             currentState = DBoxState.Conversation;
-            timeAccumulator = 0;
         }
 
         public override void LoadContent()
@@ -44,7 +42,7 @@ namespace PointAndClick
             bottomSpeaker = new SceneImage(new Vector2(0, InteractMenu.offset+100), mainGame);
             topLine = new SceneText(new Vector2(200, InteractMenu.offset+25), "", segoe, mainGame);
             bottomLine = new SceneText(new Vector2(200, InteractMenu.offset+100), "", segoe, mainGame);
-            itemLine = new SceneText(new Vector2(200, InteractMenu.offset + 100), "", segoe, mainGame);
+            itemLine = new SceneText(new Vector2(200, InteractMenu.offset + 25), "", segoe, mainGame);
             examinedItem = new SceneImage(new Vector2(0, InteractMenu.offset), mainGame);
 
             itemLine.visible = false;
@@ -80,7 +78,7 @@ namespace PointAndClick
         public void ShowItemDescription(Item item)
         {
        
-            examinedItem.UpdateCurrentTexture(item.initialTexture);
+            examinedItem.UpdateCurrentTexture(item.examineTexture);
             itemLine.path = item.description;
             UpdateState(DBoxState.Description);
 
@@ -113,14 +111,7 @@ namespace PointAndClick
 
         public override void Update(GameTime gametime)
         {
-
-            //Keep track of how much time since last flicker of the text
-            timeAccumulator += (float)gametime.ElapsedGameTime.TotalSeconds;
-
-            //When more than half a second has passed, changed the visibility of the text 
-            //and reset time
-            //if (timeAccumulator > .1)
-            //{
+  
 
                 if (currentState == DBoxState.Conversation)
                 {
@@ -138,7 +129,8 @@ namespace PointAndClick
                         else
                         {
 
-                            mainGame.iMenu.ShowInventory();
+                            mainGame.iMenu.ResetOptions();
+                            currentConversation.Reset();
 
                         }
 
@@ -153,15 +145,13 @@ namespace PointAndClick
                     if (mainGame.CheckforUnClick())
                     {
 
-                        mainGame.iMenu.ShowOptions(true);
+                        mainGame.iMenu.ResetOptions();
 
                     }
 
                 }
 
-                //timeAccumulator = 0;
-            //}
- 
+         
         }
 
     }

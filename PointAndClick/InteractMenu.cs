@@ -160,14 +160,22 @@ namespace PointAndClick
            
         }
 
+        public void DiscardItem()
+        {
+            usingItem = false;   
+            bag.RemoveItem(currentItem); 
+            mainGame.gameCursor.ResetTexture();
+            ShowInventory();
+        }
+
       
         public void CharacterOptions(Character newChar)
         {
             
             if (!usingItem)
             {
+                currentItem = newChar;
                 currentChar = newChar;
-
                 ShowOptions(false);
             }
          
@@ -176,7 +184,11 @@ namespace PointAndClick
         public void UseItem()
         {
             usingItem = true;
-            mainGame.gameCursor.UpdateCurrentTexture(currentItem.currentTexture);
+            if (currentItem.takeable)
+            {
+                mainGame.gameCursor.UpdateCurrentTexture(currentItem.currentTexture);
+            }
+            
             ShowInventory();
         }
 
@@ -185,6 +197,18 @@ namespace PointAndClick
             UpdateState(iMenuStates.Dialogue);
             dBox.BeginDialog(currentConvo);
         }
+
+        public void Options(Item item)
+        {
+            
+            if (item is Character)
+            {
+                mainGame.iMenu.CharacterOptions((Character)item);
+            }
+            else
+                mainGame.iMenu.NewItemOptions(item);
+        }
+               
 
         public void ShowInventory()
         {
@@ -204,6 +228,13 @@ namespace PointAndClick
             UpdateState(iMenuStates.Interact);
         }
 
-       
+        public void ResetOptions()
+        {
+            if (currentItem != null)
+                Options(currentItem);
+            else
+                ShowInventory();
+        }
+   
     }
 }

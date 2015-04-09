@@ -188,7 +188,7 @@ C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content
 C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.xnb
 C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.wma
 C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\IgnoreMe.dll
-C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\obj\PSM\PointAndClickContent.csprojResolveAssemblyReference.cache
 C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\obj\PSM\IgnoreMe.dll
 C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Talk.xnb
+C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1\obj\PSM\PointAndClickContent.csprojResolveAssemblyReference.cache

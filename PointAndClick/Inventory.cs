@@ -42,6 +42,22 @@ namespace PointAndClick
 
         }
 
+        public void RemoveItem(Item item)
+        {
+            drawingList.Clear();
+            drawingList.Add(bagIcon);
+            objectList.Remove(item);
+            List<ClickableObject> OldList = objectList;
+            objectList = new List<ClickableObject>();
+            itemCount = 0;
+
+            foreach(Item obj in OldList)
+            {
+                AddItemToInventory(obj);
+            }
+
+        }
+
         public void AddItemToInventory(Item newItem) 
         {   
 

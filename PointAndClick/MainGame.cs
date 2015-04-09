@@ -140,9 +140,15 @@ namespace PointAndClick
                 if (!transitioning)
                     currentScreen.Update(gameTime);
             }
-            
 
-            gameCursor.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));
+            int newXCoordinate;
+
+            if (currentMouseState.X >= 15)
+                newXCoordinate = currentMouseState.X - 15;
+            else
+                newXCoordinate = currentMouseState.X;
+
+            gameCursor.UpdatePosition(new Vector2(newXCoordinate, currentMouseState.Y));
 
             base.Update(gameTime);
 
