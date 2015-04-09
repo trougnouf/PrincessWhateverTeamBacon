@@ -7,3 +7,67 @@ text/char  =  text spoken by char
 [old state  ->  new state]  =  graphical changes made 
 Takable  =  item can be added to the inventory
 NT  =  Not Takable
+
+Jackhammer
+E: Looks like a fun destructive toy.
+Takable
+
+Mail
+E: Hopefully that is not all bills...
+Takable
+    text: Rumaging through the mail you find a letter from a Nigerian Prince!
+          Seems like the prince needs money to get home, poor dude.
+          He claims to pay you back ten times as much when he gets home though.
+          It is probably just spam but it doesn't hurt to take it with you.
+
+Pan
+E: A simple pan, that might be useful for cooking delicious bacon!
+Takable
+
+Tongs
+E: I could probably use that to pick things up with
+Takable
+
+Stovetop (off)
+E: A stove for all your cooking needs!
+Text: Turn the stovetop on?
+      (If player selects yes, turn on the stovetop)
+
+Stovetop (on)
+E: Better not touch it while it is on!
+Text: Turn the stovetop off?
+      (If player selects yes, turn off the stovetop
+      Show environment icon and text "Thank you!")
+      
+Pan on stovetop
+E: Now all I need is some bacon to cook!
+
+
+NOTE ON BACON:
+Bacon will cook depending on how long it was on the stove while the stove was on.
+If the bacon was cooked at all, you need the tongs to take the bacon. 
+If the bacon is still raw you can take it without the tongs.
+When examining, first display the text based on whether the stovetop is on or off.
+Then display the text based on the condition of the bacon.
+
+Bacon in Pan (stovetop on)
+E: *bacon sizzling*
+
+Bacon in Pan (Stovetop off)
+E: Hmmm... It doesn't seem to be cooking
+
+Bacon (Perfect)
+E: You start to drool looking at the delicious bacon
+Take: Text: You try to take the bacon...
+            But instead you burn yourself...
+
+Bacon (Undercooked)
+E: Stills looks a bit too pink
+Take: Text: You try to take the bacon...
+            But instead you burn yourself...
+NOTE: If bacon is still raw you can take it without burning yourself
+
+Bacon (Overcooked)
+E: Hopefully the princess likes her bacon extra crispy...
+Take: Text: You try to take the bacon...
+            But instead you burn yourself...
