@@ -19,18 +19,7 @@ T:
   text/Chicken: *Mumbles* I am hungry
                 (He ignores anything else you say to him)
 
-Giant Chicken (Immediately after giving him the arm)
-T:
-  text/Chicken: Oh, is that for me?
-                *Grabs arm out of your hand and eats it in one bite*
-                Much better, now how can I help you?
-  text/Player: I am on a quest
-               I need to collect bacon in order to save the princess
-               That was her arm you just ate after all!
-  text/Chicken: Oh my!!!
-                Well thank you hero for the treat you have given me
-                As a token of my appreciation I will fly you anywhere
-                Just let me know when you are ready!
+Giant Chicken (Give him the arm, see ItemText for script)
                 
 Giant Chicken (Any time after giving him the arm)
 T:
