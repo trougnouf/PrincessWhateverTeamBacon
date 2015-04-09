@@ -1,1 +1,10 @@
 
+E  =  text on examine
+US  =  text on use while object is in the scene (not in inventory)
+U <on obj>  =  text when object in inventory is used on obj
+T  =  text on talk
+text  =  general text in dialogue box
+text/char  =  text spoken by char
+[old state  ->  new state]  =  graphical changes made 
+Takable  =  item can be added to the inventory
+NT  =  Not Takable
