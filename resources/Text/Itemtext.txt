@@ -37,7 +37,8 @@ U <on bank teller>:
 - Credit Card
 E:  The finest in modern bacon acquisition technology.
 U <on credit card terminal>:
-       text:
+       text: Using your new credit card you buy what is about to become juicy delicious bacon!
+       (Bacon becomes "purchased")
 
 
 - Pack of Bacon
