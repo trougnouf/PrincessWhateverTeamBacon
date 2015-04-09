@@ -16,8 +16,8 @@ Credit Card Terminal
 E: This is where I can pay for the bacon
 
 Credit Card Terminal (Unpurchased Bacon in inventory)
-E: Using your new credit card you buy what is about to become juicy delicious bacon!
-(Bacon now become purchased)
+E: This is where I can pay for the bacon
+Note: Use the credit card on the terminal, see Itemtext for script
 
 Credit Card Terminal (Bacon already purchased)
 E: No need to pay twice... 
