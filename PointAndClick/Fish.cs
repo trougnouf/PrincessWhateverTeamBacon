@@ -21,25 +21,34 @@ namespace PointAndClick
         private Texture2D deadTexture;
         private Texture2D healthyIcon;
         private Texture2D pottedIcon;
+        private Princess princess;
 
         private Conversation fullConvo;
         private Conversation shortConvo;
-        private Texture2D heroIcon;
+        private Conversation pottingConvo;
+        private BedRoomScene bedroom;
+        private Conversation fullConvo2;
+        private Conversation shortConvo2;
 
-         public Fish(MainGame currentGame, Texture2D hIcon)
-            : base(new Vector2(708, 185), @"Objects\bedroom-magikoiHealthy", currentGame)
-         {
 
-            heroIcon = hIcon;
+        public Fish(MainGame currentGame, Texture2D hIcon, Princess prin, BedRoomScene bRoom)
+            : base(new Vector2(708, 150), @"Objects\bedroom-magikoiHealthy", currentGame, @"Icons\bedroom-magiKoyHealthyIcon", hIcon)
+        {
+            bedroom = bRoom;
+            princess = prin;
             healthyTexture = initialTexture;
             pottedTexture = currentGame.Content.Load<Texture2D>(@"Objects\bedroom-magikoiPotted");
             deadTexture = currentGame.Content.Load<Texture2D>(@"Objects\bedroom-magikoiDead");
-            healthyIcon = currentGame.Content.Load<Texture2D>(@"Icons\bedroom-magiKoyHealthyIcon");
+            healthyIcon = inBagTexture;
             pottedIcon = currentGame.Content.Load<Texture2D>(@"Icons\bedroom-magiKoiPottedIcon");
-            state = FishState.Healthy;
+
+            UpdateFishState(FishState.Healthy);
 
             fullConvo = new Conversation();
             shortConvo = new Conversation();
+            pottingConvo = new Conversation();
+            fullConvo2 = new Conversation();
+            shortConvo2 = new Conversation();
 
             shortConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
                                                                             healthyIcon,
@@ -67,13 +76,58 @@ namespace PointAndClick
                                                                              "Goodbye",
                                                                              "Improve the indexing of these operations."
                                                                              ));
+            pottingConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(pottedIcon,
+                                                                          pottedIcon,
+                                                                          "It's super effective!",
+                                                                          "!!!!!!"
+                                                                          ));
 
-         }
+            pottingConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(pottedIcon,
+                                                                           pottedIcon,
+                                                                           "It's super effective!",
+                                                                           "!!!!!!"
+                                                                           ));
+
+            pottingConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
+                                                                            heroIcon,
+                                                                            "!?!??!?!?!",
+                                                                            "The freeway is numbered! I envy the orbital paragraph."
+                                                                            ));
+            pottingConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(pottedIcon,
+                                                                              princess.examineTexture,
+                                                                              "Magikoi is confused. Magikoi uses Splash against Player1, but misses",
+                                                                              "OH SHIT, my hand!"
+                                                                              ));
+            fullConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
+                                                                           pottedIcon,
+                                                                           "Can you still hear me?",
+                                                                           "You shall spoil the perpetual negotiation!"
+                                                                           ));
+            fullConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
+                                                                              pottedIcon,
+                                                                              "Can you breathe?",
+                                                                              "The fare involves hyphens and footnotes."
+                                                                              ));
+            fullConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
+                                                                             pottedIcon,
+                                                                             "Are you out of your mind?",
+                                                                             "Sunlight oughts to assault the populace!"
+                                                                             ));
+            fullConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
+                                                                             pottedIcon,
+                                                                             "Goodbye.",
+                                                                             "Would you like to browse the glossy questionnaire?"
+                                                                             ));
+            shortConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
+                                                                            pottedIcon,
+                                                                            "Are you out of your mind?",
+                                                                             "Sunlight oughts to assault the populace!"
+                                                                            ));
+        }
 
         public void UpdateFishState(FishState newState)
         { 
-            if(newState != state)
-            {
+              
                 state = newState;
 
                 switch(newState)
@@ -82,13 +136,16 @@ namespace PointAndClick
                     case FishState.Healthy:
 
                         currentTexture = healthyTexture;
+                        examineTexture = inBagTexture;
 
                         break;
                     
                     case FishState.Potted:
 
+                        talkedTo = false;
                         currentTexture = pottedTexture;
-
+                        examineTexture = pottedIcon;
+                       
                         break;
 
                     case FishState.Dead:
@@ -98,7 +155,7 @@ namespace PointAndClick
                         break;
 
                 }
-            }         
+                
         }
       
         public override Conversation Chat()
@@ -123,12 +180,15 @@ namespace PointAndClick
                 case FishState.Potted:                 
 
                     if (talkedTo)
-                        currentConvo = shortConvo;
+                        currentConvo = shortConvo2;
                     else
-                        currentConvo = fullConvo;
+                    {
+                        currentConvo = fullConvo2;
+                        talkedTo = true;
+                    }
+
                     break;
              
-
                 case FishState.Dead:
               
                     if (talkedTo)
@@ -152,9 +212,24 @@ namespace PointAndClick
 
         protected override void OnClick(GameStates state)
         {
-            maingame.iMenu.CharacterOptions(this);
+            if (maingame.iMenu.currentItem != null)
+            {
+                if (maingame.iMenu.currentItem.path == @"Objects\bedroom-pottedPlant" && maingame.iMenu.usingItem)
+                {
+                    UpdateFishState(FishState.Potted);     
+                    maingame.iMenu.StartConversation(pottingConvo);
+                    bedroom.fishPotted = true;
+                    maingame.gameCursor.ResetTexture();
+                }
+                    
+                else
+                    base.OnClick(state);
+            }
+                
+            else
+                base.OnClick(state);
         }
- 
+
     }
 
 }

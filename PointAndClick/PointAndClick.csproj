@@ -44,12 +44,14 @@
     <Compile Include="DialogBox.cs" />
     <Compile Include="DrawableComparer.cs" />
     <Compile Include="Fish.cs" />
+    <Compile Include="Hero.cs" />
     <Compile Include="InteractButtons.cs" />
     <Compile Include="InteractMenu.cs" />
     <Compile Include="ClickableObject.cs" />
     <Compile Include="Drawable.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="Princess.cs" />
     <Compile Include="SceneScreen.cs" />
     <Compile Include="MenuButton.cs" />
     <Compile Include="SceneImage.cs" />

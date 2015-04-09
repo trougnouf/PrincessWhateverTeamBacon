@@ -13,15 +13,17 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public abstract class Character : ClickableObject
+    public abstract class Character : Item
     {
 
         protected bool talkedTo;
+        protected Texture2D heroIcon;
 
-        public Character(Vector2 initPosition, String initTexture, MainGame currentGame)
-           :base(initPosition, initTexture, currentGame)
+        public Character(Vector2 initPosition, String initTexture, MainGame currentGame, String bagText, Texture2D hIcon)
+           :base(initPosition, initTexture, currentGame, bagText, true) 
         {
            talkedTo = false;
+           heroIcon = hIcon;
         }
 
         public abstract Conversation Chat();

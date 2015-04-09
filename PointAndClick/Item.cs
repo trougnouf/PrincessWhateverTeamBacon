@@ -17,8 +17,9 @@ namespace PointAndClick
 
         public bool inScene { get; private set; }
         public String description { get; private set; }
-        private Texture2D inBagTexture;
+        protected Texture2D inBagTexture;
         public bool takeable { get; private set; }
+        public Texture2D examineTexture { get; protected set; }
 
         public Item(Vector2 initPosition, String path, MainGame currentGame, string bagTexture, bool istakable) 
             :base(initPosition, path, currentGame)
@@ -29,14 +30,45 @@ namespace PointAndClick
             if(takeable)
             inBagTexture = currentGame.Content.Load<Texture2D>(bagTexture);
 
+            if(!(this is Character))
+            {
+                examineTexture = initialTexture;
+            }
+
             //Fills in Item descriptions based on path
             switch(path)
             {   
                 case @"Objects\bedroom-pottedPlant":
 
-                    description = "A Potted Plant...";
+                    description = "This smells like probable cause.";
                     break;
 
+                case @"Objects\bedroom-magikoiHealthy":
+
+                    description = "This magikoi is frantically flapping its fins.";
+                    break;
+
+                case @"Objects\bedroom-princessWhateverHand":
+
+                    description = "The princess's severed hand...";
+                    break;
+
+                case @"Objects\bedroom-socket":
+
+                    description = "This Danish socket looks oddly happy.";
+                    break;
+
+                case @"Objects\bedroom-princessWhateverHealthy":
+
+                    description = "The alluring Princess Whatever.";
+                    break;
+
+                case @"Objects\heroLaying":
+
+                    description = "It's me! I'm a Penguin...";
+                    break;
+
+                    
                 default:
                     description = "";
                     break;
@@ -45,18 +77,27 @@ namespace PointAndClick
         }
  
         public void ChangeToBagTexture()
-        {
+        {   
             inScene = false;
             currentTexture = inBagTexture;
         }
        
         protected override void OnClick(GameStates state)
         {
-                   
+
+            maingame.iMenu.Options(this);
+
+            if (this is Character)
+            {
+                maingame.iMenu.CharacterOptions((Character)this);
+            }
+            else
+                maingame.iMenu.NewItemOptions(this);
+       
         }
         protected override void OnUnClick(GameStates state)
         {
-            maingame.iMenu.NewItemOptions(this);
+            
         }
         protected override void OnMouseEnter(GameStates state)
         {
