@@ -7,3 +7,34 @@ text/char  =  text spoken by char
 [old state  ->  new state]  =  graphical changes made 
 Takable  =  item can be added to the inventory
 NT  =  Not Takable
+
+Jumper Cables:
+E: Is that a snake?!
+    ... No, it just looks like some jumper cables.
+Takeable
+
+Giant Chicken (before giving him the arm)
+E: Woah that is a large chicken!
+T:
+  text/Chicken: *Mumbles* I am hungry
+                (He ignores anything else you say to him)
+
+Giant Chicken (Immediately after giving him the arm)
+T:
+  text/Chicken: Oh, is that for me?
+                *Grabs arm out of your hand and eats it in one bite*
+                Much better, now how can I help you?
+  text/Player: I am on a quest
+               I need to collect bacon in order to save the princess
+               That was her arm you just ate after all!
+  text/Chicken: Oh my!!!
+                Well thank you hero for the treat you have given me
+                As a token of my appreciation I will fly you anywhere
+                Just let me know when you are ready!
+                
+Giant Chicken (Any time after giving him the arm)
+T:
+  text/Chicken: Hello there hero, where would you like to go?
+  text/Player:  (Choose between Home, the Grocery Store, or the Bank)
+  text/Chicken: Alrighty then! Off we go!
+  TRANSITION TO RESPECTIVE SCENE
