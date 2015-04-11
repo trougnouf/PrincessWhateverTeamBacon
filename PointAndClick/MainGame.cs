@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public enum GameStates: int { TitleScreen, StartMenu, Bedroom };
+    public enum GameStates: int { TitleScreen, StartMenu, Bedroom, Kitchen };
    
     /// <summary>
     /// This is the main type for the game
@@ -178,6 +178,12 @@ namespace PointAndClick
                    
                     iMenu = new InteractMenu(this);
                     currentScreen = new BedRoomScene(this);
+
+                    break;
+
+                case GameStates.Kitchen:
+
+                    currentScreen = new KitchenScene(this);
 
                     break;
 

@@ -48,5 +48,9 @@ Content\Use.xnb
 Content\Icons\bedroomPrincessWhateverIcon.xnb
 Content\Icons\Backbag.xnb
 Content\Talk.xnb
+Content\Objects\arrowDown.xnb
+Content\Objects\arrowLeft.xnb
+Content\Objects\arrowRight.xnb
+Content\Objects\arrowUp.xnb
 Content\StartMenu\MusisBoxTune.xnb
 Content\StartMenu\MusisBoxTune.wma

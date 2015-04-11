@@ -3,3 +3,4 @@ C:\Users\Batman\Desktop\Woring Copy\trunk\GameName1\GameName1Content\obj\PSM\Poi
 C:\Users\Batman\Downloads\trunk\trunk\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
 C:\Users\Batman\Desktop\trunk\trunk\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
 C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
+C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache

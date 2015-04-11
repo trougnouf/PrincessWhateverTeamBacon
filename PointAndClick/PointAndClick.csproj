@@ -39,6 +39,8 @@
     <Compile Include="Background.cs" />
     <Compile Include="BedRoomScene.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="ArrowButton.cs" />
+    <Compile Include="KitchenScene.cs" />
     <Compile Include="Conversation.cs" />
     <Compile Include="Cursor.cs" />
     <Compile Include="DialogBox.cs" />
