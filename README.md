@@ -1,3 +1,3 @@
 # PrincessWhateverTeamBacon
 
-Run this in Visual Studio with MonoGame installed, follow a mysterious XNA tutorial and run the script within, hope for the best.
+Run this in Visual Studio with MonoGame and XNA installed (follow the following tutorial: http://rbwhitaker.wikidot.com/setting-up-xna ), hope for the best.
