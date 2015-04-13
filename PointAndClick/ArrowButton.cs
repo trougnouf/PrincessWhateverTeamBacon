@@ -62,15 +62,15 @@ namespace PointAndClick
         {
             //If mouse is over the button, shade it
             if (IsMouseOver)
-                maingame.spriteBatch.Draw(initialTexture,
-                                          new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
-                                          null,
-                                          Color.Aqua,
-                                          0,
-                                          new Vector2(0, 0),
-                                          maingame.ScalingFactor,
-                                          SpriteEffects.None,
-                                          0);
+                maingame.spriteBatch.Draw(currentTexture,
+                                             new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
+                                             null,
+                                             Color.White,
+                                             0,
+                                             new Vector2(0, 0),
+                                             new Vector2((float)(maingame.ScalingFactor.X * 1.2), (float)(maingame.ScalingFactor.Y * 1.2)),
+                                             SpriteEffects.None,
+                                             0);
             //maingame.spriteBatch.Draw(texture, drawRectangle, Color.Aqua);
             else
                 base.Draw();
@@ -99,7 +99,25 @@ namespace PointAndClick
             else if (type == arrowType.left)
             {
                 if (game.state == GameStates.Bedroom)
-                    maingame.UpdateState(GameStates.Kitchen);
+                    maingame.UpdateState(GameStates.ParkingLot);
+                
+                else if(game.state == GameStates.ParkingLot)
+                {
+                    if(maingame.pLot.dest == Destination.Home)
+                    {
+                        maingame.UpdateState(GameStates.Kitchen);
+                    }
+
+                    if (maingame.pLot.dest == Destination.Market)
+                    {
+                         maingame.UpdateState(GameStates.Market);
+                    }
+
+                    if (maingame.pLot.dest == Destination.Bank)
+                    {
+                        maingame.UpdateState(GameStates.Bank);
+                    }
+                }
             }
         }
     }

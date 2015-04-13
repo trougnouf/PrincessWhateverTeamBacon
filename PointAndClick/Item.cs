@@ -68,6 +68,16 @@ namespace PointAndClick
                     description = "It's me! I'm a Penguin...";
                     break;
 
+                case @"Objects\parking-jumperCables":
+
+                    description = "Is that a snake?!... No, it just looks like some jumper cables.";
+                    break;
+
+                case @"Objects\parking-cockMobile":
+
+                    description = "Woah that is a large chicken!";
+                    break;
+
                     
                 default:
                     description = "";
@@ -106,6 +116,24 @@ namespace PointAndClick
         protected override void OnMouseLeave(GameStates state)
         {
 
+        }
+
+        public override void Draw()
+        {
+            //If mouse is over the button, shade it
+            if (IsMouseOver && inScene)
+                maingame.spriteBatch.Draw(currentTexture,
+                                          new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
+                                          null,
+                                          Color.White,
+                                          0,
+                                          new Vector2(0, 0),
+                                          new Vector2((float)(maingame.ScalingFactor.X*1.2),(float)(maingame.ScalingFactor.Y*1.2)),
+                                          SpriteEffects.None,
+                                          0);
+            //maingame.spriteBatch.Draw(texture, drawRectangle, Color.Aqua);
+            else
+                base.Draw();
         }
     }
 }

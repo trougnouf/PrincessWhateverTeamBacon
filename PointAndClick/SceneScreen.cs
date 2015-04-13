@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace PointAndClick
 {
-    class SceneScreen : GameScreen
+    public class SceneScreen : GameScreen
     {   
         
         //List of dialogs

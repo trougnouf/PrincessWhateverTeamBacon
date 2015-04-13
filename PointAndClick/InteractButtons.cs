@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public enum IbuttonState: int { Use, Take, Talk };
+    public enum IbuttonState: int { Use, Take, Talk, Travel };
 
     class InteractButtons : GameScreen
     {
@@ -21,9 +21,12 @@ namespace PointAndClick
         private MenuButton examineButton;
         private MenuButton bagButton;
         private MenuButton talkButton;
+        private MenuButton homeButton;
+        private MenuButton bankButton;
+        private MenuButton marketButton;
+
         public IbuttonState currentState;
         private IbuttonState previousState;
-
 
         public InteractButtons(MainGame currentGame)
             : base(currentGame)
@@ -31,7 +34,6 @@ namespace PointAndClick
             previousState = IbuttonState.Take;
             currentState = IbuttonState.Take;   
         }
-
 
         public override void LoadContent()
         {
@@ -42,6 +44,9 @@ namespace PointAndClick
             examineButton = new MenuButton(new Vector2(1250, InteractMenu.offset), "Examine", mainGame);
             talkButton = new MenuButton(new Vector2(1600, InteractMenu.offset), "Talk", mainGame);
             bagButton = new MenuButton(new Vector2(0, InteractMenu.offset), @"Icons\Backbag", mainGame);
+            homeButton = new MenuButton(new Vector2(550, InteractMenu.offset), "Home", mainGame);
+            marketButton = new MenuButton(new Vector2(900, InteractMenu.offset), "Market", mainGame);
+            bankButton = new MenuButton(new Vector2(1250, InteractMenu.offset), "Bank", mainGame);
 
             UpdateLists();
         }
@@ -51,11 +56,29 @@ namespace PointAndClick
 
         }
 
+        public void DisplayDestination()
+        {
+            previousState = currentState;
+
+            currentState = IbuttonState.Travel;
+
+            UpdateLists();
+        }
+
         public void ShowCharacterOptions()
         {
             previousState = currentState;
 
             currentState = IbuttonState.Talk;
+
+            UpdateLists();
+        }
+
+        public void DisplayTravelOptions()
+        {
+            previousState = currentState;
+
+            currentState = IbuttonState.Travel;
 
             UpdateLists();
         }
@@ -79,21 +102,34 @@ namespace PointAndClick
             drawingList.Clear();
             objectList.Clear();
 
-            AddObject(bagButton);
-            AddObject(examineButton);
-
             switch(currentState)
             {
                 case IbuttonState.Take:
+
+                    AddObject(bagButton);
                     AddObject(takeButton);
+                    AddObject(examineButton);
                     break;
 
                 case IbuttonState.Talk:
+
+                    AddObject(bagButton);
                     AddObject(talkButton);
+                    AddObject(examineButton);
                     break;
 
                 case IbuttonState.Use:
+
+                    AddObject(bagButton);
                     AddObject(useButton);
+                    AddObject(examineButton);
+                    break;
+                
+                case IbuttonState.Travel:
+
+                    AddObject(bankButton);
+                    AddObject(marketButton);
+                    AddObject(homeButton);
                     break;
             }
           

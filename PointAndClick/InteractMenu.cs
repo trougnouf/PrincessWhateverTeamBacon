@@ -103,6 +103,14 @@ namespace PointAndClick
             
         }
 
+        public void ShowDestinations()
+        {
+
+            UpdateState(iMenuStates.Interact);
+            iButtons.DisplayDestination();
+
+        }
+
         public void Draw()
         {
             backGround.Draw();
@@ -183,9 +191,10 @@ namespace PointAndClick
 
         public void UseItem()
         {
-            usingItem = true;
+     
             if (currentItem.takeable)
             {
+                usingItem = true;
                 mainGame.gameCursor.UpdateCurrentTexture(currentItem.currentTexture);
             }
             

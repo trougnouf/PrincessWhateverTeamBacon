@@ -40,6 +40,7 @@
     <Compile Include="BedRoomScene.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="ArrowButton.cs" />
+    <Compile Include="Chicken.cs" />
     <Compile Include="KitchenScene.cs" />
     <Compile Include="Conversation.cs" />
     <Compile Include="Cursor.cs" />
@@ -53,6 +54,8 @@
     <Compile Include="Drawable.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="MarketScene.cs" />
+    <Compile Include="ParkingLotScene.cs" />
     <Compile Include="Princess.cs" />
     <Compile Include="SceneScreen.cs" />
     <Compile Include="MenuButton.cs" />

@@ -93,6 +93,25 @@ namespace PointAndClick
 
                     break;
 
+                case "Home":
+
+                    maingame.pLot.UpdateDestination(Destination.Home);
+                    
+
+                    break;
+
+                case "Market":
+
+                    maingame.pLot.UpdateDestination(Destination.Market);
+
+                    break;
+
+                case "Bank":
+
+                    maingame.pLot.UpdateDestination(Destination.Bank);
+
+                    break;
+
                 case "Talk":
 
                     maingame.iMenu.TalkToCharacter();

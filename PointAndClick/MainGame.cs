@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public enum GameStates: int { TitleScreen, StartMenu, Bedroom, Kitchen };
+    public enum GameStates: int { TitleScreen, StartMenu, Bedroom, Kitchen, ParkingLot, Market, Bank};
    
     /// <summary>
     /// This is the main type for the game
@@ -46,6 +46,8 @@ namespace PointAndClick
         private int AlphaValue;
         private int FadeIncrement;
         private double FadeDelay;
+
+        public ParkingLotScene pLot { get; private set; }
 
         //MouseStates used to update objects
         public MouseState oldMouseState { get; private set; }
@@ -184,6 +186,14 @@ namespace PointAndClick
                 case GameStates.Kitchen:
 
                     currentScreen = new KitchenScene(this);
+
+                    break;
+
+                case GameStates.ParkingLot:
+
+                    pLot = new ParkingLotScene(this);
+
+                    currentScreen = pLot;
 
                     break;
 
