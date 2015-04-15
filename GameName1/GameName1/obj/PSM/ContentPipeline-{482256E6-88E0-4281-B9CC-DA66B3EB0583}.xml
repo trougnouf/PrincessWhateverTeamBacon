@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Segoe.xnb</Output>
-      <Time>2015-04-11T11:40:03.5331721-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Segoe.xnb</Output>
+      <Time>2015-04-12T20:34:33.7382539-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\TitleScreenBackground.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\TitleScreenBackground.xnb</Output>
-      <Time>2015-04-11T11:40:03.3460425-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\TitleScreenBackground.xnb</Output>
+      <Time>2015-04-12T20:34:05.9106622-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\StartMenuBackGround.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\StartMenuBackGround.xnb</Output>
-      <Time>2015-04-11T11:40:03.3430398-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\StartMenuBackGround.xnb</Output>
+      <Time>2015-04-12T20:34:05.9046619-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\bacon.bmp</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\bacon.xnb</Output>
-      <Time>2015-04-11T11:40:03.6352443-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\bacon.xnb</Output>
+      <Time>2015-04-12T20:34:33.7992573-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\NewGame.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\NewGame.xnb</Output>
-      <Time>2015-04-11T11:40:03.6322424-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\NewGame.xnb</Output>
+      <Time>2015-04-12T20:34:33.7912569-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\Continue.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\Continue.xnb</Output>
-      <Time>2015-04-11T11:40:03.5341735-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\Continue.xnb</Output>
+      <Time>2015-04-12T20:34:33.7432541-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\Exit.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\Exit.xnb</Output>
-      <Time>2015-04-11T11:40:03.535174-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\Exit.xnb</Output>
+      <Time>2015-04-12T20:34:33.7482544-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\Cursor.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\Cursor.xnb</Output>
-      <Time>2015-04-11T11:40:03.4040815-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\Cursor.xnb</Output>
+      <Time>2015-04-12T20:34:06.2546819-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\bag.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bag.xnb</Output>
-      <Time>2015-04-11T11:40:03.405082-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bag.xnb</Output>
+      <Time>2015-04-12T20:34:06.2596822-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\bedroom-magiKoiPottedIcon.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magiKoiPottedIcon.xnb</Output>
-      <Time>2015-04-11T11:40:03.405082-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magiKoiPottedIcon.xnb</Output>
+      <Time>2015-04-12T20:34:06.2646825-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\bedroom-magiKoyHealthyIcon.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magiKoyHealthyIcon.xnb</Output>
-      <Time>2015-04-11T11:40:03.4060825-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magiKoyHealthyIcon.xnb</Output>
+      <Time>2015-04-12T20:34:06.2696827-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\heroIcon.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\heroIcon.xnb</Output>
-      <Time>2015-04-11T11:40:03.4070834-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\heroIcon.xnb</Output>
+      <Time>2015-04-12T20:34:06.2796833-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-jackHammerIcon.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-jackHammerIcon.xnb</Output>
-      <Time>2015-04-11T11:40:03.4080839-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-jackHammerIcon.xnb</Output>
+      <Time>2015-04-12T20:34:06.2846836-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-jumperCables.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-jumperCables.xnb</Output>
-      <Time>2015-04-11T11:40:03.4080839-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-jumperCables.xnb</Output>
+      <Time>2015-04-12T20:34:06.2906839-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-mailIcon.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-mailIcon.xnb</Output>
-      <Time>2015-04-11T11:40:03.4090848-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-mailIcon.xnb</Output>
+      <Time>2015-04-12T20:34:06.2956842-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-pan.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-pan.xnb</Output>
-      <Time>2015-04-11T11:40:03.4090848-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-pan.xnb</Output>
+      <Time>2015-04-12T20:34:06.2996845-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-perfectBaconIcon.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-perfectBaconIcon.xnb</Output>
-      <Time>2015-04-11T11:40:03.4100853-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-perfectBaconIcon.xnb</Output>
+      <Time>2015-04-12T20:34:06.3046847-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-pottedPlantIcon.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-pottedPlantIcon.xnb</Output>
-      <Time>2015-04-11T11:40:03.4100853-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-pottedPlantIcon.xnb</Output>
+      <Time>2015-04-12T20:34:06.308685-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-princessWhateverHandIcon.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-princessWhateverHandIcon.xnb</Output>
-      <Time>2015-04-11T11:40:03.4110863-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-princessWhateverHandIcon.xnb</Output>
+      <Time>2015-04-12T20:34:06.3136853-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-tongs.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-tongs.xnb</Output>
-      <Time>2015-04-11T11:40:03.4110863-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\inv-tongs.xnb</Output>
+      <Time>2015-04-12T20:34:06.3196856-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\parking-cockMobileIcon.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\parking-cockMobileIcon.xnb</Output>
-      <Time>2015-04-11T11:40:03.4120868-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\parking-cockMobileIcon.xnb</Output>
+      <Time>2015-04-12T20:34:06.3246859-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\bedroom.jpg</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\bedroom.xnb</Output>
-      <Time>2015-04-11T11:40:03.3570501-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\bedroom.xnb</Output>
+      <Time>2015-04-12T20:34:05.923663-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\black.png</Source>
@@ -205,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\black.xnb</Output>
-      <Time>2015-04-11T11:40:03.3570501-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\black.xnb</Output>
+      <Time>2015-04-12T20:34:05.9456642-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\groceryStoreBack.jpg</Source>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\groceryStoreBack.xnb</Output>
-      <Time>2015-04-11T11:40:03.3690709-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\groceryStoreBack.xnb</Output>
+      <Time>2015-04-12T20:34:05.958665-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\kitchen.jpg</Source>
@@ -223,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\kitchen.xnb</Output>
-      <Time>2015-04-11T11:40:03.3800785-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\kitchen.xnb</Output>
+      <Time>2015-04-12T20:34:05.9696656-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\parking.jpg</Source>
@@ -232,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\parking.xnb</Output>
-      <Time>2015-04-11T11:40:03.4000926-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\parking.xnb</Output>
+      <Time>2015-04-12T20:34:05.9856665-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-magikoiDead.png</Source>
@@ -241,8 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiDead.xnb</Output>
-      <Time>2015-04-11T11:40:03.511157-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiDead.xnb</Output>
+      <Time>2015-04-12T20:34:22.0245839-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-magikoiHealthy.png</Source>
@@ -250,8 +250,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiHealthy.xnb</Output>
-      <Time>2015-04-11T11:40:03.5121575-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiHealthy.xnb</Output>
+      <Time>2015-04-12T20:34:22.0305842-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-magikoiPotted.png</Source>
@@ -259,8 +259,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiPotted.xnb</Output>
-      <Time>2015-04-11T11:40:03.5131584-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiPotted.xnb</Output>
+      <Time>2015-04-12T20:34:22.0365846-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-pottedPlant.png</Source>
@@ -268,8 +268,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-pottedPlant.xnb</Output>
-      <Time>2015-04-11T11:40:03.5141589-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-pottedPlant.xnb</Output>
+      <Time>2015-04-12T20:34:22.0415848-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-princessWhateverArmless.png</Source>
@@ -277,8 +277,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverArmless.xnb</Output>
-      <Time>2015-04-11T11:40:03.5161603-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverArmless.xnb</Output>
+      <Time>2015-04-12T20:34:22.0475852-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-princessWhateverHand.png</Source>
@@ -286,8 +286,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverHand.xnb</Output>
-      <Time>2015-04-11T11:40:03.5171608-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverHand.xnb</Output>
+      <Time>2015-04-12T20:34:22.0535855-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-princessWhateverHealthy.png</Source>
@@ -295,8 +295,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverHealthy.xnb</Output>
-      <Time>2015-04-11T11:40:03.5191626-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverHealthy.xnb</Output>
+      <Time>2015-04-12T20:34:22.061586-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-socket.png</Source>
@@ -304,8 +304,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-socket.xnb</Output>
-      <Time>2015-04-11T11:40:03.5201632-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-socket.xnb</Output>
+      <Time>2015-04-12T20:34:22.0665863-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\heroLaying.png</Source>
@@ -313,8 +313,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\heroLaying.xnb</Output>
-      <Time>2015-04-11T11:40:03.5211641-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroLaying.xnb</Output>
+      <Time>2015-04-12T20:34:22.0715866-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\heroLeft.png</Source>
@@ -322,8 +322,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\heroLeft.xnb</Output>
-      <Time>2015-04-11T11:40:03.522165-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroLeft.xnb</Output>
+      <Time>2015-04-12T20:34:22.0775869-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\heroRight.png</Source>
@@ -331,8 +331,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\heroRight.xnb</Output>
-      <Time>2015-04-11T11:40:03.5231655-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroRight.xnb</Output>
+      <Time>2015-04-12T20:34:22.0835872-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\heroStanding.png</Source>
@@ -340,8 +340,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\heroStanding.xnb</Output>
-      <Time>2015-04-11T11:40:03.524166-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\heroStanding.xnb</Output>
+      <Time>2015-04-12T20:34:22.0905876-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-bacon.png</Source>
@@ -349,8 +349,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-bacon.xnb</Output>
-      <Time>2015-04-11T11:40:03.5251669-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-bacon.xnb</Output>
+      <Time>2015-04-12T20:34:22.096588-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-jackHammer.png</Source>
@@ -358,8 +358,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-jackHammer.xnb</Output>
-      <Time>2015-04-11T11:40:03.5261674-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-jackHammer.xnb</Output>
+      <Time>2015-04-12T20:34:22.1015883-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-mail.png</Source>
@@ -367,8 +367,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-mail.xnb</Output>
-      <Time>2015-04-11T11:40:03.5261674-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-mail.xnb</Output>
+      <Time>2015-04-12T20:34:22.1155891-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-pan.png</Source>
@@ -376,8 +376,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-pan.xnb</Output>
-      <Time>2015-04-11T11:40:03.5271683-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-pan.xnb</Output>
+      <Time>2015-04-12T20:34:22.1215894-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\parking-cockMobile.png</Source>
@@ -385,8 +385,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\parking-cockMobile.xnb</Output>
-      <Time>2015-04-11T11:40:03.5311707-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\parking-cockMobile.xnb</Output>
+      <Time>2015-04-12T20:34:22.1285898-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\parking-jumperCables.png</Source>
@@ -394,8 +394,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\parking-jumperCables.xnb</Output>
-      <Time>2015-04-11T11:40:03.5321716-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\parking-jumperCables.xnb</Output>
+      <Time>2015-04-12T20:34:22.1345902-04:00</Time>
     </Item>
     <Item>
       <Source>Examine.png</Source>
@@ -403,8 +403,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Examine.xnb</Output>
-      <Time>2015-04-11T11:40:03.4020821-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Examine.xnb</Output>
+      <Time>2015-04-12T20:34:06.238681-04:00</Time>
     </Item>
     <Item>
       <Source>Take.png</Source>
@@ -412,8 +412,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Take.xnb</Output>
-      <Time>2015-04-11T11:40:03.6372457-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Take.xnb</Output>
+      <Time>2015-04-12T20:34:34.2982859-04:00</Time>
     </Item>
     <Item>
       <Source>Use.png</Source>
@@ -421,8 +421,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Use.xnb</Output>
-      <Time>2015-04-11T11:40:03.6402476-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Use.xnb</Output>
+      <Time>2015-04-12T20:34:34.3132867-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\bedroomPrincessWhateverIcon.png</Source>
@@ -430,8 +430,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bedroomPrincessWhateverIcon.xnb</Output>
-      <Time>2015-04-11T11:40:03.4070834-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bedroomPrincessWhateverIcon.xnb</Output>
+      <Time>2015-04-12T20:34:06.274683-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\Backbag.png</Source>
@@ -439,8 +439,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\Backbag.xnb</Output>
-      <Time>2015-04-11T11:40:03.4040815-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\Backbag.xnb</Output>
+      <Time>2015-04-12T20:34:06.2486815-04:00</Time>
     </Item>
     <Item>
       <Source>Talk.png</Source>
@@ -448,8 +448,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Talk.xnb</Output>
-      <Time>2015-04-11T11:40:03.6382466-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Talk.xnb</Output>
+      <Time>2015-04-12T20:34:34.3032862-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\arrowDown.png</Source>
@@ -457,8 +457,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\arrowDown.xnb</Output>
-      <Time>2015-04-11T11:43:17.511056-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\arrowDown.xnb</Output>
+      <Time>2015-04-12T20:34:21.9855816-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\arrowLeft.png</Source>
@@ -466,8 +466,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\arrowLeft.xnb</Output>
-      <Time>2015-04-11T11:43:17.525054-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\arrowLeft.xnb</Output>
+      <Time>2015-04-12T20:34:21.992582-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\arrowRight.png</Source>
@@ -475,8 +475,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\arrowRight.xnb</Output>
-      <Time>2015-04-11T11:43:17.5410657-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\arrowRight.xnb</Output>
+      <Time>2015-04-12T20:34:21.9975823-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\arrowUp.png</Source>
@@ -484,8 +484,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\arrowUp.xnb</Output>
-      <Time>2015-04-11T11:43:17.4890281-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\arrowUp.xnb</Output>
+      <Time>2015-04-12T20:34:22.0035827-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\MusisBoxTune.wav</Source>
@@ -493,9 +493,45 @@
       <Importer>WavImporter</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.xnb</Output>
-      <Extra>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.wma</Extra>
-      <Time>2015-04-11T11:40:03.630241-05:00</Time>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.xnb</Output>
+      <Extra>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.wma</Extra>
+      <Time>2015-04-12T20:34:33.7852565-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Icons\groceryStore-clerkIcon.png</Source>
+      <Name>Icons\groceryStore-clerkIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\groceryStore-clerkIcon.xnb</Output>
+      <Time>2015-04-12T21:12:42.298152-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\groceryStoreBack-baconPackBackground.png</Source>
+      <Name>Objects\groceryStoreBack-baconPackBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\groceryStoreBack-baconPackBackground.xnb</Output>
+      <Time>2015-04-12T21:33:11.1394377-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\groceryStore.jpg</Source>
+      <Name>Backgrounds\groceryStore</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Backgrounds\groceryStore.xnb</Output>
+      <Time>2015-04-12T22:11:34.1501624-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\groceryStore-creditCardTerminalBackground.png</Source>
+      <Name>Objects\groceryStore-creditCardTerminalBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\groceryStore-creditCardTerminalBackground.xnb</Output>
+      <Time>2015-04-12T22:14:33.8964433-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -504,43 +540,43 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>PSM</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\obj\PSM\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\MSBuild\MonoGame\v3.0\MonoGameContentProcessors.dll</Key>
-        <Value>2014-04-05T16:56:18-05:00</Value>
+        <Value>2014-04-05T17:56:18-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2011-09-01T16:22:30-05:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2011-09-01T16:22:30-05:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2011-09-01T16:22:30-05:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2011-09-01T16:22:30-05:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2011-09-01T16:22:30-05:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2011-09-01T16:22:30-05:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-02-03T11:21:45.5302047-05:00</Value>
+        <Value>2015-01-24T20:38:07.9452987-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

@@ -54,6 +54,7 @@
     <Compile Include="Drawable.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="MarketBack.cs" />
     <Compile Include="MarketScene.cs" />
     <Compile Include="ParkingLotScene.cs" />
     <Compile Include="Princess.cs" />

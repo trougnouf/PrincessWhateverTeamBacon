@@ -132,6 +132,9 @@ namespace PointAndClick
 
         public void TakeItem()
         {
+            if (currentItem.path == @"Objects\groceryStoreBack-baconPackBackground")
+                mainGame.Market.pickedUpBAcon = true;
+    
             bag.AddItemToInventory(currentItem);
 
             mainGame.currentScreen.RemoveObject(currentItem);

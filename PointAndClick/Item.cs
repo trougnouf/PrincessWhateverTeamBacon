@@ -94,15 +94,11 @@ namespace PointAndClick
        
         protected override void OnClick(GameStates state)
         {
+            if (maingame.iMenu.currentItem != null)
+            if (path == @"Objects/groceryStore-creditCardTerminalBackground" && maingame.iMenu.currentItem.path == @"Objects\bank-creditCard" && maingame.iMenu.usingItem)
+                maingame.Market.PayedFor();
 
             maingame.iMenu.Options(this);
-
-            if (this is Character)
-            {
-                maingame.iMenu.CharacterOptions((Character)this);
-            }
-            else
-                maingame.iMenu.NewItemOptions(this);
        
         }
         protected override void OnUnClick(GameStates state)

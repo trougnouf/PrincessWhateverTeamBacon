@@ -48,6 +48,7 @@ namespace PointAndClick
         private double FadeDelay;
 
         public ParkingLotScene pLot { get; private set; }
+        public MarketScene Market { get; private set; }
 
         //MouseStates used to update objects
         public MouseState oldMouseState { get; private set; }
@@ -194,6 +195,14 @@ namespace PointAndClick
                     pLot = new ParkingLotScene(this);
 
                     currentScreen = pLot;
+
+                    break;
+
+                case GameStates.Market:
+
+                    Market = new MarketScene(this);
+
+                    currentScreen = Market;
 
                     break;
 

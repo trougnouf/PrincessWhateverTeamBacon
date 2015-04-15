@@ -99,25 +99,36 @@ namespace PointAndClick
             else if (type == arrowType.left)
             {
                 if (game.state == GameStates.Bedroom)
-                    maingame.UpdateState(GameStates.ParkingLot);
+                    maingame.UpdateState(GameStates.Market);
                 
                 else if(game.state == GameStates.ParkingLot)
-                {
-                    if(maingame.pLot.dest == Destination.Home)
                     {
-                        maingame.UpdateState(GameStates.Kitchen);
-                    }
+                        if(maingame.pLot.dest == Destination.Home)
+                        {
+                            maingame.UpdateState(GameStates.Kitchen);
+                        }
 
-                    if (maingame.pLot.dest == Destination.Market)
-                    {
-                         maingame.UpdateState(GameStates.Market);
-                    }
+                        if (maingame.pLot.dest == Destination.Market)
+                        {
+                             maingame.UpdateState(GameStates.Market);
+                        }
 
-                    if (maingame.pLot.dest == Destination.Bank)
-                    {
-                        maingame.UpdateState(GameStates.Bank);
+                        if (maingame.pLot.dest == Destination.Bank)
+                        {
+                            maingame.UpdateState(GameStates.Bank);
+                        }
                     }
-                }
+                else if(game.state == GameStates.Market)
+                    {
+                        if (maingame.Market.pickedUpBAcon && !maingame.Market.Payedfor)
+                            maingame.Market.StopConvo();
+                        else
+                        {
+
+                            maingame.UpdateState(GameStates.ParkingLot);
+                        }
+
+                    }
             }
         }
     }
