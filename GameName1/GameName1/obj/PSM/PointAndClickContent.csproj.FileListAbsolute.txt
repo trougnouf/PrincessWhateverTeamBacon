@@ -611,6 +611,9 @@ C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\menu-bank.xnb
 C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bank-tellerBackground.xnb
 C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Bank.xnb
 C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Market.xnb
+C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\menu-home2.xnb
+C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\menu-grocery2.xnb
+C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\menu-bank2.xnb
 C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.xnb
 C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\boom.xnb
 C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\click.xnb
@@ -634,7 +637,3 @@ C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\Mus
 C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\IgnoreMe.dll
 C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\IgnoreMe.dll
-C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\PointAndClickContent.csprojResolveAssemblyReference.cache
-C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\menu-home2.xnb
-C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\menu-grocery2.xnb
-C:\p\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\menu-bank2.xnb

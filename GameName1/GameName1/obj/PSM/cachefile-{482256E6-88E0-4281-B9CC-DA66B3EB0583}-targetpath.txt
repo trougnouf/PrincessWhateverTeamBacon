@@ -85,6 +85,9 @@ Content\menu-bank.xnb
 Content\Objects\bank-tellerBackground.xnb
 Content\Bank.xnb
 Content\Market.xnb
+Content\Icons\menu-home2.xnb
+Content\Icons\menu-grocery2.xnb
+Content\Icons\menu-bank2.xnb
 Content\StartMenu\MusisBoxTune.xnb
 Content\StartMenu\MusisBoxTune.wma
 Content\SFX\boom.xnb
@@ -105,6 +108,3 @@ Content\SFX\spark.xnb
 Content\SFX\thud.xnb
 Content\SFX\whoosh.xnb
 Content\SFX\zoop.xnb
-Content\Icons\menu-home2.xnb
-Content\Icons\menu-grocery2.xnb
-Content\Icons\menu-bank2.xnb
