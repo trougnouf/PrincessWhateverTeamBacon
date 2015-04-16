@@ -44,9 +44,9 @@ namespace PointAndClick
             examineButton = new MenuButton(new Vector2(1250, InteractMenu.offset), @"Examine", mainGame);
             talkButton = new MenuButton(new Vector2(1600, InteractMenu.offset), @"Talk", mainGame);
             bagButton = new MenuButton(new Vector2(0, InteractMenu.offset), @"Icons\Backbag", mainGame);
-            homeButton = new MenuButton(new Vector2(550, InteractMenu.offset), @"Home", mainGame);
-            marketButton = new MenuButton(new Vector2(900, InteractMenu.offset), @"Market", mainGame);
-            bankButton = new MenuButton(new Vector2(1250, InteractMenu.offset), @"Bank", mainGame);
+            homeButton = new MenuButton(new Vector2(550, InteractMenu.offset), @"Icons\menu-home2", mainGame);
+            marketButton = new MenuButton(new Vector2(900, InteractMenu.offset), @"Icons\menu-grocery2", mainGame);
+            bankButton = new MenuButton(new Vector2(1250, InteractMenu.offset), @"Icons\menu-bank2", mainGame);
 
             UpdateLists();
         }
