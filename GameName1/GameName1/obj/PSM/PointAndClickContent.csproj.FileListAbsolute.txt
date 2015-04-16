@@ -514,9 +514,9 @@ C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-panWi
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-tongsIcon.xnb
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\mouth.xnb
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\bank.xnb
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Home.xnb
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.xnb
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.wma
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\IgnoreMe.dll
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\IgnoreMe.dll
-C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Home.xnb

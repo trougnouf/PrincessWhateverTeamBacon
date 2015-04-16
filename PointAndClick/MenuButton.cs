@@ -95,20 +95,20 @@ namespace PointAndClick
 
                 case "Home":
 
-                    maingame.pLot.UpdateDestination(Destination.Home);
+                    maingame.parkingLotScene.UpdateDestination(Destination.Home);
                     
 
                     break;
 
                 case "Market":
 
-                    maingame.pLot.UpdateDestination(Destination.Market);
+                    maingame.parkingLotScene.UpdateDestination(Destination.Market);
 
                     break;
 
                 case "Bank":
 
-                    maingame.pLot.UpdateDestination(Destination.Bank);
+                    maingame.parkingLotScene.UpdateDestination(Destination.Bank);
 
                     break;
 

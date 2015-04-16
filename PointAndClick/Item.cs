@@ -96,7 +96,7 @@ namespace PointAndClick
         {
             if (maingame.iMenu.currentItem != null)
             if (path == @"Objects/groceryStore-creditCardTerminalBackground" && maingame.iMenu.currentItem.path == @"Objects\bank-creditCard" && maingame.iMenu.usingItem)
-                maingame.Market.PayedFor();
+                maingame.marketScene.PayedFor();
 
             maingame.iMenu.Options(this);
        

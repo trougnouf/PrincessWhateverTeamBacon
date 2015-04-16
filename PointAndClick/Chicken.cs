@@ -125,7 +125,7 @@ namespace PointAndClick
                         UpdateChickenState(ChickenState.Fed);
                         maingame.iMenu.StartConversation(fullConvo2);
                         maingame.gameCursor.ResetTexture();
-                        maingame.pLot.chickenFed = true;
+                        maingame.parkingLotScene.chickenFed = true;
                     }
 
                     else

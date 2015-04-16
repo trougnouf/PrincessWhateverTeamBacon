@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace PointAndClick
 {
-    class BankScene : SceneScreen
+    public class BankScene : SceneScreen
     {
         private Song music;
         private BackGround background;
