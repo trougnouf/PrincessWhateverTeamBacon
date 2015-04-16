@@ -201,7 +201,7 @@ namespace PointAndClick
                     break;
 
                 case GameStates.Bedroom:
-
+                    Console.WriteLine("called this");
                     if (bedroomScene == null)
                         bedroomScene = new BedRoomScene(this);
                     
