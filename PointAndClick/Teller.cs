@@ -114,12 +114,13 @@ namespace PointAndClick
         {
             if (maingame.iMenu.currentItem != null && maingame.iMenu.usingItem)
             {
-                if (maingame.iMenu.currentItem.path == @"Objects\kitchen-mail")
+                if (maingame.iMenu.currentItem.path == @"Objects\kitchen-mail") //show letter to teller
                 {
                     UpdateTellerState(TellerState.HasLetter);
                     maingame.iMenu.StartConversation(ShowLetterConvo);
                     UpdateTellerState(TellerState.SeenLetter);
                     maingame.gameCursor.ResetTexture();
+                    maingame.iMenu.DiscardItem(); //discard letter
                 }
             }
             else

@@ -69,8 +69,8 @@ namespace PointAndClick
                     teller.UpdateTellerState(TellerState.UnHelpful);
                 }
             }
-            else
-                AddObject(creditCard);
+            else if (!mainGame.iMenu.ItemInBag(creditCard.path))
+                    AddObject(creditCard); //this means that the gullible teller has read the letter and you have yet to take the credit card
 
 
             base.Update(gametime);
