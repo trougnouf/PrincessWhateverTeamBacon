@@ -21,7 +21,7 @@ namespace PointAndClick
         private Texture2D heroIcon;
         private Texture2D tellerIcon;
         
-        private Hero hero;
+        private SceneImage hero;
         private Teller teller;
         private Item creditCard;
 
@@ -37,17 +37,16 @@ namespace PointAndClick
         {
             background = new BackGround(new Vector2(0, 0), @"Backgrounds\bank", mainGame);
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
-            tellerIcon = mainGame.Content.Load<Texture2D>(@"Icons\bank-tellerIcon");
+            //tellerIcon = mainGame.Content.Load<Texture2D>(@"Icons\bank-tellerIcon");
 
             creditCard = new Item(new Vector2(1052, 446), @"Objects\bank-creditCard", mainGame, "", false);
-            teller = new Teller(mainGame, tellerIcon, new Vector2(958, 194));
-            hero = new Hero(mainGame, heroIcon);
-            hero.UpdateHeroState(HeroState.Awake);
+            teller = new Teller(mainGame, heroIcon, new Vector2(958, 194));
+            hero = new SceneImage(new Vector2(195, 310), @"Objects\bank-hero", mainGame );
         
             drawingList.Add(background);
-            AddObject(hero);
+            drawingList.Add(hero);
             AddObject(teller);
-            AddObject(creditCard);
+            //AddObject(creditCard);
 
             base.LoadContent();
         }
@@ -71,6 +70,7 @@ namespace PointAndClick
                 }
             }
             else
+                AddObject(creditCard);
 
 
             base.Update(gametime);

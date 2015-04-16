@@ -28,6 +28,7 @@ namespace PointAndClick
             : base(initPosition, @"Objects\bank-teller", currentGame, @"Icons\bank-tellerIcon", hIcon)
         {
             examineTexture = inBagTexture;
+            dialogIcon = inBagTexture;
 
             UpdateTellerState(TellerState.UnHelpful);
 

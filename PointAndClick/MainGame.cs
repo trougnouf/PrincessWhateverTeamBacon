@@ -187,6 +187,15 @@ namespace PointAndClick
 
                     break;
 
+                case GameStates.Bank:
+
+                    if (bankScene == null)
+                        bankScene = new BankScene(this);
+
+                    currentScreen = bankScene;
+
+                    break;
+
                 case GameStates.Bedroom:
 
                     if (bedroomScene == null)

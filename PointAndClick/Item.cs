@@ -78,6 +78,9 @@ namespace PointAndClick
                     description = "Woah that is a large chicken!";
                     break;
 
+                case @"Objects\bank-teller":
+                    description = "A bank teller.";
+                    break;
                     
                 default:
                     description = "";
