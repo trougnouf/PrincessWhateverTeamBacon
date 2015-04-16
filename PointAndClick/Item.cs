@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -20,6 +21,7 @@ namespace PointAndClick
         protected Texture2D inBagTexture;
         public bool takeable { get; private set; }
         public Texture2D examineTexture { get; protected set; }
+        private SoundEffect effect;
 
         public Item(Vector2 initPosition, String path, MainGame currentGame, string bagTexture, bool istakable) 
             :base(initPosition, path, currentGame)
@@ -39,7 +41,7 @@ namespace PointAndClick
             switch(path)
             {   
                 case @"Objects\bedroom-pottedPlant":
-
+                    effect = maingame.Content.Load<SoundEffect>(@"SFX\thud");
                     description = "This smells like probable cause.";
                     break;
 
@@ -133,6 +135,11 @@ namespace PointAndClick
                     break;
             }
 
+        }
+
+        public void PlayEffect()
+        {
+            effect.Play();
         }
  
         public void ChangeToBagTexture()

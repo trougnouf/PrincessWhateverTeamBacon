@@ -21,8 +21,8 @@ namespace PointAndClick
         private SceneText text;
         private Texture2D heroIcon;
         private Hero hero;
-        private ArrowButton arrowUp;
-        private ArrowButton arrowDown;
+//        private ArrowButton arrowUp;
+//        private ArrowButton arrowDown;
         private ArrowButton arrowRight;
         private ArrowButton arrowLeft;
         private Item pan;
@@ -59,8 +59,8 @@ namespace PointAndClick
         {
 
             background = new BackGround(new Vector2(0, 0), @"Backgrounds\kitchen", mainGame);
-            arrowUp = new ArrowButton(new Vector2(150, 15), @"Objects\arrowUp", mainGame);
-            arrowDown = new ArrowButton(new Vector2(150, 120), @"Objects\arrowDown", mainGame);
+//            arrowUp = new ArrowButton(new Vector2(150, 15), @"Objects\arrowUp", mainGame);
+//            arrowDown = new ArrowButton(new Vector2(150, 120), @"Objects\arrowDown", mainGame);
             arrowRight = new ArrowButton(new Vector2(250, 120), @"Objects\arrowRight", mainGame);
             arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame);
 
@@ -82,8 +82,8 @@ namespace PointAndClick
             text = new SceneText(new Vector2(700, 750), "This is the kitchen!!!", segoe, mainGame);
 
             drawingList.Add(background);
-            AddObject(arrowUp);
-            AddObject(arrowDown);
+//            AddObject(arrowUp);
+//            AddObject(arrowDown);
             AddObject(arrowLeft);
             AddObject(arrowRight);
             AddObject(onLight);
@@ -155,6 +155,11 @@ namespace PointAndClick
         {
             AddObject(pan);
             pan.UpdatePosition(new Vector2(270, 340));
+            drawingList.Add(background);
+//            AddObject(arrowUp);
+//            AddObject(arrowDown);
+            AddObject(arrowLeft);
+            AddObject(arrowRight);
         }
 
 

@@ -93,7 +93,14 @@ namespace PointAndClick
 
             else if (type == arrowType.right)
             {
+                if (game.state == GameStates.Bedroom)
+                    maingame.UpdateState(GameStates.MarketBack);
 
+                else if (game.state == GameStates.Kitchen)
+                    maingame.UpdateState(GameStates.Bedroom);
+
+                else if (game.state == GameStates.Market)
+                    maingame.UpdateState(GameStates.MarketBack);
             }
 
             else if (type == arrowType.left)
@@ -129,6 +136,15 @@ namespace PointAndClick
                         }
 
                     }
+                else if(game.state == GameStates.MarketBack)
+                    {
+                        maingame.UpdateState(GameStates.Market);
+                    }
+                else if(game.state == GameStates.Bank)
+                    {
+                        maingame.UpdateState(GameStates.ParkingLot);
+                    }
+
             }
         }
     }

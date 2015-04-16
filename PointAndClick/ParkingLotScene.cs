@@ -43,7 +43,7 @@ namespace PointAndClick
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
             jumperCables = new Item(new Vector2(1530, 635), @"Objects\parking-jumperCables", mainGame, @"Icons\inv-jumperCables", true);
             chic = new Chicken(mainGame, heroIcon);
-            hero = new SceneImage(new Vector2(100, 200), @"Objects\heroLeft", mainGame); 
+            hero = new SceneImage(new Vector2(100, 550), @"Objects\heroRight", mainGame); 
 
             drawingList.Add(background);
             drawingList.Add(hero);

@@ -2,13 +2,13 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Media;
-using Microsoft.Xna.Framework.Audio;
 #endregion
 
 namespace PointAndClick
@@ -133,13 +133,19 @@ namespace PointAndClick
         public void TakeItem()
         {
             if (currentItem.path == @"Objects\groceryStoreBack-baconPackBackground")
+            {
                 mainGame.marketScene.pickedUpBAcon = true;
-    
-            bag.AddItemToInventory(currentItem);
+                bag.AddItemToInventory(currentItem);
+                ShowInventory();
+            }
+            else
+            {
+                bag.AddItemToInventory(currentItem);
 
-            mainGame.currentScreen.RemoveObject(currentItem);
+                mainGame.currentScreen.RemoveObject(currentItem);
 
-            ShowInventory();
+                ShowInventory();
+            }
         }
 
         public void ExamineItem()
@@ -224,7 +230,11 @@ namespace PointAndClick
             else
                 mainGame.iMenu.NewItemOptions(item);
         }
-               
+
+        public void PlayCurrentItemSound()
+        {
+            currentItem.PlayEffect();
+        }
 
         public void ShowInventory()
         {

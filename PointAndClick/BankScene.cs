@@ -24,6 +24,7 @@ namespace PointAndClick
         private SceneImage hero;
         private Teller teller;
         private Item creditCard;
+        private ArrowButton arrowLeft;
 
         bool introduced;
 
@@ -38,6 +39,7 @@ namespace PointAndClick
             background = new BackGround(new Vector2(0, 0), @"Backgrounds\bank", mainGame);
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
             //tellerIcon = mainGame.Content.Load<Texture2D>(@"Icons\bank-tellerIcon");
+            arrowLeft = new ArrowButton(new Vector2(50, 120), "Objects/arrowLeft", mainGame);
 
             creditCard = new Item(new Vector2(1052, 446), @"Objects\bank-creditCard", mainGame, "", false);
             teller = new Teller(mainGame, heroIcon, new Vector2(1000, 330));
@@ -46,6 +48,7 @@ namespace PointAndClick
             drawingList.Add(background);
             drawingList.Add(hero);
             AddObject(teller);
+            AddObject(arrowLeft);
             //AddObject(creditCard);
 
             base.LoadContent();

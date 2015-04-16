@@ -231,6 +231,11 @@ namespace PointAndClick
                         bedroom.fishPotted = true;
                         maingame.gameCursor.ResetTexture();
                     }
+                    maingame.iMenu.PlayCurrentItemSound();
+                    UpdateFishState(FishState.Potted);     
+                    maingame.iMenu.StartConversation(pottingConvo);
+                    bedroom.fishPotted = true;
+                    maingame.gameCursor.ResetTexture();
                 }
                 else
                     base.OnClick(state);
