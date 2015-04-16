@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Background.cs" />
+    <Compile Include="BankScene.cs" />
     <Compile Include="BedRoomScene.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="ArrowButton.cs" />
@@ -63,6 +64,8 @@
     <Compile Include="SceneImage.cs" />
     <Compile Include="SceneText.cs" />
     <Compile Include="StartMenuScreen.cs" />
+    <Compile Include="StoveTop.cs" />
+    <Compile Include="Teller.cs" />
     <Compile Include="TitleScreen.cs" />
     <Compile Include="MainGame.cs" />
     <Compile Include="GameScreen.cs" />

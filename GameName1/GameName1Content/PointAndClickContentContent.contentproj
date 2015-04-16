@@ -206,6 +206,78 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Examine.png">
+      <Name>Examine</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Take.png">
+      <Name>Take</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Use.png">
+      <Name>Use</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Icons\bedroomPrincessWhateverIcon.png">
+      <Name>bedroomPrincessWhateverIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Icons\Backbag.png">
+      <Name>Backbag</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Talk.png">
+      <Name>Talk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Icons\groceryStore-clerkIcon.png">
+      <Name>groceryStore-clerkIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backgrounds\groceryStore.jpg">
+      <Name>groceryStore</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objects\arrowDown.png">
+      <Name>arrowDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\arrowLeft.png">
+      <Name>arrowLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\arrowRight.png">
+      <Name>arrowRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\arrowUp.png">
+      <Name>arrowUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Compile Include="Objects\bedroom-magikoiDead.png">
       <Name>bedroom-magikoiDead</Name>
       <Importer>TextureImporter</Importer>
@@ -243,6 +315,16 @@
     </Compile>
     <Compile Include="Objects\bedroom-socket.png">
       <Name>bedroom-socket</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\groceryStore-creditCardTerminalBackground.png">
+      <Name>groceryStore-creditCardTerminalBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\groceryStoreBack-baconPackBackground.png">
+      <Name>groceryStoreBack-baconPackBackground</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -298,89 +380,127 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Examine.png">
-      <Name>Examine</Name>
+    <Compile Include="Objects\bank-creditCard.png">
+      <Name>bank-creditCard</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Take.png">
-      <Name>Take</Name>
+    <Compile Include="Objects\bank-hero.png">
+      <Name>bank-hero</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Use.png">
-      <Name>Use</Name>
+    <Compile Include="Objects\bank-teller.png">
+      <Name>bank-teller</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Icons\bedroomPrincessWhateverIcon.png">
-      <Name>bedroomPrincessWhateverIcon</Name>
+    <Compile Include="Objects\kitchen-onLight.png">
+      <Name>kitchen-onLight</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Icons\Backbag.png">
-      <Name>Backbag</Name>
+    <Compile Include="Objects\kitchen-pan2.png">
+      <Name>kitchen-pan2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Talk.png">
-      <Name>Talk</Name>
+    <Compile Include="Objects\kitchen-panWithBacon.png">
+      <Name>kitchen-panWithBacon</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Objects\arrowDown.png">
-      <Name>arrowDown</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Objects\arrowLeft.png">
-      <Name>arrowLeft</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Objects\arrowRight.png">
-      <Name>arrowRight</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Objects\arrowUp.png">
-      <Name>arrowUp</Name>
+    <Compile Include="Objects\kitchen-stoveTop.png">
+      <Name>kitchen-stoveTop</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Icons\groceryStore-clerkIcon.png">
-      <Name>groceryStore-clerkIcon</Name>
+    <Compile Include="Icons\bank-tellerIcon.png">
+      <Name>bank-tellerIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\bedroom-princessWhateverIcon.png">
+      <Name>bedroom-princessWhateverIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\body.png">
+      <Name>body</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\eyes.png">
+      <Name>eyes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\hand.png">
+      <Name>hand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-baconBurnedIcon.png">
+      <Name>inv-baconBurnedIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-baconPackIcon.png">
+      <Name>inv-baconPackIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-baconPerfectIcon.png">
+      <Name>inv-baconPerfectIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-baconRawIcon.png">
+      <Name>inv-baconRawIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-creditCardIcon.png">
+      <Name>inv-creditCardIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-mailOpenedIcon.png">
+      <Name>inv-mailOpenedIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-pan2.png">
+      <Name>inv-pan2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-panIcon.png">
+      <Name>inv-panIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-panWithBacon.png">
+      <Name>inv-panWithBacon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\inv-tongsIcon.png">
+      <Name>inv-tongsIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Icons\mouth.png">
+      <Name>mouth</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Objects\groceryStoreBack-baconPackBackground.png">
-      <Name>groceryStoreBack-baconPackBackground</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Backgrounds\groceryStore.jpg">
-      <Name>groceryStore</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Objects\groceryStore-creditCardTerminalBackground.png">
-      <Name>groceryStore-creditCardTerminalBackground</Name>
+    <Compile Include="Backgrounds\bank.jpg">
+      <Name>bank</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

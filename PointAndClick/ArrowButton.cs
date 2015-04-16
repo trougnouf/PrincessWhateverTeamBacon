@@ -99,7 +99,7 @@ namespace PointAndClick
             else if (type == arrowType.left)
             {
                 if (game.state == GameStates.Bedroom)
-                    maingame.UpdateState(GameStates.Market);
+                    maingame.UpdateState(GameStates.Kitchen);
                 
                 else if(game.state == GameStates.ParkingLot)
                     {

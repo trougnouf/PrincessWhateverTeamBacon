@@ -179,7 +179,11 @@ namespace PointAndClick
             ShowInventory();
         }
 
-      
+        public bool ItemInBag(String itemPath)
+        {
+            return bag.CheckItem(itemPath);
+        }
+
         public void CharacterOptions(Character newChar)
         {
             

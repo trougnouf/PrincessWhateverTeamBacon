@@ -82,6 +82,17 @@ namespace PointAndClick
       
         }
 
+        public bool CheckItem(String item)
+        {
+            foreach (Item obj in objectList)
+            {
+                if (obj.path == item)
+                    return true;
+            }
+            
+            return false;
+        }
+
     }
 
 }
