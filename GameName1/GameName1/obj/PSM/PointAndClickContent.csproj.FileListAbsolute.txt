@@ -520,3 +520,5 @@ C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\Musis
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\IgnoreMe.dll
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\IgnoreMe.dll
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Market.xnb
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Bank.xnb

@@ -181,7 +181,7 @@ namespace PointAndClick
                 case GameStates.StartMenu:
 
                     if (startMenuScreen == null)
-                        currentScreen = new StartMenuScreen(this);
+                        startMenuScreen = new StartMenuScreen(this);
                     
                     currentScreen = startMenuScreen;
 
@@ -190,7 +190,7 @@ namespace PointAndClick
                 case GameStates.Bedroom:
 
                     if (bedroomScene == null)
-                        currentScreen = new BedRoomScene(this);
+                        bedroomScene = new BedRoomScene(this);
                     
                     currentScreen = bedroomScene;
 
@@ -199,7 +199,7 @@ namespace PointAndClick
                 case GameStates.Kitchen:
 
                     if (kitchenScene == null)
-                        currentScreen = new KitchenScene(this);
+                        kitchenScene = new KitchenScene(this);
 
                     currentScreen = kitchenScene;
 

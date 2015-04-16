@@ -749,6 +749,24 @@
       <Time>2015-04-15T21:18:17.9972334-04:00</Time>
     </Item>
     <Item>
+      <Source>Market.png</Source>
+      <Name>Market</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Market.xnb</Output>
+      <Time>2015-04-15T21:18:17.9972334-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Bank.png</Source>
+      <Name>Bank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Bank.xnb</Output>
+      <Time>2015-04-15T21:18:17.9972334-04:00</Time>
+    </Item>
+    <Item>
       <Source>StartMenu\MusisBoxTune.wav</Source>
       <Name>StartMenu\MusisBoxTune</Name>
       <Importer>WavImporter</Importer>
