@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -11,7 +12,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public enum GameStates: int { TitleScreen, StartMenu, Bedroom, Kitchen, ParkingLot, Market, Bank};
+    public enum GameStates: int { TitleScreen, StartMenu, Bedroom, Kitchen, ParkingLot, Market, MarketBack, Bank};
    
     /// <summary>
     /// This is the main type for the game
@@ -53,12 +54,15 @@ namespace PointAndClick
         public BankScene bankScene { get; private set; }
         public KitchenScene kitchenScene { get; private set; }
         public StartMenuScreen startMenuScreen { get; private set; }
+        public MarketBackScene marketBackScene { get; private set; }
 
         //MouseStates used to update objects
         public MouseState oldMouseState { get; private set; }
         public MouseState currentMouseState { get; private set; }
 
         public Cursor gameCursor { get; private set; }
+
+        private SoundEffect transitionSound;
 
         public MainGame()
             : base()
@@ -82,7 +86,7 @@ namespace PointAndClick
         /// 
         protected override void Initialize()
         {
-
+            transitionSound = Content.Load<SoundEffect>(@"SFX\click");
             spriteBatch = new SpriteBatch(GraphicsDevice);
             base.Initialize();
             currentScreen = new TitleScreen(this);
@@ -232,10 +236,22 @@ namespace PointAndClick
 
                     break;
 
+                case GameStates.MarketBack:
+
+                    if (marketBackScene == null)
+                        marketBackScene = new MarketBackScene(this);
+
+                    currentScreen = marketBackScene;
+
+                    break;
+
             }
 
             if (previousScreen != currentScreen)
+            {
+                transitionSound.Play();
                 transitioning = true;
+            }
         }
 
         /// <summary>

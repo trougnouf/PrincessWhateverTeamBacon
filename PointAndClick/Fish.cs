@@ -216,6 +216,7 @@ namespace PointAndClick
             {
                 if (maingame.iMenu.currentItem.path == @"Objects\bedroom-pottedPlant" && maingame.iMenu.usingItem)
                 {
+                    maingame.iMenu.PlayCurrentItemSound();
                     UpdateFishState(FishState.Potted);     
                     maingame.iMenu.StartConversation(pottingConvo);
                     bedroom.fishPotted = true;
