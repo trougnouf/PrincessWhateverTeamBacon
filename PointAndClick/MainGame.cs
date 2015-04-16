@@ -47,8 +47,12 @@ namespace PointAndClick
         private int FadeIncrement;
         private double FadeDelay;
 
-        public ParkingLotScene pLot { get; private set; }
-        public MarketScene Market { get; private set; }
+        public ParkingLotScene parkingLotScene { get; private set; }
+        public MarketScene marketScene { get; private set; }
+        public BedRoomScene bedroomScene { get; private set; }
+        public BankScene bankScene { get; private set; }
+        public KitchenScene kitchenScene { get; private set; }
+        public StartMenuScreen startMenuScreen { get; private set; }
 
         //MouseStates used to update objects
         public MouseState oldMouseState { get; private set; }
@@ -168,41 +172,54 @@ namespace PointAndClick
         {
 
             previousScreen = currentScreen;
+            
+            if (iMenu == null && state!=GameStates.StartMenu && state!=GameStates.TitleScreen)
+                iMenu = new InteractMenu(this);
 
             switch (state)
             {
                 case GameStates.StartMenu:
 
-                    currentScreen = new StartMenuScreen(this);
+                    if (startMenuScreen == null)
+                        currentScreen = new StartMenuScreen(this);
+                    
+                    currentScreen = startMenuScreen;
 
                     break;
 
                 case GameStates.Bedroom:
-                   
-                    iMenu = new InteractMenu(this);
-                    currentScreen = new BedRoomScene(this);
+
+                    if (bedroomScene == null)
+                        currentScreen = new BedRoomScene(this);
+                    
+                    currentScreen = bedroomScene;
 
                     break;
 
                 case GameStates.Kitchen:
 
-                    currentScreen = new KitchenScene(this);
+                    if (kitchenScene == null)
+                        currentScreen = new KitchenScene(this);
+
+                    currentScreen = kitchenScene;
 
                     break;
 
                 case GameStates.ParkingLot:
 
-                    pLot = new ParkingLotScene(this);
+                    if (parkingLotScene == null)
+                        parkingLotScene = new ParkingLotScene(this);
 
-                    currentScreen = pLot;
+                    currentScreen = parkingLotScene;
 
                     break;
 
                 case GameStates.Market:
 
-                    Market = new MarketScene(this);
+                    if (marketScene == null)
+                        marketScene = new MarketScene(this);
 
-                    currentScreen = Market;
+                    currentScreen = marketScene;
 
                     break;
 
