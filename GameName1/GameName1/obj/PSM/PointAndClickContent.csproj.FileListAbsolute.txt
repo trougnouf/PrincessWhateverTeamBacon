@@ -519,11 +519,8 @@ C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\Musis
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\IgnoreMe.dll
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\IgnoreMe.dll
-<<<<<<< HEAD
-C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Market.xnb
-C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Bank.xnb
-C:\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\PointAndClickContent.csprojResolveAssemblyReference.cache
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bank-tellerBackground.xnb
-=======
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Home.xnb
->>>>>>> origin/master
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\menu-bank.xnb
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Bank.xnb
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Market.xnb
