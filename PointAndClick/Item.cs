@@ -48,6 +48,17 @@ namespace PointAndClick
                     description = "This magikoi is frantically flapping its fins.";
                     break;
 
+                case @"Objects\bedroom-magikoiDead":
+
+                    description = "A meal this foul is sure to ravage the bowels.";
+                    break;
+
+
+                case @"Objects\bedroom-magikoiPotted":
+
+                    description = "The magikoi has been potted!";
+                    break;
+
                 case @"Objects\bedroom-princessWhateverHand":
 
                     description = "The princess's severed hand...";
@@ -78,7 +89,46 @@ namespace PointAndClick
                     description = "Woah that is a large chicken!";
                     break;
 
-                    
+                case @"Objects\groceryStore-creditCardTerminalBackground":
+
+                    description = "This is where I can pay for the bacon";
+                    break;
+
+                case @"Objects\groceryStoreBack-baconPackBackground":
+
+                    description = "Wow... Look at all that bacon!!!!!!!";
+                    break;
+
+                case @"Objects\kitchen-jackHammer":
+
+                    description = "Looks like a fun destructive toy.";
+                    break;
+
+                case @"Objects\kitchen-mail":
+
+                    description = "Hopefully that is not all bills...";
+                    break;
+
+                case @"Objects\kitchen-onLight":
+
+                    description = "Better not touch it while it is on!";
+                    break;
+
+                case @"Objects\kitchen-pan":
+
+                    description = " A simple pan, that might be useful for cooking delicious bacon!";
+                    break;
+
+                case @"Objects\kitchen-panWithBacon":
+
+                    description = "Wow... Look at all that bacon!!!!!!!";
+                    break;
+
+                case @"Objects\kitchen-stoveTop":
+
+                    description = "Hmmm... It doesn't seem to be cooking";
+                    break;
+
                 default:
                     description = "";
                     break;
