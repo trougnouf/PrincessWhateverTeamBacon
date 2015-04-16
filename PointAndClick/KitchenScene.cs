@@ -91,16 +91,31 @@ namespace PointAndClick
 
             if (panIdle == true)
             {
-                AddObject(pan);
+                
                 panIdle = false;
-                //if(panCooking == true)
-                    //Erase panOnStove
+                if(panCooking == true)
+                {
+                    redraw();
+                    AddObject(pan);
+                }
+                    
+                else
+                    AddObject(pan);
             }
 
             
 
 
 
+        }
+
+        public void redraw()
+        {
+            drawingList.Add(background);
+            AddObject(arrowUp);
+            AddObject(arrowDown);
+            AddObject(arrowLeft);
+            AddObject(arrowRight);
         }
 
         
