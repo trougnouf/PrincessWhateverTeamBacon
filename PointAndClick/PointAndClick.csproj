@@ -59,6 +59,7 @@
     <Compile Include="MarketScene.cs" />
     <Compile Include="ParkingLotScene.cs" />
     <Compile Include="Princess.cs" />
+    <Compile Include="Puzzle.cs" />
     <Compile Include="SceneScreen.cs" />
     <Compile Include="MenuButton.cs" />
     <Compile Include="SceneImage.cs" />

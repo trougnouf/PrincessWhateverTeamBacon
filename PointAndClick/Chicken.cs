@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public enum ChickenState : short { Hungry, Fed};
+    public enum ChickenState : short { Hungry, Fed, FedBacon};
 
     class Chicken : Character
     {
@@ -23,6 +23,7 @@ namespace PointAndClick
         private Conversation fullConvo;
         private Conversation shortConvo;
         private Conversation fullConvo2;
+        private Conversation baconConvo;
 
         public Chicken(MainGame currentGame, Texture2D hIcon)
             : base(new Vector2(425, 50), @"Objects\parking-cockMobile", currentGame, @"Icons\parking-cockMobileIcon", hIcon)
@@ -38,6 +39,7 @@ namespace PointAndClick
             fullConvo = new Conversation();
             shortConvo = new Conversation();
             fullConvo2 = new Conversation();
+            baconConvo = new Conversation();
 
             fullConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
                                                                              heroIcon,
@@ -57,6 +59,12 @@ namespace PointAndClick
                                                                             "You notice the chicken fancies your arm with bloodthirst in his eyes."
                                                                             ));
 
+            baconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+                                                                            heroIcon,
+                                                                            "Thank you!",
+                                                                            ""
+                                                                            ));
+
 
         }
 
@@ -73,6 +81,7 @@ namespace PointAndClick
                     break;
 
                 case ChickenState.Fed:
+                case ChickenState.FedBacon:
 
                     talkedTo = false;
               
@@ -100,6 +109,11 @@ namespace PointAndClick
                         currentConvo = fullConvo2;
 
                     break;
+                
+                case ChickenState.FedBacon:
+                    currentConvo = baconConvo;
+                    
+                    break;
 
                 default:
 
@@ -120,14 +134,20 @@ namespace PointAndClick
 
                 if (maingame.iMenu.currentItem != null)
                 {
-                    if (maingame.iMenu.currentItem.path == @"Objects\bedroom-princessWhateverHand" && maingame.iMenu.usingItem)
+                    if (maingame.iMenu.usingItem)
                     {
-                        UpdateChickenState(ChickenState.Fed);
-                        maingame.iMenu.StartConversation(fullConvo2);
-                        maingame.gameCursor.ResetTexture();
-                        maingame.parkingLotScene.chickenFed = true;
+                        if (maingame.iMenu.currentItem.path == @"Objects\bedroom-princessWhateverHand")
+                        {
+                            UpdateChickenState(ChickenState.Fed);
+                            maingame.iMenu.StartConversation(fullConvo2);
+                            maingame.gameCursor.ResetTexture();
+                            maingame.parkingLotScene.chickenFed = true;
+                        }
+                        else if (maingame.iMenu.currentItem.path == @"Objects\kitchen-panWithPerfectBacon") //fix and make it point to all the bacon
+                        {
+                            
+                        }
                     }
-
                     else
                         base.OnClick(state);
                 }

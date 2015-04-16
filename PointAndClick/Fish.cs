@@ -21,6 +21,7 @@ namespace PointAndClick
         private Texture2D deadTexture;
         private Texture2D healthyIcon;
         private Texture2D pottedIcon;
+        private Texture2D deadIcon;
         private Princess princess;
 
         private Conversation fullConvo;
@@ -29,6 +30,7 @@ namespace PointAndClick
         private BedRoomScene bedroom;
         private Conversation fullConvo2;
         private Conversation shortConvo2;
+        private Conversation deadConvo;
 
 
         public Fish(MainGame currentGame, Texture2D hIcon, Princess prin, BedRoomScene bRoom)
@@ -41,6 +43,7 @@ namespace PointAndClick
             deadTexture = currentGame.Content.Load<Texture2D>(@"Objects\bedroom-magikoiDead");
             healthyIcon = inBagTexture;
             pottedIcon = currentGame.Content.Load<Texture2D>(@"Icons\bedroom-magiKoiPottedIcon");
+            deadIcon = currentGame.Content.Load<Texture2D>(@"Icons\bedroom-magikoiDeadIcon");
 
             UpdateFishState(FishState.Healthy);
 
@@ -49,6 +52,7 @@ namespace PointAndClick
             pottingConvo = new Conversation();
             fullConvo2 = new Conversation();
             shortConvo2 = new Conversation();
+            deadConvo = new Conversation();
 
             shortConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
                                                                             healthyIcon,
@@ -123,6 +127,13 @@ namespace PointAndClick
                                                                             "Are you out of your mind?",
                                                                              "Sunlight oughts to assault the populace!"
                                                                             ));
+
+            deadConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
+                                                                            deadIcon,
+                                                                            "It didn't have to end this way.",
+                                                                             "(X_x)"
+                                                                            ));
+
         }
 
         public void UpdateFishState(FishState newState)
@@ -151,7 +162,7 @@ namespace PointAndClick
                     case FishState.Dead:
 
                         currentTexture = deadTexture;
-
+                        examineTexture = deadTexture;
                         break;
 
                 }
@@ -191,10 +202,7 @@ namespace PointAndClick
              
                 case FishState.Dead:
               
-                    if (talkedTo)
-                        currentConvo = shortConvo;
-                    else
-                        currentConvo = fullConvo;
+                    currentConvo = deadConvo;
                     break;
                     
 
@@ -214,14 +222,16 @@ namespace PointAndClick
         {
             if (maingame.iMenu.currentItem != null)
             {
-                if (maingame.iMenu.currentItem.path == @"Objects\bedroom-pottedPlant" && maingame.iMenu.usingItem)
+                if (maingame.iMenu.usingItem)
                 {
-                    UpdateFishState(FishState.Potted);     
-                    maingame.iMenu.StartConversation(pottingConvo);
-                    bedroom.fishPotted = true;
-                    maingame.gameCursor.ResetTexture();
+                    if (maingame.iMenu.currentItem.path == @"Objects\bedroom-pottedPlant")
+                    {
+                        UpdateFishState(FishState.Potted);
+                        maingame.iMenu.StartConversation(pottingConvo);
+                        bedroom.fishPotted = true;
+                        maingame.gameCursor.ResetTexture();
+                    }
                 }
-                    
                 else
                     base.OnClick(state);
             }

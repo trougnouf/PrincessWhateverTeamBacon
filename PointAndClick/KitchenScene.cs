@@ -26,25 +26,33 @@ namespace PointAndClick
         private ArrowButton arrowRight;
         private ArrowButton arrowLeft;
         private Item pan;
-        private Item panWithBacon;
+        private Item jackhammer;
         private StoveTop stoveTop;
-        private Item panOnStove;
         private Item onLight;
+        public Item rawBacon;
+        public Item perfectBacon;
+        public Item burnedBacon;
 
+
+        //This Item will be changed once grocery bacon gets added
+        //private Item kitchenBacon;
 
         bool introduced;
-        public bool stoveOn;
-        public bool panCooking;
-        public bool baconInPan;
-        public bool panIdle;
+        bool timerRunning;
+
+        public bool baconReady;
+        public bool addRawBacon;
+        public bool addPerfectBacon;
+        public bool addBurnedBacon;
+
 
         public KitchenScene(MainGame game)
             :base(game)
         {
-            stoveOn = false;
-            panCooking = false;
-            baconInPan = false;
-            panIdle = true;
+            baconReady = false;
+            addBurnedBacon = false;
+            addRawBacon = false;
+            addPerfectBacon = false;
         }
 
         public override void LoadContent()
@@ -57,12 +65,15 @@ namespace PointAndClick
             arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame);
 
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
-            pan = new Item(new Vector2(270, 340), @"Objects\kitchen-pan2", mainGame, @"Icons\inv-pan2", true);
+            pan = new Item(new Vector2(270, 340), @"Objects\kitchen-pan", mainGame, @"Icons\inv-pan", true);
             onLight = new Item(new Vector2(540, 360), @"Objects\kitchen-onLight", mainGame, "", false);
-            stoveTop = new StoveTop(mainGame, heroIcon, this);
-           // stoveTop = new Item(new Vector2(), @"Objects\kitchen-stoveTop", mainGame, "", false);
-            panOnStove = new Item(new Vector2(605, 350), @"Objects\kitchen-pan2", mainGame, @"Icons\inv-pan2", true);
-          //  panWithBacon = new Item(new Vector2(670, 400), "@Objects\kitchen-panWithBacon", mainGame, "inv-panWithBacon", true);
+            stoveTop = new StoveTop(mainGame,  this);
+
+            rawBacon = new Item(new Vector2(350, 410), @"Objects\kitchen-rawBaconPlate", mainGame, @"Icons\inv-baconRawIcon", true);
+            perfectBacon = new Item(new Vector2(350, 410), @"Objects\kitchen-perfectBaconPlate", mainGame, @"Icons\inv-baconPerfectIcon", true);
+            burnedBacon = new Item(new Vector2(350, 410), @"Objects\kitchen-burnedBaconPlate", mainGame, @"Icons\inv-baconBurnedIcon", true);
+            //kitchenBacon = new Item(new Vector2(1025, 320), @"Objects\kitchen-bacon", mainGame, @"Icons\inv-baconPackIcon", true);
+            jackhammer = new Item(new Vector2(885, 580), @"Objects\kitchen-jackHammer", mainGame, @"Icons\inv-jackHammerIcon", true);
 
 
 
@@ -70,55 +81,84 @@ namespace PointAndClick
             segoe = mainGame.Content.Load<SpriteFont>("Segoe");
             text = new SceneText(new Vector2(700, 750), "This is the kitchen!!!", segoe, mainGame);
 
-
             drawingList.Add(background);
             AddObject(arrowUp);
             AddObject(arrowDown);
             AddObject(arrowLeft);
             AddObject(arrowRight);
+            AddObject(onLight);
+            //AddObject(kitchenBacon);
+            AddObject(jackhammer);
+            AddObject(pan);
+            AddObject(stoveTop);
+            onLight.visible = false;
+
             
         }
 
-        public override void Update(GameTime gametime)
+        
+        
+         public override void Update(GameTime gametime)
         {
-
+            stoveTop.UpdateGameTime(gametime);
             base.Update(gametime);
+
+            if (baconReady == false)
+            {
+                if (addRawBacon == true)
+                {
+                    AddObject(rawBacon);
+                    baconReady = true;
+                    addRawBacon = false;
+                    resetPan();
+                }
+
+                //Perfect
+                else if (addPerfectBacon == true)
+                {
+                    AddObject(perfectBacon);
+                    baconReady = true;
+                    addPerfectBacon = false;
+                    resetPan();
+                }
+
+                //Burned
+                else if (addBurnedBacon == true)
+                {
+                    AddObject(burnedBacon);
+                    baconReady = true;
+                    addBurnedBacon = false;
+                    resetPan();
+                }
+            }
+
 
             if (!introduced)
             {
                 introduced = true;
             }
 
-            if (panIdle == true)
-            {
-                
-                panIdle = false;
-                if(panCooking == true)
-                {
-                    redraw();
-                    AddObject(pan);
-                }
-                    
-                else
-                    AddObject(pan);
-            }
-
             
-
-
-
         }
-
-        public void redraw()
-        {
-            drawingList.Add(background);
-            AddObject(arrowUp);
-            AddObject(arrowDown);
-            AddObject(arrowLeft);
-            AddObject(arrowRight);
-        }
-
         
+        
+        public void beginCooking()
+         {
+
+         }
+
+
+
+
+
+        public void resetPan()
+        {
+            AddObject(pan);
+            pan.UpdatePosition(new Vector2(270, 340));
+        }
+
+
+
     }
 
     

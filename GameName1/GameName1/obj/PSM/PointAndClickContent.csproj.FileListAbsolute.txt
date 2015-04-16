@@ -524,3 +524,4 @@ C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Home.xnb
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\menu-bank.xnb
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Bank.xnb
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Market.xnb
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\PointAndClickContent.csprojResolveAssemblyReference.cache

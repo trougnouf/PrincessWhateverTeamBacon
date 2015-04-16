@@ -23,6 +23,7 @@ namespace PointAndClick
         private Conversation shortConvo;
         private Conversation fullConvo2;
         private Conversation shortConvo2;
+        private Conversation soggyBaconConvo, goodBaconConvo, burnedBaconConvo;
 
         public Princess(MainGame currentGame, Texture2D hIcon)
             : base(new Vector2(1265, 175), @"Objects\bedroom-princessWhateverHealthy", currentGame, @"Icons\bedroomPrincessWhateverIcon", hIcon)
@@ -40,6 +41,7 @@ namespace PointAndClick
             shortConvo = new Conversation();
             fullConvo2 = new Conversation();
             shortConvo2 = new Conversation();
+
 
            shortConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
                                                                             heroIcon,
@@ -74,6 +76,24 @@ namespace PointAndClick
                                                                              "You mind hitting that fish with something? He's annoying as shit.",
                                                                              "Sure, toots."
                                                                              ));
+
+            soggyBaconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+                                                                             heroIcon,
+                                                                             "This is not crispy! I am leaving you!",
+                                                                             "=(."
+                                                                             ));
+
+            goodBaconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+                                                                            heroIcon,
+                                                                            "=)",
+                                                                            "Yatta!"
+                                                                            ));
+
+            burnedBaconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+                                                                            heroIcon,
+                                                                            "This burned bacon gave me cancer. Goodbye!",
+                                                                            "Kuso! (Crap!)"
+                                                                            ));
             
         }
 
