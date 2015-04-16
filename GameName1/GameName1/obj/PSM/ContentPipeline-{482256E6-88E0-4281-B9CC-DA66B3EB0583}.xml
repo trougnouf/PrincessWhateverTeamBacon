@@ -8,7 +8,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Segoe.xnb</Output>
-      <Time>2015-04-15T21:18:18.3060662-04:00</Time>
+      <Time>2015-04-15T21:51:52.1679662-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\TitleScreenBackground.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\TitleScreenBackground.xnb</Output>
-      <Time>2015-04-15T21:18:17.8874369-04:00</Time>
+      <Time>2015-04-15T21:51:47.6792255-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\StartMenuBackGround.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\StartMenuBackGround.xnb</Output>
-      <Time>2015-04-15T21:18:17.8617819-04:00</Time>
+      <Time>2015-04-15T21:51:47.5681459-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\bacon.bmp</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\bacon.xnb</Output>
-      <Time>2015-04-15T21:18:18.4213601-04:00</Time>
+      <Time>2015-04-15T21:51:52.3931258-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\NewGame.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\NewGame.xnb</Output>
-      <Time>2015-04-15T21:18:18.4085047-04:00</Time>
+      <Time>2015-04-15T21:51:52.3030617-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\Continue.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\Continue.xnb</Output>
-      <Time>2015-04-15T21:18:18.3080675-04:00</Time>
+      <Time>2015-04-15T21:51:52.169967-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\Exit.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\Exit.xnb</Output>
-      <Time>2015-04-15T21:18:18.3090689-04:00</Time>
+      <Time>2015-04-15T21:51:52.1709684-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\Cursor.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\Cursor.xnb</Output>
-      <Time>2015-04-15T21:18:18.0002351-04:00</Time>
+      <Time>2015-04-15T21:51:49.3908845-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\bag.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bag.xnb</Output>
-      <Time>2015-04-15T21:18:18.0494279-04:00</Time>
+      <Time>2015-04-15T21:51:49.4709421-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\bedroom-magiKoiPottedIcon.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magiKoiPottedIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0514319-04:00</Time>
+      <Time>2015-04-15T21:51:49.5059728-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\bedroom-magiKoyHealthyIcon.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magiKoyHealthyIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0534332-04:00</Time>
+      <Time>2015-04-15T21:51:49.506969-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\heroIcon.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\heroIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0634399-04:00</Time>
+      <Time>2015-04-15T21:51:49.5159741-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-jackHammerIcon.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-jackHammerIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0704448-04:00</Time>
+      <Time>2015-04-15T21:51:49.5429927-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-jumperCables.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-jumperCables.xnb</Output>
-      <Time>2015-04-15T21:18:18.0734488-04:00</Time>
+      <Time>2015-04-15T21:51:49.5620075-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-mailIcon.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-mailIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0744493-04:00</Time>
+      <Time>2015-04-15T21:51:49.5630089-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-pan.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-pan.xnb</Output>
-      <Time>2015-04-15T21:18:18.0765086-04:00</Time>
+      <Time>2015-04-15T21:51:49.5660097-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-perfectBaconIcon.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-perfectBaconIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0815117-04:00</Time>
+      <Time>2015-04-15T21:51:49.5710126-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-pottedPlantIcon.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-pottedPlantIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0825126-04:00</Time>
+      <Time>2015-04-15T21:51:49.5720159-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-princessWhateverHandIcon.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-princessWhateverHandIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0835126-04:00</Time>
+      <Time>2015-04-15T21:51:49.5740154-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-tongs.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-tongs.xnb</Output>
-      <Time>2015-04-15T21:18:18.08553-04:00</Time>
+      <Time>2015-04-15T21:51:49.5760175-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\parking-cockMobileIcon.png</Source>
@@ -188,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\parking-cockMobileIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0895171-04:00</Time>
+      <Time>2015-04-15T21:51:49.5800197-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\bedroom.jpg</Source>
@@ -197,7 +197,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\bedroom.xnb</Output>
-      <Time>2015-04-15T21:18:17.9097484-04:00</Time>
+      <Time>2015-04-15T21:51:47.9584261-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\black.png</Source>
@@ -206,7 +206,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\black.xnb</Output>
-      <Time>2015-04-15T21:18:17.9107484-04:00</Time>
+      <Time>2015-04-15T21:51:47.9594249-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\groceryStoreBack.jpg</Source>
@@ -215,7 +215,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\groceryStoreBack.xnb</Output>
-      <Time>2015-04-15T21:18:17.9481955-04:00</Time>
+      <Time>2015-04-15T21:51:48.5508053-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\kitchen.jpg</Source>
@@ -224,7 +224,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\kitchen.xnb</Output>
-      <Time>2015-04-15T21:18:17.9632102-04:00</Time>
+      <Time>2015-04-15T21:51:48.5958361-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\parking.jpg</Source>
@@ -233,7 +233,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\parking.xnb</Output>
-      <Time>2015-04-15T21:18:17.990228-04:00</Time>
+      <Time>2015-04-15T21:51:49.3648653-04:00</Time>
     </Item>
     <Item>
       <Source>Examine.png</Source>
@@ -242,7 +242,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Examine.xnb</Output>
-      <Time>2015-04-15T21:18:17.9942302-04:00</Time>
+      <Time>2015-04-15T21:51:49.3688752-04:00</Time>
     </Item>
     <Item>
       <Source>Take.png</Source>
@@ -251,7 +251,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Take.xnb</Output>
-      <Time>2015-04-15T21:18:18.4254708-04:00</Time>
+      <Time>2015-04-15T21:51:52.3981294-04:00</Time>
     </Item>
     <Item>
       <Source>Use.png</Source>
@@ -260,7 +260,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Use.xnb</Output>
-      <Time>2015-04-15T21:18:18.4775328-04:00</Time>
+      <Time>2015-04-15T21:51:52.4701806-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\bedroomPrincessWhateverIcon.png</Source>
@@ -269,7 +269,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bedroomPrincessWhateverIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0554341-04:00</Time>
+      <Time>2015-04-15T21:51:49.5089685-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\Backbag.png</Source>
@@ -278,7 +278,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\Backbag.xnb</Output>
-      <Time>2015-04-15T21:18:17.9982338-04:00</Time>
+      <Time>2015-04-15T21:51:49.3898844-04:00</Time>
     </Item>
     <Item>
       <Source>Talk.png</Source>
@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Talk.xnb</Output>
-      <Time>2015-04-15T21:18:18.4264967-04:00</Time>
+      <Time>2015-04-15T21:51:52.4001314-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\groceryStore-clerkIcon.png</Source>
@@ -296,7 +296,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\groceryStore-clerkIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0604377-04:00</Time>
+      <Time>2015-04-15T21:51:49.5129733-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\groceryStore.jpg</Source>
@@ -305,7 +305,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\groceryStore.xnb</Output>
-      <Time>2015-04-15T21:18:17.9307626-04:00</Time>
+      <Time>2015-04-15T21:51:48.2536343-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\arrowDown.png</Source>
@@ -314,7 +314,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\arrowDown.xnb</Output>
-      <Time>2015-04-15T21:18:18.2370471-04:00</Time>
+      <Time>2015-04-15T21:51:50.6785866-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\arrowLeft.png</Source>
@@ -323,7 +323,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\arrowLeft.xnb</Output>
-      <Time>2015-04-15T21:18:18.2380493-04:00</Time>
+      <Time>2015-04-15T21:51:50.6795854-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\arrowRight.png</Source>
@@ -332,7 +332,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\arrowRight.xnb</Output>
-      <Time>2015-04-15T21:18:18.2406017-04:00</Time>
+      <Time>2015-04-15T21:51:50.7896644-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\arrowUp.png</Source>
@@ -341,7 +341,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\arrowUp.xnb</Output>
-      <Time>2015-04-15T21:18:18.2411796-04:00</Time>
+      <Time>2015-04-15T21:51:50.7906632-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-magikoiDead.png</Source>
@@ -350,7 +350,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiDead.xnb</Output>
-      <Time>2015-04-15T21:18:18.2486633-04:00</Time>
+      <Time>2015-04-15T21:51:50.8126782-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-magikoiHealthy.png</Source>
@@ -359,7 +359,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiHealthy.xnb</Output>
-      <Time>2015-04-15T21:18:18.2496682-04:00</Time>
+      <Time>2015-04-15T21:51:51.0038155-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-magikoiPotted.png</Source>
@@ -368,7 +368,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-magikoiPotted.xnb</Output>
-      <Time>2015-04-15T21:18:18.25167-04:00</Time>
+      <Time>2015-04-15T21:51:51.1619293-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-pottedPlant.png</Source>
@@ -377,7 +377,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-pottedPlant.xnb</Output>
-      <Time>2015-04-15T21:18:18.25267-04:00</Time>
+      <Time>2015-04-15T21:51:51.162928-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-princessWhateverArmless.png</Source>
@@ -386,7 +386,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverArmless.xnb</Output>
-      <Time>2015-04-15T21:18:18.2566722-04:00</Time>
+      <Time>2015-04-15T21:51:51.2249728-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-princessWhateverHand.png</Source>
@@ -395,7 +395,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverHand.xnb</Output>
-      <Time>2015-04-15T21:18:18.2581073-04:00</Time>
+      <Time>2015-04-15T21:51:51.2259748-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-princessWhateverHealthy.png</Source>
@@ -404,7 +404,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverHealthy.xnb</Output>
-      <Time>2015-04-15T21:18:18.2607958-04:00</Time>
+      <Time>2015-04-15T21:51:51.2309765-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bedroom-socket.png</Source>
@@ -413,7 +413,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-socket.xnb</Output>
-      <Time>2015-04-15T21:18:18.2607958-04:00</Time>
+      <Time>2015-04-15T21:51:51.2319791-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\groceryStore-creditCardTerminalBackground.png</Source>
@@ -422,7 +422,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\groceryStore-creditCardTerminalBackground.xnb</Output>
-      <Time>2015-04-15T21:18:18.2618012-04:00</Time>
+      <Time>2015-04-15T21:51:51.2599965-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\groceryStoreBack-baconPackBackground.png</Source>
@@ -431,7 +431,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\groceryStoreBack-baconPackBackground.xnb</Output>
-      <Time>2015-04-15T21:18:18.2708087-04:00</Time>
+      <Time>2015-04-15T21:51:51.2730064-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\heroLaying.png</Source>
@@ -440,7 +440,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\heroLaying.xnb</Output>
-      <Time>2015-04-15T21:18:18.2718074-04:00</Time>
+      <Time>2015-04-15T21:51:51.2750078-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\heroLeft.png</Source>
@@ -449,7 +449,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\heroLeft.xnb</Output>
-      <Time>2015-04-15T21:18:18.2748083-04:00</Time>
+      <Time>2015-04-15T21:51:51.2950214-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\heroRight.png</Source>
@@ -458,7 +458,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\heroRight.xnb</Output>
-      <Time>2015-04-15T21:18:18.2775022-04:00</Time>
+      <Time>2015-04-15T21:51:51.3230452-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\heroStanding.png</Source>
@@ -467,7 +467,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\heroStanding.xnb</Output>
-      <Time>2015-04-15T21:18:18.2785062-04:00</Time>
+      <Time>2015-04-15T21:51:51.3250434-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-bacon.png</Source>
@@ -476,7 +476,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-bacon.xnb</Output>
-      <Time>2015-04-15T21:18:18.2795071-04:00</Time>
+      <Time>2015-04-15T21:51:51.3260441-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-jackHammer.png</Source>
@@ -485,7 +485,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-jackHammer.xnb</Output>
-      <Time>2015-04-15T21:18:18.2805075-04:00</Time>
+      <Time>2015-04-15T21:51:51.3280455-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-mail.png</Source>
@@ -494,7 +494,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-mail.xnb</Output>
-      <Time>2015-04-15T21:18:18.2820475-04:00</Time>
+      <Time>2015-04-15T21:51:51.3290462-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-pan.png</Source>
@@ -503,7 +503,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-pan.xnb</Output>
-      <Time>2015-04-15T21:18:18.2840533-04:00</Time>
+      <Time>2015-04-15T21:51:51.3950932-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\parking-cockMobile.png</Source>
@@ -512,7 +512,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\parking-cockMobile.xnb</Output>
-      <Time>2015-04-15T21:18:18.2940586-04:00</Time>
+      <Time>2015-04-15T21:51:52.1520126-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\parking-jumperCables.png</Source>
@@ -521,7 +521,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\parking-jumperCables.xnb</Output>
-      <Time>2015-04-15T21:18:18.2950591-04:00</Time>
+      <Time>2015-04-15T21:51:52.1559577-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bank-creditCard.png</Source>
@@ -530,7 +530,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bank-creditCard.xnb</Output>
-      <Time>2015-04-15T21:18:18.2421827-04:00</Time>
+      <Time>2015-04-15T21:51:50.7926646-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bank-hero.png</Source>
@@ -539,7 +539,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bank-hero.xnb</Output>
-      <Time>2015-04-15T21:18:18.2451863-04:00</Time>
+      <Time>2015-04-15T21:51:50.7956661-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bank-teller.png</Source>
@@ -548,7 +548,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bank-teller.xnb</Output>
-      <Time>2015-04-15T21:18:18.2461849-04:00</Time>
+      <Time>2015-04-15T21:51:50.7976733-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-onLight.png</Source>
@@ -557,7 +557,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-onLight.xnb</Output>
-      <Time>2015-04-15T21:18:18.2820475-04:00</Time>
+      <Time>2015-04-15T21:51:51.3320484-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-pan2.png</Source>
@@ -566,7 +566,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-pan2.xnb</Output>
-      <Time>2015-04-15T21:18:18.2850524-04:00</Time>
+      <Time>2015-04-15T21:51:51.3970959-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-panWithBacon.png</Source>
@@ -575,7 +575,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-panWithBacon.xnb</Output>
-      <Time>2015-04-15T21:18:18.2860528-04:00</Time>
+      <Time>2015-04-15T21:51:51.3980947-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\kitchen-stoveTop.png</Source>
@@ -584,7 +584,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-stoveTop.xnb</Output>
-      <Time>2015-04-15T21:18:18.287055-04:00</Time>
+      <Time>2015-04-15T21:51:51.3990961-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\bank-tellerIcon.png</Source>
@@ -593,7 +593,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bank-tellerIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0504332-04:00</Time>
+      <Time>2015-04-15T21:51:49.4739436-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\bedroom-princessWhateverIcon.png</Source>
@@ -602,7 +602,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-princessWhateverIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.054435-04:00</Time>
+      <Time>2015-04-15T21:51:49.5079678-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\body.png</Source>
@@ -611,7 +611,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\body.xnb</Output>
-      <Time>2015-04-15T21:18:18.0574363-04:00</Time>
+      <Time>2015-04-15T21:51:49.5109718-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\eyes.png</Source>
@@ -620,7 +620,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\eyes.xnb</Output>
-      <Time>2015-04-15T21:18:18.0594395-04:00</Time>
+      <Time>2015-04-15T21:51:49.5119706-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\hand.png</Source>
@@ -629,7 +629,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\hand.xnb</Output>
-      <Time>2015-04-15T21:18:18.0624399-04:00</Time>
+      <Time>2015-04-15T21:51:49.5139721-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-baconBurnedIcon.png</Source>
@@ -638,7 +638,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-baconBurnedIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0654408-04:00</Time>
+      <Time>2015-04-15T21:51:49.534987-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-baconPackIcon.png</Source>
@@ -647,7 +647,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-baconPackIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0664412-04:00</Time>
+      <Time>2015-04-15T21:51:49.5369891-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-baconPerfectIcon.png</Source>
@@ -656,7 +656,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-baconPerfectIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0674421-04:00</Time>
+      <Time>2015-04-15T21:51:49.5379911-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-baconRawIcon.png</Source>
@@ -665,7 +665,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-baconRawIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0684452-04:00</Time>
+      <Time>2015-04-15T21:51:49.5399906-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-creditCardIcon.png</Source>
@@ -674,7 +674,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-creditCardIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0694435-04:00</Time>
+      <Time>2015-04-15T21:51:49.5419926-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-mailOpenedIcon.png</Source>
@@ -683,7 +683,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-mailOpenedIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.075505-04:00</Time>
+      <Time>2015-04-15T21:51:49.565009-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-pan2.png</Source>
@@ -692,7 +692,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-pan2.xnb</Output>
-      <Time>2015-04-15T21:18:18.0775108-04:00</Time>
+      <Time>2015-04-15T21:51:49.5670117-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-panIcon.png</Source>
@@ -701,7 +701,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-panIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0785117-04:00</Time>
+      <Time>2015-04-15T21:51:49.5680124-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-panWithBacon.png</Source>
@@ -710,7 +710,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-panWithBacon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0805108-04:00</Time>
+      <Time>2015-04-15T21:51:49.5690119-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\inv-tongsIcon.png</Source>
@@ -719,7 +719,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\inv-tongsIcon.xnb</Output>
-      <Time>2015-04-15T21:18:18.0875162-04:00</Time>
+      <Time>2015-04-15T21:51:49.5770169-04:00</Time>
     </Item>
     <Item>
       <Source>Icons\mouth.png</Source>
@@ -728,7 +728,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\mouth.xnb</Output>
-      <Time>2015-04-15T21:18:18.0885162-04:00</Time>
+      <Time>2015-04-15T21:51:49.5780183-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\bank.jpg</Source>
@@ -737,7 +737,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\bank.xnb</Output>
-      <Time>2015-04-15T21:18:17.8947337-04:00</Time>
+      <Time>2015-04-15T21:51:47.7672876-04:00</Time>
     </Item>
     <Item>
       <Source>Home.png</Source>
@@ -746,25 +746,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Home.xnb</Output>
-      <Time>2015-04-15T21:18:17.9972334-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Market.png</Source>
-      <Name>Market</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Market.xnb</Output>
-      <Time>2015-04-15T21:18:17.9972334-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Bank.png</Source>
-      <Name>Bank</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Bank.xnb</Output>
-      <Time>2015-04-15T21:18:17.9972334-04:00</Time>
+      <Time>2015-04-15T21:51:49.3878836-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\MusisBoxTune.wav</Source>
@@ -774,7 +756,7 @@
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.xnb</Output>
       <Extra>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.wma</Extra>
-      <Time>2015-04-15T21:18:18.4061326-04:00</Time>
+      <Time>2015-04-15T21:51:52.3010603-04:00</Time>
     </Item>
     <Item>
       <Source>Objects\bank-tellerBackground.png</Source>
@@ -804,31 +786,31 @@
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2011-09-01T20:22:30-04:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2011-09-01T20:22:30-04:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2011-09-01T20:22:30-04:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2011-09-01T20:22:30-04:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2011-09-01T20:22:30-04:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2011-09-01T20:22:30-04:00</Value>
+        <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-03-06T13:26:01.8416357-05:00</Value>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-03-06T15:26:28.7390489-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

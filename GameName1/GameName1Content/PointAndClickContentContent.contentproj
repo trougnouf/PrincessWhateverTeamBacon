@@ -513,15 +513,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Market.png">
-      <Name>Market</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Bank.png">
-      <Name>Bank</Name>
+    <Compile Include="menu-bank.png">
+      <Name>menu-bank</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
