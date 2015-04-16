@@ -16,7 +16,7 @@ namespace PointAndClick
 
 
         public bool inScene { get; private set; }
-        public String description { get; private set; }
+        public String description { get; protected set; }
         protected Texture2D inBagTexture;
         public bool takeable { get; private set; }
         public Texture2D examineTexture { get; protected set; }
@@ -78,7 +78,7 @@ namespace PointAndClick
                     description = "Woah that is a large chicken!";
                     break;
 
-                case @"Objects\bank-teller":
+                case @"Objects\bank-tellerBackground":
                     description = "A bank teller.";
                     break;
                     

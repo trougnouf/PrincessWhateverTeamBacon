@@ -776,6 +776,15 @@
       <Extra>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.wma</Extra>
       <Time>2015-04-15T21:18:18.4061326-04:00</Time>
     </Item>
+    <Item>
+      <Source>Objects\bank-tellerBackground.png</Source>
+      <Name>Objects\bank-tellerBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bank-tellerBackground.xnb</Output>
+      <Time>2015-04-15T23:57:04.6577206-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{482256E6-88E0-4281-B9CC-DA66B3EB0583}</ContentProjectGUID>

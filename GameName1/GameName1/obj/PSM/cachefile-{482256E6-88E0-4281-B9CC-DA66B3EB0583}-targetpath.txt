@@ -85,3 +85,4 @@ Content\Market.xnb
 Content\Bank.xnb
 Content\StartMenu\MusisBoxTune.xnb
 Content\StartMenu\MusisBoxTune.wma
+Content\Objects\bank-tellerBackground.xnb

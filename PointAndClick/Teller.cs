@@ -25,7 +25,7 @@ namespace PointAndClick
 
 
         public Teller(MainGame currentGame, Texture2D hIcon, Vector2 initPosition)
-            : base(initPosition, @"Objects\bank-teller", currentGame, @"Icons\bank-tellerIcon", hIcon)
+            : base(initPosition, @"Objects\bank-tellerBackground", currentGame, @"Icons\bank-tellerIcon", hIcon)
         {
             examineTexture = inBagTexture;
             dialogIcon = inBagTexture;
@@ -75,7 +75,7 @@ namespace PointAndClick
                     break;
 
                 case TellerState.SeenLetter:
-                    //
+                    description = "A gullible bank teller.";
                     break;
 
                 default:

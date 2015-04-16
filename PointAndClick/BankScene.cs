@@ -40,7 +40,7 @@ namespace PointAndClick
             //tellerIcon = mainGame.Content.Load<Texture2D>(@"Icons\bank-tellerIcon");
 
             creditCard = new Item(new Vector2(1052, 446), @"Objects\bank-creditCard", mainGame, "", false);
-            teller = new Teller(mainGame, heroIcon, new Vector2(958, 194));
+            teller = new Teller(mainGame, heroIcon, new Vector2(1000, 330));
             hero = new SceneImage(new Vector2(195, 310), @"Objects\bank-hero", mainGame );
         
             drawingList.Add(background);
