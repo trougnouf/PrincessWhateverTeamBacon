@@ -41,6 +41,9 @@ namespace PointAndClick
             shortConvo = new Conversation();
             fullConvo2 = new Conversation();
             shortConvo2 = new Conversation();
+            soggyBaconConvo = new Conversation();
+            goodBaconConvo = new Conversation();
+            burnedBaconConvo = new Conversation();
 
 
            shortConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,

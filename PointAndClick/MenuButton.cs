@@ -93,20 +93,20 @@ namespace PointAndClick
 
                     break;
 
-                case "Home":
+                case @"Icons\menu-home2":
 
                     maingame.parkingLotScene.UpdateDestination(Destination.Home);
                     
 
                     break;
 
-                case "Market":
+                case @"Icons\menu-grocery2":
 
                     maingame.parkingLotScene.UpdateDestination(Destination.Market);
 
                     break;
 
-                case "Bank":
+                case @"Icons\menu-bank2":
 
                     maingame.parkingLotScene.UpdateDestination(Destination.Bank);
 

@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework.GamerServices;
 namespace PointAndClick
 {
 
-    public enum arrowType : int { up, down, left, right };
+    public enum arrowType : int {left, right };
     //Class for buttons for navagating scenes
     class ArrowButton : ClickableObject
     {
@@ -29,25 +29,14 @@ namespace PointAndClick
 
             switch (path)
             {
-                case "Objects/arrowUp":
-
-                    type = arrowType.up;
-
-                    break;
-
-                case "Objects/arrowDown":
-
-                    type = arrowType.down;
-
-                    break;
-
-                case "Objects/arrowRight":
+                
+                case @"Objects\arrowRight":
 
                     type = arrowType.right;
 
                     break;
 
-                case "Objects/arrowLeft":
+                case @"Objects\arrowLeft":
 
                     type = arrowType.left;
 
@@ -80,25 +69,18 @@ namespace PointAndClick
         //based on unique path
         protected override void OnClick(GameStates state)
         {
-
-            if (type == arrowType.up)
-            {
-
-            }
-
-            else if (type == arrowType.down)
-            {
-
-            }
-
-            else if (type == arrowType.right)
+            Console.WriteLine("Current state is {0}, Arrow type is {1}", maingame.state, this.type);
+        
+            if (type == arrowType.right)
             {
                 if (game.state == GameStates.Bedroom)
                     maingame.UpdateState(GameStates.MarketBack);
 
                 else if (game.state == GameStates.Kitchen)
-                    maingame.UpdateState(GameStates.Bedroom);
-
+                {
+                        Console.WriteLine("If right arrow, if kitchen in onclick arrows");
+                        maingame.UpdateState(GameStates.Bedroom);
+                }
                 else if (game.state == GameStates.Market)
                     maingame.UpdateState(GameStates.MarketBack);
             }
@@ -106,44 +88,52 @@ namespace PointAndClick
             else if (type == arrowType.left)
             {
                 if (game.state == GameStates.Bedroom)
-                    maingame.UpdateState(GameStates.Bank);
-                
-                else if(game.state == GameStates.ParkingLot)
+                    maingame.UpdateState(GameStates.Kitchen);
+
+                else if (game.state == GameStates.ParkingLot)
+                {
+                    if (maingame.parkingLotScene.dest == Destination.Home)
                     {
-                        if(maingame.parkingLotScene.dest == Destination.Home)
-                        {
-                            maingame.UpdateState(GameStates.Kitchen);
-                        }
-
-                        if (maingame.parkingLotScene.dest == Destination.Market)
-                        {
-                             maingame.UpdateState(GameStates.Market);
-                        }
-
-                        if (maingame.parkingLotScene.dest == Destination.Bank)
-                        {
-                            maingame.UpdateState(GameStates.Bank);
-                        }
+                        maingame.UpdateState(GameStates.Kitchen);
                     }
-                else if(game.state == GameStates.Market)
-                    {
-                        if (maingame.marketScene.pickedUpBAcon && !maingame.marketScene.Payedfor)
-                            maingame.marketScene.StopConvo();
-                        else
-                        {
 
-                            maingame.UpdateState(GameStates.ParkingLot);
-                        }
-
-                    }
-                else if(game.state == GameStates.MarketBack)
+                    if (maingame.parkingLotScene.dest == Destination.Market)
                     {
                         maingame.UpdateState(GameStates.Market);
                     }
-                else if(game.state == GameStates.Bank)
+
+                    if (maingame.parkingLotScene.dest == Destination.Bank)
                     {
+                        maingame.UpdateState(GameStates.Bank);
+                    }
+                }
+                else if (game.state == GameStates.Market)
+                {   /*
+                    if (maingame.marketScene.pickedUpBAcon && !maingame.marketScene.Payedfor)
+                    {
+                        Console.WriteLine("Right before stop convo starts");
+                        maingame.marketScene.caught = true;
+                        
+                    }
+                       
+                    else
+                    {
+
                         maingame.UpdateState(GameStates.ParkingLot);
                     }
+                     */
+                    maingame.UpdateState(GameStates.ParkingLot);
+                }
+                else if (game.state == GameStates.MarketBack)
+                {
+                    maingame.UpdateState(GameStates.Market);
+                }
+                else if (game.state == GameStates.Bank)
+                {
+                    maingame.UpdateState(GameStates.ParkingLot);
+                }
+                else if (game.state == GameStates.Kitchen)
+                    maingame.UpdateState(GameStates.ParkingLot);
 
             }
         }

@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Backgrounds\TitleScreenBackground.xnb</Output>
-      <Time>2015-04-15T21:18:17.8874369-04:00</Time>
+      <Time>2015-04-16T18:59:36.9333926-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\StartMenuBackGround.png</Source>
@@ -773,7 +773,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Bank.xnb</Output>
-      <Time>2015-04-15T21:18:17.9972334-04:00</Time>
+      <Time>2015-04-16T18:59:36.9383948-04:00</Time>
     </Item>
     <Item>
       <Source>Market.png</Source>
@@ -782,7 +782,88 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Market.xnb</Output>
-      <Time>2015-04-15T21:18:17.9972334-04:00</Time>
+      <Time>2015-04-16T18:59:36.9434001-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Icons\menu-home2.png</Source>
+      <Name>Icons\menu-home2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\menu-home2.xnb</Output>
+      <Time>2015-04-16T18:59:36.9423997-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Icons\menu-grocery2.png</Source>
+      <Name>Icons\menu-grocery2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\menu-grocery2.xnb</Output>
+      <Time>2015-04-16T18:59:36.9403961-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Icons\menu-bank2.png</Source>
+      <Name>Icons\menu-bank2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\menu-bank2.xnb</Output>
+      <Time>2015-04-16T18:59:36.9393952-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\kitchen-panWithBurnedBacon.png</Source>
+      <Name>Objects\kitchen-panWithBurnedBacon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-panWithBurnedBacon.xnb</Output>
+      <Time>2015-04-16T16:17:06-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\kitchen-panWithPerfectBacon.png</Source>
+      <Name>Objects\kitchen-panWithPerfectBacon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-panWithPerfectBacon.xnb</Output>
+      <Time>2015-04-16T16:17:06-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\kitchen-panWithRawBacon.png</Source>
+      <Name>Objects\kitchen-panWithRawBacon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-panWithRawBacon.xnb</Output>
+      <Time>2015-04-16T16:17:06-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\kitchen-burnedBaconPlate.png</Source>
+      <Name>Objects\kitchen-burnedBaconPlate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-burnedBaconPlate.xnb</Output>
+      <Time>2015-04-16T19:34:23.8313782-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\kitchen-perfectBaconPlate.png</Source>
+      <Name>Objects\kitchen-perfectBaconPlate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-perfectBaconPlate.xnb</Output>
+      <Time>2015-04-16T19:34:23.8313782-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\kitchen-rawBaconPlate.png</Source>
+      <Name>Objects\kitchen-rawBaconPlate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\kitchen-rawBaconPlate.xnb</Output>
+      <Time>2015-04-16T19:34:23.8313782-04:00</Time>
     </Item>
     <Item>
       <Source>StartMenu\MusisBoxTune.wav</Source>
@@ -793,6 +874,177 @@
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.xnb</Output>
       <Extra>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\StartMenu\MusisBoxTune.wma</Extra>
       <Time>2015-04-15T21:18:18.4061326-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\boom.wav</Source>
+      <Name>SFX\boom</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\boom.xnb</Output>
+      <Time>2015-04-16T18:59:36.9474006-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\click.wav</Source>
+      <Name>SFX\click</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\click.xnb</Output>
+      <Time>2015-04-16T18:59:36.9514055-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\cosmic.wav</Source>
+      <Name>SFX\cosmic</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\cosmic.xnb</Output>
+      <Time>2015-04-16T18:59:36.9647588-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\jackhammer.wav</Source>
+      <Name>SFX\jackhammer</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\jackhammer.xnb</Output>
+      <Time>2015-04-16T18:59:36.9756428-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\kitten.wav</Source>
+      <Name>SFX\kitten</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\kitten.xnb</Output>
+      <Time>2015-04-16T18:59:36.9792452-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\koi.wav</Source>
+      <Name>SFX\koi</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\koi.xnb</Output>
+      <Time>2015-04-16T18:59:36.9842483-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\princess1.wav</Source>
+      <Name>SFX\princess1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\princess1.xnb</Output>
+      <Time>2015-04-16T18:59:36.9932545-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\princess2.wav</Source>
+      <Name>SFX\princess2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\princess2.xnb</Output>
+      <Time>2015-04-16T18:59:37.0002616-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\princess3.wav</Source>
+      <Name>SFX\princess3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\princess3.xnb</Output>
+      <Time>2015-04-16T18:59:37.0080541-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\register.wav</Source>
+      <Name>SFX\register</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\register.xnb</Output>
+      <Time>2015-04-16T18:59:37.0116351-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\rooster.wav</Source>
+      <Name>SFX\rooster</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\rooster.xnb</Output>
+      <Time>2015-04-16T18:59:37.0176378-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\sizzle1.wav</Source>
+      <Name>SFX\sizzle1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\sizzle1.xnb</Output>
+      <Time>2015-04-16T18:59:37.0356493-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\sizzle2.wav</Source>
+      <Name>SFX\sizzle2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\sizzle2.xnb</Output>
+      <Time>2015-04-16T18:59:37.063668-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\sizzle3.wav</Source>
+      <Name>SFX\sizzle3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\sizzle3.xnb</Output>
+      <Time>2015-04-16T18:59:37.1197097-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\spark.wav</Source>
+      <Name>SFX\spark</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\spark.xnb</Output>
+      <Time>2015-04-16T18:59:37.124886-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\thud.wav</Source>
+      <Name>SFX\thud</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\thud.xnb</Output>
+      <Time>2015-04-16T18:59:37.1284241-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\whoosh.wav</Source>
+      <Name>SFX\whoosh</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\whoosh.xnb</Output>
+      <Time>2015-04-16T18:59:37.1392898-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\zoop.wav</Source>
+      <Name>SFX\zoop</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\zoop.xnb</Output>
+      <Time>2015-04-16T18:59:37.1422956-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Icons\bedroom-magikoiDeadIcon.png</Source>
+      <Name>Icons\bedroom-magikoiDeadIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magikoiDeadIcon.xnb</Output>
+      <Time>2015-04-16T19:39:44.667932-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -41,7 +41,7 @@ namespace PointAndClick
             //tellerIcon = mainGame.Content.Load<Texture2D>(@"Icons\bank-tellerIcon");
             arrowLeft = new ArrowButton(new Vector2(50, 120), "Objects/arrowLeft", mainGame);
 
-            creditCard = new Item(new Vector2(1052, 446), @"Objects\bank-creditCard", mainGame, "", false);
+            creditCard = new Item(new Vector2(1052, 446), @"Objects\bank-creditCard", mainGame, @"Icons\inv-creditCardIcon", true);
             teller = new Teller(mainGame, heroIcon, new Vector2(1000, 330));
             hero = new SceneImage(new Vector2(195, 310), @"Objects\bank-hero", mainGame );
         

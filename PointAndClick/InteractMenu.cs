@@ -103,6 +103,11 @@ namespace PointAndClick
             
         }
 
+        public void ResetCurrentItem() 
+        {
+            currentItem = null;
+        }
+
         public void ShowDestinations()
         {
 

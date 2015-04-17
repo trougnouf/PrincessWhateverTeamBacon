@@ -74,7 +74,7 @@ namespace PointAndClick
                 }
 
                 //Called when bacon is added to pan
-                else if (maingame.iMenu.currentItem.path == @"Objects\groceryStore-baconPack" && maingame.iMenu.usingItem && stoveState == StoveState.pan && kitchenScene.baconReady == false)
+                else if (maingame.iMenu.currentItem.path == @"Objects\groceryStore-baconPackBackground" && maingame.iMenu.usingItem && stoveState == StoveState.pan && kitchenScene.baconReady == false)
                 {
                     // kitchenScene.baconInPan = true;
                     UpdateStoveState(StoveState.bacon);

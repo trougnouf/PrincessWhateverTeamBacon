@@ -32,6 +32,7 @@ namespace PointAndClick
         public Item rawBacon;
         public Item perfectBacon;
         public Item burnedBacon;
+        private Item letter;
 
 
         //This Item will be changed once grocery bacon gets added
@@ -69,6 +70,8 @@ namespace PointAndClick
             onLight = new Item(new Vector2(540, 360), @"Objects\kitchen-onLight", mainGame, "", false);
             stoveTop = new StoveTop(mainGame,  this);
 
+            letter = new Item(new Vector2(300, 400), @"Objects\kitchen-mail", mainGame, @"Icons\inv-mailIcon", true);
+
             rawBacon = new Item(new Vector2(350, 410), @"Objects\kitchen-rawBaconPlate", mainGame, @"Icons\inv-baconRawIcon", true);
             perfectBacon = new Item(new Vector2(350, 410), @"Objects\kitchen-perfectBaconPlate", mainGame, @"Icons\inv-baconPerfectIcon", true);
             burnedBacon = new Item(new Vector2(350, 410), @"Objects\kitchen-burnedBaconPlate", mainGame, @"Icons\inv-baconBurnedIcon", true);
@@ -87,6 +90,7 @@ namespace PointAndClick
             AddObject(arrowLeft);
             AddObject(arrowRight);
             AddObject(onLight);
+            AddObject(letter);
             //AddObject(kitchenBacon);
             AddObject(jackhammer);
             AddObject(pan);

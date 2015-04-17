@@ -29,6 +29,7 @@ namespace PointAndClick
         private ArrowButton arrowLeft;
         public bool pickedUpBAcon;
         public bool Payedfor;
+        public bool caught;
 
         bool introduced;
 
@@ -38,21 +39,22 @@ namespace PointAndClick
             pickedUpBAcon = false;
             Payedfor = false;
             introduced = false;
+            caught = false;
         }
 
         public override void LoadContent()
         {
 
             background = new BackGround(new Vector2(0, 0), @"Backgrounds\groceryStore", mainGame);
-            arrowRight = new ArrowButton(new Vector2(250, 120), "Objects/arrowRight", mainGame);
-            arrowLeft = new ArrowButton(new Vector2(50, 120), "Objects/arrowLeft", mainGame);
+            arrowRight = new ArrowButton(new Vector2(250, 120), @"Objects\arrowRight", mainGame);
+            arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame);
 
             stopConversation = new Conversation();
             Introduction = new Conversation();
             thanks = new Conversation();
             clerkIcon = mainGame.Content.Load<Texture2D>(@"Icons\groceryStore-clerkIcon");
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
-            cardMachine = new Item(new Vector2(200, 400), @"Objects/groceryStore-creditCardTerminalBackground", mainGame, "", false); 
+            cardMachine = new Item(new Vector2(200, 400), @"Objects\groceryStore-creditCardTerminalBackground", mainGame, "", false); 
 
             drawingList.Add(background);
             //AddObject(hero);
@@ -85,18 +87,19 @@ namespace PointAndClick
             mainGame.gameCursor.ResetTexture();
             mainGame.iMenu.StartConversation(thanks);
         }
-        public void StopConvo()
-        {
-
-            mainGame.iMenu.StartConversation(stopConversation);
-        }
-
+  
         public override void Update(GameTime gametime)
         {
             if(!introduced)
             {
                 mainGame.iMenu.StartConversation(Introduction);
                 introduced = true;
+            }
+
+            if(caught)
+            {
+                caught = false;
+                mainGame.iMenu.StartConversation(stopConversation);
             }
         
             base.Update(gametime);

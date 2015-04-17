@@ -38,7 +38,7 @@ namespace PointAndClick
         public override void LoadContent()
         {
             background = new BackGround(new Vector2(0, 0), "Backgrounds/parking", mainGame);
-            arrowLeft = new ArrowButton(new Vector2(50, 120), "Objects/arrowLeft", mainGame);
+            arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame);
             TravelDialog = new Conversation();
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
             jumperCables = new Item(new Vector2(1530, 635), @"Objects\parking-jumperCables", mainGame, @"Icons\inv-jumperCables", true);
@@ -80,7 +80,7 @@ namespace PointAndClick
 
         public void UpdateDestination(Destination newDest)
         {
-
+            Console.WriteLine("In update Destination");
             dest = newDest;
             mainGame.iMenu.StartConversation(TravelDialog);
 

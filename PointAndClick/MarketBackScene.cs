@@ -34,13 +34,11 @@ namespace PointAndClick
         public override void LoadContent()
         {
             background = new BackGround(new Vector2(0, 0), @"Backgrounds\groceryStoreBack", mainGame);
-            arrowLeft = new ArrowButton(new Vector2(50, 120), "Objects/arrowLeft", mainGame);
+            arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame);
             bacons = new Item(new Vector2(410, 10), @"Objects\groceryStoreBack-baconPackBackground", mainGame, @"Icons\inv-baconPackIcon", true);
-            //new Item(new Vector2(200, 400), @"Objects/groceryStore-creditCardTerminalBackground", mainGame, "", false);
             hero = new SceneImage(new Vector2(100, 550), @"Objects\bank-hero", mainGame);
-            heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
+
             drawingList.Add(background);
-//            drawingList.Add(bacons);
             drawingList.Add(hero);
             AddObject(arrowLeft);
             AddObject(bacons);

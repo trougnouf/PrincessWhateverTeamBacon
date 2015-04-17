@@ -539,8 +539,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Icons\bedroom-magikoiDeadIcon.png">
-      <Name>bedroom-magikoiDeadIcon</Name>
     <Compile Include="SFX\boom.wav">
       <Name>boom</Name>
       <Importer>WavImporter</Importer>
@@ -649,6 +647,47 @@
   <ItemGroup>
     <Compile Include="Icons\menu-bank2.png">
       <Name>menu-bank2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objects\kitchen-panWithBurnedBacon.png">
+      <Name>kitchen-panWithBurnedBacon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\kitchen-panWithPerfectBacon.png">
+      <Name>kitchen-panWithPerfectBacon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\kitchen-panWithRawBacon.png">
+      <Name>kitchen-panWithRawBacon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objects\kitchen-burnedBaconPlate.png">
+      <Name>kitchen-burnedBaconPlate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\kitchen-perfectBaconPlate.png">
+      <Name>kitchen-perfectBaconPlate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Objects\kitchen-rawBaconPlate.png">
+      <Name>kitchen-rawBaconPlate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Icons\bedroom-magikoiDeadIcon.png">
+      <Name>bedroom-magikoiDeadIcon</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
