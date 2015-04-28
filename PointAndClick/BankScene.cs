@@ -39,7 +39,7 @@ namespace PointAndClick
             background = new BackGround(new Vector2(0, 0), @"Backgrounds\bank", mainGame);
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
             //tellerIcon = mainGame.Content.Load<Texture2D>(@"Icons\bank-tellerIcon");
-            arrowLeft = new ArrowButton(new Vector2(50, 120), "Objects/arrowLeft", mainGame);
+            arrowLeft = new ArrowButton(new Vector2(50, 120), "Objects/arrowLeft", mainGame, GameStates.ParkingLot );
 
             creditCard = new Item(new Vector2(1052, 446), @"Objects\bank-creditCard", mainGame, @"Icons\inv-creditCardIcon", true);
             teller = new Teller(mainGame, heroIcon, new Vector2(1000, 330));

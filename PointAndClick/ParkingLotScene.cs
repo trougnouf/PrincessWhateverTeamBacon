@@ -11,6 +11,11 @@ using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Audio;
 #endregion
 
+namespace DestEnum
+{
+
+}
+
 namespace PointAndClick
 {
     public enum Destination : short { Home, Market, Bank };
@@ -25,20 +30,23 @@ namespace PointAndClick
         private SceneImage hero;
         private Chicken chic;
         private Item jumperCables;
-        public bool chickenFed;
+       // public bool chickenFed { get; set; }
         private ArrowButton arrowLeft;
+        private GameStates arrowLeftScene;
 
         public ParkingLotScene(MainGame game)
             :base(game)
         {
-            chickenFed = false;
+            //chickenFed = false;
             dest = Destination.Home;
+            arrowLeftScene = GameStates.Kitchen;
+
         }
 
         public override void LoadContent()
         {
-            background = new BackGround(new Vector2(0, 0), "Backgrounds/parking", mainGame);
-            arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame);
+            background = new BackGround(new Vector2(0, 0), @"Backgrounds\parking", mainGame);
+            arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame, arrowLeftScene);
             TravelDialog = new Conversation();
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
             jumperCables = new Item(new Vector2(1530, 635), @"Objects\parking-jumperCables", mainGame, @"Icons\inv-jumperCables", true);
@@ -68,10 +76,10 @@ namespace PointAndClick
         public override void Update(GameTime gametime)
         {   
 
-            if(chickenFed)
+            if(chic.fed)
             {
                 mainGame.iMenu.DiscardItem();
-                chickenFed = false;
+                chic.fed = false;
             }
 
             base.Update(gametime);
@@ -81,7 +89,17 @@ namespace PointAndClick
         public void UpdateDestination(Destination newDest)
         {
             Console.WriteLine("In update Destination");
+            
             dest = newDest;
+            if (dest == Destination.Home)
+                arrowLeftScene = GameStates.Kitchen;
+            else if (dest == Destination.Market)
+                arrowLeftScene = GameStates.Market;
+            else if (dest == Destination.Bank)
+                arrowLeftScene = GameStates.Bank;
+
+            arrowLeft.nextScene = arrowLeftScene;
+
             mainGame.iMenu.StartConversation(TravelDialog);
 
         }

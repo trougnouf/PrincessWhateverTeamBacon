@@ -46,8 +46,8 @@ namespace PointAndClick
         {
 
             background = new BackGround(new Vector2(0, 0), @"Backgrounds\groceryStore", mainGame);
-            arrowRight = new ArrowButton(new Vector2(250, 120), @"Objects\arrowRight", mainGame);
-            arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame);
+            arrowRight = new ArrowButton(new Vector2(250, 120), @"Objects\arrowRight", mainGame, GameStates.MarketBack);
+            arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame, GameStates.ParkingLot);
 
             stopConversation = new Conversation();
             Introduction = new Conversation();

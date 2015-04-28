@@ -62,8 +62,8 @@ namespace PointAndClick
             background = new BackGround(new Vector2(0, 0), @"Backgrounds\kitchen", mainGame);
 //            arrowUp = new ArrowButton(new Vector2(150, 15), @"Objects\arrowUp", mainGame);
 //            arrowDown = new ArrowButton(new Vector2(150, 120), @"Objects\arrowDown", mainGame);
-            arrowRight = new ArrowButton(new Vector2(250, 120), @"Objects\arrowRight", mainGame);
-            arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame);
+            arrowRight = new ArrowButton(new Vector2(250, 120), @"Objects\arrowRight", mainGame, GameStates.Bedroom);
+            arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame, GameStates.ParkingLot);
 
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
             pan = new Item(new Vector2(270, 340), @"Objects\kitchen-pan", mainGame, @"Icons\inv-pan", true);

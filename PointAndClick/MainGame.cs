@@ -48,14 +48,14 @@ namespace PointAndClick
         private int FadeIncrement;
         private double FadeDelay;
 
-        public ParkingLotScene parkingLotScene { get; private set; }
+       /* public ParkingLotScene parkingLotScene { get; private set; }
         public MarketScene marketScene { get; private set; }
         public BedRoomScene bedroomScene { get; private set; }
         public BankScene bankScene { get; private set; }
         public KitchenScene kitchenScene { get; private set; }
         public StartMenuScreen startMenuScreen { get; private set; }
         public MarketBackScene marketBackScene { get; private set; }
-
+        */
         //MouseStates used to update objects
         public MouseState oldMouseState { get; private set; }
         public MouseState currentMouseState { get; private set; }
@@ -63,6 +63,8 @@ namespace PointAndClick
         public Cursor gameCursor { get; private set; }
 
         private SoundEffect transitionSound;
+
+        private Dictionary<GameStates, GameScreen> scenes;
 
         public MainGame()
             : base()
@@ -74,6 +76,7 @@ namespace PointAndClick
             AlphaValue = 255;
             FadeIncrement = -6;
             FadeDelay = .0005;
+            scenes = new Dictionary<GameStates, GameScreen>();
 
         }
 
@@ -174,80 +177,36 @@ namespace PointAndClick
 
         private void UpdateScreens()
         {
-
             previousScreen = currentScreen;
             
             if (iMenu == null && state!=GameStates.StartMenu && state!=GameStates.TitleScreen)
                 iMenu = new InteractMenu(this);
 
-            switch (state)
+            if (scenes.ContainsKey(state)) // check if the scene is available and retrieve it.
+                currentScreen = scenes[state];
+            else // create the scene and save it to the dictionary.
             {
-                case GameStates.StartMenu:
-
-                    if (startMenuScreen == null)
-                        startMenuScreen = new StartMenuScreen(this);
-                    
-                    currentScreen = startMenuScreen;
-
-                    break;
-
-                case GameStates.Bank:
-
-                    if (bankScene == null)
-                        bankScene = new BankScene(this);
-
-                    currentScreen = bankScene;
-
-                    break;
-
-                case GameStates.Bedroom:
-                    Console.WriteLine("called this");
-                    if (bedroomScene == null)
-                        bedroomScene = new BedRoomScene(this);
-                    
-                    currentScreen = bedroomScene;
-
-                    break;
-
-                case GameStates.Kitchen:
-
-                    if (kitchenScene == null)
-                        kitchenScene = new KitchenScene(this);
-
-                    currentScreen = kitchenScene;
-
-                    break;
-
-                case GameStates.ParkingLot:
-
-                    if (parkingLotScene == null)
-                        parkingLotScene = new ParkingLotScene(this);
-
-                    currentScreen = parkingLotScene;
-
-                    break;
-
-                case GameStates.Market:
-
-                    if (marketScene == null)
-                        marketScene = new MarketScene(this);
-
-                    currentScreen = marketScene;
-
-                    break;
-
-                case GameStates.MarketBack:
-
-                    if (marketBackScene == null)
-                        marketBackScene = new MarketBackScene(this);
-
-                    currentScreen = marketBackScene;
-
-                    break;
-
+                switch (state)
+                {
+                    case GameStates.StartMenu:
+                        currentScreen = new StartMenuScreen(this); break;
+                    case GameStates.Bank:
+                        currentScreen = new BankScene(this); break;
+                    case GameStates.Bedroom:
+                        currentScreen = new BedRoomScene(this); break;
+                    case GameStates.Kitchen:
+                        currentScreen = new KitchenScene(this); break;
+                    case GameStates.ParkingLot:
+                        currentScreen = new ParkingLotScene(this); break;
+                    case GameStates.Market:
+                        currentScreen = new MarketScene(this); break;
+                    case GameStates.MarketBack:
+                        currentScreen = new MarketBackScene(this); break;
+                }
+                scenes.Add(state, currentScreen);
             }
 
-            if (previousScreen != currentScreen)
+            if (previousScreen != currentScreen) //enable scene transition if moving to a new scene.
             {
                 transitionSound.Play();
                 transitioning = true;

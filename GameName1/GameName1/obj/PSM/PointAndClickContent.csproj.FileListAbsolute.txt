@@ -665,3 +665,4 @@ C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\thud.xnb
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\whoosh.xnb
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\zoop.xnb
 C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-magikoiDeadIcon.xnb
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\obj\PSM\PointAndClickContent.csprojResolveAssemblyReference.cache

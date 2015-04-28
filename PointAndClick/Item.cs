@@ -130,6 +130,11 @@ namespace PointAndClick
                     description = "Hmmm... It doesn't seem to be cooking";
                     break;
 
+                case @"Objects\bank-creditCard":
+
+                    description = "A credit card... With no credit limit!!!";
+                    break;
+
                 default:
                     description = "";
                     break;
@@ -152,7 +157,7 @@ namespace PointAndClick
         {
             if (maingame.iMenu.currentItem != null)
             if (path == @"Objects/groceryStore-creditCardTerminalBackground" && maingame.iMenu.currentItem.path == @"Objects\bank-creditCard" && maingame.iMenu.usingItem)
-                maingame.marketScene.PayedFor();
+                ((MarketScene)maingame.currentScreen).PayedFor();
             maingame.iMenu.Options(this);
        
         }

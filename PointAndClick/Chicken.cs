@@ -15,11 +15,12 @@ namespace PointAndClick
 
     class Chicken : Character
     {
+        public bool fed { get; set; }
 
         private ChickenState state;
         private Texture2D healthyTexture;
         private Texture2D dialogIcon;
-
+        
         private Conversation fullConvo;
         private Conversation shortConvo;
         private Conversation fullConvo2;
@@ -28,7 +29,7 @@ namespace PointAndClick
         public Chicken(MainGame currentGame, Texture2D hIcon)
             : base(new Vector2(425, 50), @"Objects\parking-cockMobile", currentGame, @"Icons\parking-cockMobileIcon", hIcon)
         {
-
+            fed = false;
             healthyTexture = initialTexture;
             dialogIcon = inBagTexture;
 
@@ -80,8 +81,8 @@ namespace PointAndClick
 
                     break;
 
-                case ChickenState.Fed:
-                case ChickenState.FedBacon:
+                    case ChickenState.Fed:
+                    case ChickenState.FedBacon:
 
                     talkedTo = false;
               
@@ -105,8 +106,9 @@ namespace PointAndClick
                     break;
 
                 case ChickenState.Fed:
-                        
-                        currentConvo = fullConvo2;
+                    if (!fed)
+                        fed = true;
+                    currentConvo = fullConvo2;
 
                     break;
                 
@@ -138,10 +140,10 @@ namespace PointAndClick
                     {
                         if (maingame.iMenu.currentItem.path == @"Objects\bedroom-princessWhateverHand")
                         {
-                            UpdateChickenState(ChickenState.Fed);
-                            maingame.iMenu.StartConversation(fullConvo2);
+                            maingame.iMenu.DiscardItem();
                             maingame.gameCursor.ResetTexture();
-                            maingame.parkingLotScene.chickenFed = true;
+                            UpdateChickenState(ChickenState.Fed);
+                            maingame.iMenu.StartConversation(fullConvo2);                            
                         }
                         else if (maingame.iMenu.currentItem.path == @"Objects\kitchen-panWithPerfectBacon") //fix and make it point to all the bacon
                         {

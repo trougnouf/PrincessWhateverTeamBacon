@@ -20,12 +20,13 @@ namespace PointAndClick
 
         public arrowType type;
         public MainGame game;
+        public GameStates nextScene { get; set; }
 
-
-        public ArrowButton(Vector2 initPosition, String path, MainGame currentGame)
+        public ArrowButton(Vector2 initPosition, String path, MainGame currentGame, GameStates nextScene)
             : base(initPosition, path, currentGame)
         {
             game = currentGame;
+            this.nextScene = nextScene;
 
             switch (path)
             {
@@ -70,72 +71,10 @@ namespace PointAndClick
         protected override void OnClick(GameStates state)
         {
             Console.WriteLine("Current state is {0}, Arrow type is {1}", maingame.state, this.type);
+            
+            maingame.UpdateState(nextScene);
         
-            if (type == arrowType.right)
-            {
-                if (game.state == GameStates.Bedroom)
-                    maingame.UpdateState(GameStates.MarketBack);
-
-                else if (game.state == GameStates.Kitchen)
-                {
-                        Console.WriteLine("If right arrow, if kitchen in onclick arrows");
-                        maingame.UpdateState(GameStates.Bedroom);
-                }
-                else if (game.state == GameStates.Market)
-                    maingame.UpdateState(GameStates.MarketBack);
-            }
-
-            else if (type == arrowType.left)
-            {
-                if (game.state == GameStates.Bedroom)
-                    maingame.UpdateState(GameStates.Kitchen);
-
-                else if (game.state == GameStates.ParkingLot)
-                {
-                    if (maingame.parkingLotScene.dest == Destination.Home)
-                    {
-                        maingame.UpdateState(GameStates.Kitchen);
-                    }
-
-                    if (maingame.parkingLotScene.dest == Destination.Market)
-                    {
-                        maingame.UpdateState(GameStates.Market);
-                    }
-
-                    if (maingame.parkingLotScene.dest == Destination.Bank)
-                    {
-                        maingame.UpdateState(GameStates.Bank);
-                    }
-                }
-                else if (game.state == GameStates.Market)
-                {   /*
-                    if (maingame.marketScene.pickedUpBAcon && !maingame.marketScene.Payedfor)
-                    {
-                        Console.WriteLine("Right before stop convo starts");
-                        maingame.marketScene.caught = true;
-                        
-                    }
-                       
-                    else
-                    {
-
-                        maingame.UpdateState(GameStates.ParkingLot);
-                    }
-                     */
-                    maingame.UpdateState(GameStates.ParkingLot);
-                }
-                else if (game.state == GameStates.MarketBack)
-                {
-                    maingame.UpdateState(GameStates.Market);
-                }
-                else if (game.state == GameStates.Bank)
-                {
-                    maingame.UpdateState(GameStates.ParkingLot);
-                }
-                else if (game.state == GameStates.Kitchen)
-                    maingame.UpdateState(GameStates.ParkingLot);
-
-            }
+            
         }
     }
 
