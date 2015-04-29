@@ -63,16 +63,25 @@ namespace PointAndClick
 
                     break;
                 //Cases for Pause Menu
-                case "ReturnGame":
+                case @"Icons\Exit":
+
+                    maingame.Exit();
 
                     break;
 
-                case "ReturnStart":
+                case @"Icons\Return":
+
+                    maingame.ReturnToPreviousScreen();
 
                     break;
 
-                case "Options":
+                case @"Icons\Toggle":
 
+           
+                maingame.graphics.ToggleFullScreen();
+
+                maingame.graphics.ApplyChanges();
+                                            
                     break;
                 //Cases for InteractButtons
                 case "Use":

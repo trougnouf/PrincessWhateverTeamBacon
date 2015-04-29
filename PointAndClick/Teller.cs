@@ -44,17 +44,17 @@ namespace PointAndClick
             UnHelpfulConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
                                                                                 dialogIcon,
                                                                                 "Um... No...",
-                                                                                "Then I am sorry, but I cannot give away free monies."
+                                                                                "Then I am sorry, you got to show some credibility. I mean your a freaking penguin!"
                                                                                 ));
 
             ShowLetterConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
                                                                                 dialogIcon,
-                                                                                "I have this letter from a Nigerian prince. He says if I send him money he will send me back 10 times as much. Any chance I could get some monies to send to him?",
+                                                                                "I have this letter from a Nigerian prince saying if I send him money he will reimburse me 10 fold!Any chance I could get some monies to send to him?",
                                                                                 "Hmm.. Seems legit. How about I give you a credit card. That should help you and the prince out!"
                                                                                 ));
             ShowLetterConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
                                                                                 dialogIcon,
-                                                                                "I have this letter from a Nigerian prince. He says if I send him money he will send me back 10 times as much. Any chance I could get some monies to send to him?",
+                                                                                "I have this letter from a Nigerian prince saying if I send him money he will reimburse\nme 10 fold!Any chance I could get some monies to send to him?",
                                                                                 "Hmm.. Seems legit. How about I give you a credit card. That should help you and the prince out!"
                                                                                 ));
 
@@ -91,6 +91,7 @@ namespace PointAndClick
 
         public override Conversation Chat()
         {
+            effect.Play();
             Conversation currentConvo;
 
             switch (state)

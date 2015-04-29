@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Audio;
 #endregion
 
 namespace PointAndClick
@@ -24,6 +25,7 @@ namespace PointAndClick
         private Conversation shortConvo;
         private Conversation fullConvo2;
         private Conversation baconConvo;
+        private SoundEffect gulp;
 
         public Chicken(MainGame currentGame, Texture2D hIcon)
             : base(new Vector2(425, 50), @"Objects\parking-cockMobile", currentGame, @"Icons\parking-cockMobileIcon", hIcon)
@@ -33,7 +35,7 @@ namespace PointAndClick
             dialogIcon = inBagTexture;
 
             UpdateChickenState(ChickenState.Hungry);
-
+            gulp = maingame.Content.Load<SoundEffect>(@"SFX\gulp");
             examineTexture = inBagTexture;
 
             fullConvo = new Conversation();
@@ -67,7 +69,7 @@ namespace PointAndClick
             baconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
                                                                             heroIcon,
                                                                             "Thank you!",
-                                                                            ""
+                                                                            "Got to keep my ride fueled."
                                                                             ));
 
 
@@ -97,6 +99,7 @@ namespace PointAndClick
 
         public override Conversation Chat()
         {
+            effect.Play();
             Conversation currentConvo;
 
             switch (state)
@@ -122,7 +125,7 @@ namespace PointAndClick
                     break;
 
             }
-
+            
             return currentConvo;
 
         }
@@ -138,6 +141,7 @@ namespace PointAndClick
                     {
                         if (maingame.iMenu.currentItem.path == @"Objects\bedroom-princessWhateverHand")
                         {
+                            gulp.Play();
                             maingame.iMenu.DiscardItem();
                             UpdateChickenState(ChickenState.Fed);
                             maingame.iMenu.StartConversation(fullConvo2);
@@ -155,7 +159,7 @@ namespace PointAndClick
             }
             else if (maingame.iMenu.currentItem.path == @"Objects\kitchen-rawBaconPlate" || maingame.iMenu.currentItem.path == @"Objects\kitchen-perfectBaconPlate" || maingame.iMenu.currentItem.path == @"Objects\kitchen-burnedBaconPlate") //fix and make it point to all the bacon
                   {
-                      
+                      gulp.Play();
                       maingame.iMenu.DiscardItem();
                       maingame.iMenu.StartConversation(baconConvo);
           

@@ -24,6 +24,7 @@ namespace PointAndClick
     {
         public Destination dest { get; private set; }
         private Song music;
+        private SoundEffect whoosh;
         private BackGround background;
         private Conversation TravelDialog;
         private Texture2D heroIcon;
@@ -48,13 +49,14 @@ namespace PointAndClick
             arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame, arrowLeftScene);
             TravelDialog = new Conversation();
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
-            jumperCables = new Item(new Vector2(1530, 635), @"Objects\parking-jumperCables", mainGame, @"Icons\inv-jumperCables", true);
+            //jumperCables = new Item(new Vector2(1530, 635), @"Objects\parking-jumperCables", mainGame, @"Icons\inv-jumperCables", true);
             chic = new Chicken(mainGame, heroIcon);
-            hero = new SceneImage(new Vector2(100, 550), @"Objects\heroRight", mainGame); 
+            hero = new SceneImage(new Vector2(100, 550), @"Objects\heroRight", mainGame);
+            whoosh = mainGame.Content.Load<SoundEffect>(@"SFX\whoosh");
 
             drawingList.Add(background);
             drawingList.Add(hero);
-            AddObject(jumperCables);
+            //AddObject(jumperCables);
 
             AddObject(arrowLeft);
             AddObject(chic);
@@ -91,8 +93,12 @@ namespace PointAndClick
 
             arrowLeft.nextScene = arrowLeftScene;
 
-            if(chic.state == ChickenState.Fed)
-            mainGame.iMenu.StartConversation(TravelDialog);
+            if (chic.state == ChickenState.Fed)
+            {
+                whoosh.Play();
+                mainGame.iMenu.StartConversation(TravelDialog);
+            }
+            
 
         }
     }

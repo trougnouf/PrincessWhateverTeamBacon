@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public enum GameStates: int { TitleScreen, StartMenu, Bedroom, Kitchen, ParkingLot, Market, MarketBack, Bank};
+    public enum GameStates: int { TitleScreen, StartMenu, Bedroom, Kitchen, ParkingLot, Market, MarketBack, Bank, Paused};
    
     /// <summary>
     /// This is the main type for the game
@@ -48,14 +48,6 @@ namespace PointAndClick
         private int FadeIncrement;
         private double FadeDelay;
 
-       /* public ParkingLotScene parkingLotScene { get; private set; }
-        public MarketScene marketScene { get; private set; }
-        public BedRoomScene bedroomScene { get; private set; }
-        public BankScene bankScene { get; private set; }
-        public KitchenScene kitchenScene { get; private set; }
-        public StartMenuScreen startMenuScreen { get; private set; }
-        public MarketBackScene marketBackScene { get; private set; }
-        */
         //MouseStates used to update objects
         public MouseState oldMouseState { get; private set; }
         public MouseState currentMouseState { get; private set; }
@@ -89,6 +81,7 @@ namespace PointAndClick
         /// 
         protected override void Initialize()
         {
+        
             transitionSound = Content.Load<SoundEffect>(@"SFX\click");
             spriteBatch = new SpriteBatch(GraphicsDevice);
             base.Initialize();
@@ -96,7 +89,6 @@ namespace PointAndClick
             state = GameStates.TitleScreen;
             graphics.PreferredBackBufferHeight = initBufferHeight;
             graphics.PreferredBackBufferWidth = initBufferWidth;    
-            graphics.IsFullScreen = false;
             Window.AllowUserResizing = true;
             graphics.ApplyChanges();
             Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);
@@ -139,10 +131,6 @@ namespace PointAndClick
         {
             CheckMouseInput();
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
-
-
             if (iMenu != null)
             {
                 if (!transitioning && !iMenu.StateDialog())
@@ -155,6 +143,9 @@ namespace PointAndClick
                     currentScreen.Update(gameTime);
             }
             
+           
+
+            
             int newXCoordinate;
 
             if (currentMouseState.X >= 7)
@@ -164,9 +155,25 @@ namespace PointAndClick
 
             gameCursor.UpdatePosition(new Vector2(newXCoordinate, currentMouseState.Y));
 
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape) && state != GameStates.StartMenu && state != GameStates.TitleScreen && state != GameStates.Paused)
+                UpdateState(GameStates.Paused);
+
             base.Update(gameTime);
 
 
+        }
+
+        public void ReturnToPreviousScreen()
+        {
+
+            currentScreen = previousScreen;
+            previousScreen = scenes[GameStates.Paused];
+            if (previousScreen != currentScreen) //enable scene transition if moving to a new scene.
+            {
+                transitionSound.Play();
+                transitioning = true;
+            }
         }
 
         public void UpdateState(GameStates newState)
@@ -209,6 +216,9 @@ namespace PointAndClick
                         break;
                     case GameStates.MarketBack:
                         currentScreen = new MarketBackScene(this); 
+                        break;
+                    case GameStates.Paused:
+                        currentScreen = new PauseMenu(this);
                         break;
                 }
 

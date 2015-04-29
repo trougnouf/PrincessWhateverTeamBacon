@@ -16,6 +16,8 @@ namespace PointAndClick
     public class BedRoomScene : SceneScreen
     {
         private Song music;
+        private SoundEffect cosmic;
+        private SoundEffect chop;
         private BackGround background;
         private Conversation Introduction;
         private Texture2D princessTexture;
@@ -81,19 +83,25 @@ namespace PointAndClick
                                                                             ));
            
             mainGame.iMenu.StartConversation(Introduction);
+            cosmic = mainGame.Content.Load<SoundEffect>(@"SFX\cosmic");
+            cosmic.Play();
+                
         }
 
         public override void Update(GameTime gametime)
         {   
 
             if(!introduced)
-            {
+            {   
                 introduced = true;
                 hero.UpdateHeroState(HeroState.Awake);
+
             }
 
             if(fishPotted)
             {
+                chop = mainGame.Content.Load<SoundEffect>(@"SFX\augh");
+                chop.Play();
                 AddObject(princessHand);
                 princess.UpdatePrincessState(PrincessState.Injured);
                 mainGame.iMenu.DiscardItem();
@@ -102,7 +110,9 @@ namespace PointAndClick
 
             if (princessFed)
             {
-                PrintDrawingList();
+          
+                cosmic.Play();
+                
  
                 if(princess.state == PrincessState.Disgusted)
                 {
@@ -115,8 +125,7 @@ namespace PointAndClick
                 AddObject(kitty);
                 mainGame.iMenu.DiscardItem();
                 princessFed = false;
-
-                PrintDrawingList();
+       
             }
 
             base.Update(gametime);

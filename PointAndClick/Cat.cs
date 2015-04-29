@@ -16,7 +16,7 @@ namespace PointAndClick
         private Conversation shortConvo;
 
         public Cat(MainGame currentGame, Texture2D hIcon)
-            : base(new Vector2(425, 50), @"Objects\bedroom-cat", currentGame, @"Icons\bedroom-catIcon", hIcon)
+            : base(new Vector2(425, 500), @"Objects\bedroom-cat", currentGame, @"Icons\bedroom-catIcon", hIcon)
         {
 
         
@@ -27,20 +27,20 @@ namespace PointAndClick
 
             shortConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(examineTexture,
                                                                              heroIcon,
-                                                                            "Pet(Use) me to win",
-                                                                            "Thats all there is to it!!!"
+                                                                            "Pet(Use) me to win, thats all there is to it",
+                                                                            "What style and pizazz!"
                                                                              ));
 
             fullConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(examineTexture,
                                                                              heroIcon,
-                                                                             "Im the man",
-                                                                             "Ye. the man"
+                                                                             "I'm Larry, the magical cat from beyond the stars. Bask in my awe inspirining presence.",
+                                                                             "What style and pizazz!"
                                                                              ));
 
             fullConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(examineTexture,
-                                                                            heroIcon,
-                                                                            "Pet(Use) me to win",
-                                                                            "Thats all there is to it"
+                                                                            examineTexture,
+                                                                            "Your journey has ended mighty hero. Your bacon cooking skills where tested today like never before!",
+                                                                            "I bestow upon you the greasted honor possbile. I shall allow you to pet the great Larry!\nPet(Use) me to win, thats all there is to it."
                                                                             ));
 
 
@@ -48,6 +48,7 @@ namespace PointAndClick
      
         public override Conversation Chat()
         {
+            effect.Play();
             Conversation currentConvo;
 
             if (talkedTo)

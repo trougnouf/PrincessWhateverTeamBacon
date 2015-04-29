@@ -927,7 +927,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\boom.xnb</Output>
-      <Time>2015-04-16T18:59:36.9474006-04:00</Time>
+      <Time>2015-04-29T16:17:46.4578558-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\click.wav</Source>
@@ -936,7 +936,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\click.xnb</Output>
-      <Time>2015-04-16T18:59:36.9514055-04:00</Time>
+      <Time>2015-04-29T16:17:46.4938799-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\cosmic.wav</Source>
@@ -945,7 +945,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\cosmic.xnb</Output>
-      <Time>2015-04-16T18:59:36.9647588-04:00</Time>
+      <Time>2015-04-29T16:17:46.1776685-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\jackhammer.wav</Source>
@@ -954,7 +954,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\jackhammer.xnb</Output>
-      <Time>2015-04-16T18:59:36.9756428-04:00</Time>
+      <Time>2015-04-29T16:17:46.2046876-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\kitten.wav</Source>
@@ -963,7 +963,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\kitten.xnb</Output>
-      <Time>2015-04-16T18:59:36.9792452-04:00</Time>
+      <Time>2015-04-29T16:17:46.2086894-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\koi.wav</Source>
@@ -972,7 +972,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\koi.xnb</Output>
-      <Time>2015-04-16T18:59:36.9842483-04:00</Time>
+      <Time>2015-04-29T16:17:46.2126916-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\princess1.wav</Source>
@@ -981,7 +981,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\princess1.xnb</Output>
-      <Time>2015-04-16T18:59:36.9932545-04:00</Time>
+      <Time>2015-04-29T16:17:46.2287032-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\princess2.wav</Source>
@@ -990,7 +990,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\princess2.xnb</Output>
-      <Time>2015-04-16T18:59:37.0002616-04:00</Time>
+      <Time>2015-04-29T16:17:46.2357072-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\princess3.wav</Source>
@@ -999,7 +999,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\princess3.xnb</Output>
-      <Time>2015-04-16T18:59:37.0080541-04:00</Time>
+      <Time>2015-04-29T16:17:46.2417112-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\register.wav</Source>
@@ -1008,7 +1008,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\register.xnb</Output>
-      <Time>2015-04-16T18:59:37.0116351-04:00</Time>
+      <Time>2015-04-29T16:17:46.2787352-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\rooster.wav</Source>
@@ -1017,7 +1017,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\rooster.xnb</Output>
-      <Time>2015-04-16T18:59:37.0176378-04:00</Time>
+      <Time>2015-04-29T16:17:46.2887423-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\sizzle1.wav</Source>
@@ -1026,7 +1026,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\sizzle1.xnb</Output>
-      <Time>2015-04-16T18:59:37.0356493-04:00</Time>
+      <Time>2015-04-29T16:17:46.2957472-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\sizzle2.wav</Source>
@@ -1035,7 +1035,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\sizzle2.xnb</Output>
-      <Time>2015-04-16T18:59:37.063668-04:00</Time>
+      <Time>2015-04-29T16:17:46.3017521-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\sizzle3.wav</Source>
@@ -1044,7 +1044,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\sizzle3.xnb</Output>
-      <Time>2015-04-16T18:59:37.1197097-04:00</Time>
+      <Time>2015-04-29T16:17:46.3557909-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\spark.wav</Source>
@@ -1053,7 +1053,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\spark.xnb</Output>
-      <Time>2015-04-16T18:59:37.124886-04:00</Time>
+      <Time>2015-04-29T16:17:46.3868078-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\thud.wav</Source>
@@ -1062,7 +1062,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\thud.xnb</Output>
-      <Time>2015-04-16T18:59:37.1284241-04:00</Time>
+      <Time>2015-04-29T16:17:46.401818-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\whoosh.wav</Source>
@@ -1071,7 +1071,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\whoosh.xnb</Output>
-      <Time>2015-04-16T18:59:37.1392898-04:00</Time>
+      <Time>2015-04-29T16:17:46.4068216-04:00</Time>
     </Item>
     <Item>
       <Source>SFX\zoop.wav</Source>
@@ -1080,7 +1080,178 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\zoop.xnb</Output>
-      <Time>2015-04-16T18:59:37.1422956-04:00</Time>
+      <Time>2015-04-29T16:17:46.4288362-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\augh.wav</Source>
+      <Name>SFX\augh</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\augh.xnb</Output>
+      <Time>2015-04-29T16:17:46.4328385-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\bell.wav</Source>
+      <Name>SFX\bell</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\bell.xnb</Output>
+      <Time>2015-04-29T16:17:46.4538532-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\breathe.wav</Source>
+      <Name>SFX\breathe</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\breathe.xnb</Output>
+      <Time>2015-04-29T16:17:46.4778678-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\enjoy.wav</Source>
+      <Name>SFX\enjoy</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\enjoy.xnb</Output>
+      <Time>2015-04-29T16:17:46.1837059-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\goodbye.wav</Source>
+      <Name>SFX\goodbye</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\goodbye.xnb</Output>
+      <Time>2015-04-29T16:17:46.1876756-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\gulp.wav</Source>
+      <Name>SFX\gulp</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\gulp.xnb</Output>
+      <Time>2015-04-29T16:17:46.1956814-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\hello.wav</Source>
+      <Name>SFX\hello</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\hello.xnb</Output>
+      <Time>2015-04-29T16:17:46.1996832-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\ohh.wav</Source>
+      <Name>SFX\ohh</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\ohh.xnb</Output>
+      <Time>2015-04-29T16:17:46.216697-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\ohno.wav</Source>
+      <Name>SFX\ohno</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\ohno.xnb</Output>
+      <Time>2015-04-29T16:17:46.2206978-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\okay.wav</Source>
+      <Name>SFX\okay</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\okay.xnb</Output>
+      <Time>2015-04-29T16:17:46.2227001-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\ooh.wav</Source>
+      <Name>SFX\ooh</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\ooh.xnb</Output>
+      <Time>2015-04-29T16:17:46.2257005-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\print.wav</Source>
+      <Name>SFX\print</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\print.xnb</Output>
+      <Time>2015-04-29T16:17:46.2457134-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\rawr.wav</Source>
+      <Name>SFX\rawr</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\rawr.xnb</Output>
+      <Time>2015-04-29T16:17:46.2717312-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\relax.wav</Source>
+      <Name>SFX\relax</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\relax.xnb</Output>
+      <Time>2015-04-29T16:17:46.2837397-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\slurp.wav</Source>
+      <Name>SFX\slurp</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\slurp.xnb</Output>
+      <Time>2015-04-29T16:17:46.377802-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\squelch.wav</Source>
+      <Name>SFX\squelch</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\squelch.xnb</Output>
+      <Time>2015-04-29T16:17:46.3948131-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\thankyou.wav</Source>
+      <Name>SFX\thankyou</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\thankyou.xnb</Output>
+      <Time>2015-04-29T16:17:46.3978153-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\tryagain.wav</Source>
+      <Name>SFX\tryagain</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\tryagain.xnb</Output>
+      <Time>2015-04-29T16:17:46.4038189-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SFX\wow.wav</Source>
+      <Name>SFX\wow</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\SFX\wow.xnb</Output>
+      <Time>2015-04-29T16:17:46.4118242-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

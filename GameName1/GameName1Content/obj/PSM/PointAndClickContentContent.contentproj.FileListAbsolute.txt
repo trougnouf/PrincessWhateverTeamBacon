@@ -6,5 +6,5 @@ C:\Users\Batman\Desktop\NewWorkingCopy\trunk\GameName1\GameName1Content\obj\PSM\
 C:\Users\Batman\Desktop\NewestWorkingCopy\trunk\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
 C:\Branches\trunk\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
 C:\Users\jorda_000\Documents\GitHub\PrincessWhateverTeamBacon\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
-C:\PrincessWhateverTeamBacon\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
 C:\Users\Batman\Desktop\WorkingCopy\trunk\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache
+C:\PrincessWhateverTeamBacon\GameName1\GameName1Content\obj\PSM\PointAndClickContentContent.contentprojResolveAssemblyReference.cache

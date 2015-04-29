@@ -21,7 +21,7 @@ namespace PointAndClick
         protected Texture2D inBagTexture;
         public bool takeable { get; private set; }
         public Texture2D examineTexture { get; protected set; }
-        private SoundEffect effect;
+        protected SoundEffect effect;
 
         public Item(Vector2 initPosition, String path, MainGame currentGame, string bagTexture, bool istakable, string newExamineTexture)
             : this(initPosition, path, currentGame, bagTexture, istakable)
@@ -52,7 +52,7 @@ namespace PointAndClick
                     break;
 
                 case @"Objects\bedroom-magikoiHealthy":
-
+                    effect = maingame.Content.Load<SoundEffect>(@"SFX\koi");
                     description = "This magikoi is frantically flapping its fins.";
                     break;
 
@@ -69,7 +69,7 @@ namespace PointAndClick
 
                 case @"Objects\bedroom-princessWhateverHand":
 
-                    description = "The princess' severed hand...";
+                    description = "The princess's severed hand...";
                     break;
 
                 case @"Objects\bedroom-socket":
@@ -85,6 +85,13 @@ namespace PointAndClick
                 case @"Objects\heroLaying":
 
                     description = "It's me! I'm a Penguin...";
+                    effect = maingame.Content.Load<SoundEffect>(@"SFX\rawr");
+                    break;
+
+                case @"Objects\bedroom-cat":
+
+                    description = "A mystical fluffy cat.... he's so mysterious.";
+                    effect = maingame.Content.Load<SoundEffect>(@"SFX\kitten");
                     break;
 
                 case @"Objects\parking-jumperCables":
@@ -95,10 +102,13 @@ namespace PointAndClick
                 case @"Objects\parking-cockMobile":
 
                     description = "Woah that is a large chicken!";
+                    effect = maingame.Content.Load<SoundEffect>(@"SFX\rooster");
+
                     break;
 
                 case @"Objects\bank-tellerBackground":
                     description = "A bank teller.";
+                    effect = maingame.Content.Load<SoundEffect>(@"SFX\zoop");
                     break;
 
                 case @"Objects\groceryStoreBack-baconPackBackground":
@@ -113,7 +123,7 @@ namespace PointAndClick
 
                 case @"Objects\kitchen-mail":
 
-                    description = "Hopefully that is not all bills...";
+                    description = "A letter from a Nigerian Prince offering me an opportunity. Seems fishy...";
                     break;
 
                 case @"Objects\kitchen-onLight":

@@ -17,6 +17,8 @@ namespace PointAndClick
     public class MarketScene : SceneScreen
     {
         private Song music;
+        private SoundEffect register;
+        private SoundEffect bell;
         private BackGround background;
         private Conversation Introduction;
         private Conversation stopConversation;
@@ -48,6 +50,7 @@ namespace PointAndClick
             arrowRight = new ArrowButton(new Vector2(250, 120), @"Objects\arrowRight", mainGame, GameStates.MarketBack);
             arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame, GameStates.ParkingLot);
 
+            register = mainGame.Content.Load<SoundEffect>(@"SFX\register");
             stopConversation = new Conversation();
             Introduction = new Conversation();
             thanks = new Conversation();
@@ -109,6 +112,7 @@ namespace PointAndClick
 
         public void PayedFor()
         {
+            register.Play();
             Payedfor = true;
             mainGame.iMenu.DiscardItem();
             mainGame.iMenu.StartConversation(thanks);
@@ -118,6 +122,8 @@ namespace PointAndClick
         {
             if(!introduced)
             {
+                bell = mainGame.Content.Load<SoundEffect>(@"SFX\bell");
+                bell.Play();
                 mainGame.iMenu.StartConversation(Introduction);
                 introduced = true;
             }

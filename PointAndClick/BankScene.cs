@@ -16,6 +16,7 @@ namespace PointAndClick
     public class BankScene : SceneScreen
     {
         private Song music;
+        private SoundEffect print;
         private BackGround background;
         
         private Texture2D heroIcon;
@@ -25,12 +26,13 @@ namespace PointAndClick
         private Item creditCard;
         private ArrowButton arrowLeft;
 
-        bool introduced;
+        private Conversation introduction;
+        private bool introduced;
 
         public BankScene(MainGame game)
             :base(game)
         {
-           
+            introduced = false;
         }
 
         public override void LoadContent()
@@ -43,43 +45,42 @@ namespace PointAndClick
             creditCard = new Item(new Vector2(1052, 446), @"Objects\bank-creditCard", mainGame, @"Icons\inv-creditCardIcon", true);
             teller = new Teller(mainGame, heroIcon, new Vector2(1000, 330));
             hero = new SceneImage(new Vector2(195, 310), @"Objects\bank-hero", mainGame );
+            introduction = new Conversation();
+
+            
         
             drawingList.Add(background);
             drawingList.Add(hero);
             AddObject(teller);
             AddObject(arrowLeft);
-            //AddObject(creditCard);
+            
+            introduction.Addline(new Tuple<Texture2D, Texture2D, string, string>(teller.examineTexture,
+                                                                            heroIcon,
+                                                                            "Welcome! Please speak with our multifunctional model for assistance.",
+                                                                            "I wonder if I can store some cash for a bacon run here...."));
 
             base.LoadContent();
         }
 
         public override void Update(GameTime gametime)
         {
+
+            if (!introduced)
+            {
+                mainGame.iMenu.StartConversation(introduction);
+                introduced = true;
+            }
+
             if (teller.state == TellerState.HasLetter)
             {
-               
+                print = mainGame.Content.Load<SoundEffect>(@"SFX\print");
+                print.Play();
                 AddObject(creditCard);
                 teller.UpdateTellerState(TellerState.SeenLetter);            
                 mainGame.iMenu.DiscardItem();
             }
         
-            /*
-            if (teller.state != TellerState.SeenLetter)
-            {
-                if (mainGame.iMenu.ItemInBag(creditCard.path)) //Check to see if we have the credit card
-                {
-                    teller.UpdateTellerState(TellerState.SeenLetter);
-                }
-               
-            }
-            else if (!mainGame.iMenu.ItemInBag(creditCard.path))
-            {
-                mainGame.iMenu.StartConversation(teller.Chat());
-                AddObject(creditCard);          
-                mainGame.gameCursor.ResetTexture();
-                mainGame.iMenu.DiscardItem();
-            }
-             */
+            
        
             base.Update(gametime); 
 

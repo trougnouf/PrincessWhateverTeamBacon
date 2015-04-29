@@ -75,7 +75,7 @@ namespace PointAndClick
             perfectBacon = new Item(new Vector2(350, 410), @"Objects\kitchen-perfectBaconPlate", mainGame, @"Icons\inv-baconPerfectIcon", true);
             burnedBacon = new Item(new Vector2(350, 410), @"Objects\kitchen-burnedBaconPlate", mainGame, @"Icons\inv-baconBurnedIcon", true);
             //kitchenBacon = new Item(new Vector2(1025, 320), @"Objects\kitchen-bacon", mainGame, @"Icons\inv-baconPackIcon", true);
-            jackhammer = new Item(new Vector2(885, 580), @"Objects\kitchen-jackHammer", mainGame, @"Icons\inv-jackHammerIcon", true);
+            //jackhammer = new Item(new Vector2(885, 580), @"Objects\kitchen-jackHammer", mainGame, @"Icons\inv-jackHammerIcon", true);
 
 
 
@@ -90,7 +90,7 @@ namespace PointAndClick
             AddObject(onLight);
             AddObject(letter);
             //AddObject(kitchenBacon);
-            AddObject(jackhammer);
+            //AddObject(jackhammer);
             AddObject(pan);
             AddObject(stoveTop);
             //AddObject(bacons);
@@ -106,35 +106,31 @@ namespace PointAndClick
             stoveTop.UpdateGameTime(gametime);
             base.Update(gametime);
             
-            if (baconReady == false)
+            if (addRawBacon == true)
             {
-                if (addRawBacon == true)
-                {
-                    AddObject(rawBacon);
-                    baconReady = true;
-                    addRawBacon = false;
-                    resetPan();
-                }
-
-                //Perfect
-                else if (addPerfectBacon == true)
-                {
-                    AddObject(perfectBacon);
-                    baconReady = true;
-                    addPerfectBacon = false;
-                    resetPan();
-                }
-
-                //Burned
-                else if (addBurnedBacon == true)
-                {
-                    AddObject(burnedBacon);
-                    baconReady = true;
-                    addBurnedBacon = false;
-                    resetPan();
-                }
+                AddObject(rawBacon);
+                baconReady = true;
+                addRawBacon = false;
+                resetPan();
             }
 
+               //Perfect
+            else if (addPerfectBacon == true)
+            {
+                AddObject(perfectBacon);
+                baconReady = true;
+                addPerfectBacon = false;
+                resetPan();
+            }
+
+            //Burned
+            else if (addBurnedBacon == true)
+            {
+                AddObject(burnedBacon);
+                baconReady = true;
+                addBurnedBacon = false;
+                resetPan();
+            }
 
             if (!introduced)
             {

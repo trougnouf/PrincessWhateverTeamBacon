@@ -139,7 +139,7 @@ namespace PointAndClick
         {
             if (currentItem.path == @"Objects\groceryStoreBack-baconPackBackground")
             {
-                ((MarketScene)mainGame.previousScreen).pickedUpBAcon = true;
+                //((MarketScene)mainGame.GetScene(GameStates.Market)).pickedUpBAcon = true;
                 bag.AddItemToInventory(currentItem);
                 mainGame.currentScreen.RemoveObject(currentItem);
                 ShowInventory();
@@ -161,76 +161,7 @@ namespace PointAndClick
             UpdateState(iMenuStates.Dialogue);
         }
 
-        /*
-         * 
-         *     public void CharacterOptions(Character newChar)
-        {
-
-            if (!usingItem)
-            {
-                
-                ShowOptions(newChar);
-            }
-
-        }
-
-        public void NewItemOptions(Item item)
-        {
-
-            if (!usingItem)
-            {
-                currentItem = item;
-
-                ShowOptions(item);
-            }
-            else if (!item.inScene)
-            {
-                currentItem = item;
-
-                usingItem = false;
-
-                mainGame.gameCursor.ResetTexture();
-
-                ShowOptions(item);
-            }
-
-        }
-        public void Options(Item item)
-        {   
-         *  if(!usingItem)
-         *  {
-         *      currentItem = item;
-         *  }
-            
-            if (item is Character)
-            {
-                //System.Console.WriteLine("cHAR");
-                mainGame.iMenu.CharacterOptions((Character)item);
-            }
-            else
-                mainGame.iMenu.NewItemOptions(item);
-         * 
-         * ShowOptions(items);
-        }
-         * 
-         *   public void ShowOptions(Item item)
-        {
-
-            if ((item is Item))
-            {
-                iButtons.ItemOptions(currentItem);
-            }
-            else
-            {
-                if (item is Cat)
-                    iButtons.UpdateState(IbuttonState.Cat);
-                else
-                    iButtons.UpdateState(IbuttonState.Talk);
-            }
-
-            UpdateState(iMenuStates.Interact);
-        }
-         */
+        
         public void Options(Item item)
         {
 
@@ -238,8 +169,7 @@ namespace PointAndClick
 
             if (item is Character)
             {
-                //System.Console.WriteLine("cHAR");
-               
+                        
                 currentChar = (Character)item;
                 
                 if(item is Cat)
