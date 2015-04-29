@@ -139,7 +139,7 @@ namespace PointAndClick
         {
             if (currentItem.path == @"Objects\groceryStoreBack-baconPackBackground")
             {
-                //((MarketScene)mainGame.previousScreen).pickedUpBAcon = true;
+                ((MarketScene)mainGame.previousScreen).pickedUpBAcon = true;
                 bag.AddItemToInventory(currentItem);
                 mainGame.currentScreen.RemoveObject(currentItem);
                 ShowInventory();

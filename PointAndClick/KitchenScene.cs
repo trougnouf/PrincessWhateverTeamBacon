@@ -21,8 +21,6 @@ namespace PointAndClick
         private SceneText text;
         private Texture2D heroIcon;
         private Hero hero;
-        //        private ArrowButton arrowUp;
-        //        private ArrowButton arrowDown;
         private ArrowButton arrowRight;
         private ArrowButton arrowLeft;
         private Item pan;
@@ -65,7 +63,7 @@ namespace PointAndClick
             //            arrowDown = new ArrowButton(new Vector2(150, 120), @"Objects\arrowDown", mainGame);
             arrowRight = new ArrowButton(new Vector2(250, 120), @"Objects\arrowRight", mainGame, GameStates.Bedroom);
             arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame, GameStates.ParkingLot);
-            bacons = new Item(new Vector2(410, 10), @"Objects\groceryStoreBack-baconPackBackground", mainGame, @"Icons\inv-baconPackIcon", true);
+            //bacons = new Item(new Vector2(410, 10), @"Objects\groceryStoreBack-baconPackBackground", mainGame, @"Icons\inv-baconPackIcon", true);
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
             pan = new Item(new Vector2(270, 340), @"Objects\kitchen-pan", mainGame, @"Icons\inv-pan", true);
             onLight = new Item(new Vector2(540, 360), @"Objects\kitchen-onLight", mainGame, "", false);
@@ -86,8 +84,7 @@ namespace PointAndClick
             text = new SceneText(new Vector2(700, 750), "This is the kitchen!!!", segoe, mainGame);
 
             drawingList.Add(background);
-            //            AddObject(arrowUp);
-            //            AddObject(arrowDown);
+ 
             AddObject(arrowLeft);
             AddObject(arrowRight);
             AddObject(onLight);
@@ -96,7 +93,7 @@ namespace PointAndClick
             AddObject(jackhammer);
             AddObject(pan);
             AddObject(stoveTop);
-            AddObject(bacons);
+            //AddObject(bacons);
             onLight.visible = false;
 
 
