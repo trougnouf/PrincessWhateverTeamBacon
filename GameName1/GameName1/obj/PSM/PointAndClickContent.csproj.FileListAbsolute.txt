@@ -791,3 +791,7 @@ C:\Users\Batman\Desktop\WorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Ob
 C:\Users\Batman\Desktop\WorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverSaved.xnb
 C:\Users\Batman\Desktop\WorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-cat.xnb
 C:\Users\Batman\Desktop\WorkingCopy\trunk\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-catIcon.xnb
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverDead.xnb
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-princessWhateverSaved.xnb
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Objects\bedroom-cat.xnb
+C:\PrincessWhateverTeamBacon\GameName1\GameName1\bin\PSM\Content\Icons\bedroom-catIcon.xnb
