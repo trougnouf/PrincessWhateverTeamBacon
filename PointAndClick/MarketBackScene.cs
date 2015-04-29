@@ -35,7 +35,7 @@ namespace PointAndClick
         {
             background = new BackGround(new Vector2(0, 0), @"Backgrounds\groceryStoreBack", mainGame);
             arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame,GameStates.Market);
-            bacons = new Item(new Vector2(410, 10), @"Objects\groceryStoreBack-baconPackBackground", mainGame, @"Icons\inv-baconPackIcon", true);
+            bacons = new Item(new Vector2(410, 10), @"Objects\groceryStoreBack-baconPackBackground", mainGame, @"Icons\inv-baconPackIcon", true, @"Icons\inv-baconPackIcon");
             hero = new SceneImage(new Vector2(100, 550), @"Objects\bank-hero", mainGame);
 
             AddObject(bacons);

@@ -46,7 +46,7 @@ namespace PointAndClick
                 fullConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
                                                                                 heroIcon,
                                                                                 "Just sitting here talking to myself.",
-                                                                                "Wonder what that fish and hotty are up to."
+                                                                                "Wonder what that fish and hottie are up to."
                                                                                 ));
                 shortConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
                                                                                  heroIcon,

@@ -23,6 +23,12 @@ namespace PointAndClick
         public Texture2D examineTexture { get; protected set; }
         private SoundEffect effect;
 
+        public Item(Vector2 initPosition, String path, MainGame currentGame, string bagTexture, bool istakable, string newExamineTexture)
+            : this(initPosition, path, currentGame, bagTexture, istakable)
+        {
+            examineTexture = currentGame.Content.Load<Texture2D>(newExamineTexture);
+        }
+
         public Item(Vector2 initPosition, String path, MainGame currentGame, string bagTexture, bool istakable) 
             :base(initPosition, path, currentGame)
         {
@@ -63,7 +69,7 @@ namespace PointAndClick
 
                 case @"Objects\bedroom-princessWhateverHand":
 
-                    description = "The princess's severed hand...";
+                    description = "The princess' severed hand...";
                     break;
 
                 case @"Objects\bedroom-socket":
