@@ -11,13 +11,12 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public enum ChickenState : short { Hungry, Fed, FedBacon};
+    public enum ChickenState : short { Hungry, Fed};
 
     class Chicken : Character
     {
-        public bool fed { get; set; }
 
-        private ChickenState state;
+        public ChickenState state { get; private set; }
         private Texture2D healthyTexture;
         private Texture2D dialogIcon;
         
@@ -29,7 +28,7 @@ namespace PointAndClick
         public Chicken(MainGame currentGame, Texture2D hIcon)
             : base(new Vector2(425, 50), @"Objects\parking-cockMobile", currentGame, @"Icons\parking-cockMobileIcon", hIcon)
         {
-            fed = false;
+            
             healthyTexture = initialTexture;
             dialogIcon = inBagTexture;
 
@@ -65,6 +64,11 @@ namespace PointAndClick
                                                                             "Thank you!",
                                                                             ""
                                                                             ));
+            baconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+                                                                            heroIcon,
+                                                                            "Thank you!",
+                                                                            ""
+                                                                            ));
 
 
         }
@@ -81,8 +85,7 @@ namespace PointAndClick
 
                     break;
 
-                    case ChickenState.Fed:
-                    case ChickenState.FedBacon:
+               case ChickenState.Fed:
 
                     talkedTo = false;
               
@@ -106,17 +109,12 @@ namespace PointAndClick
                     break;
 
                 case ChickenState.Fed:
-                    if (!fed)
-                        fed = true;
+
                     currentConvo = fullConvo2;
 
                     break;
                 
-                case ChickenState.FedBacon:
-                    currentConvo = baconConvo;
-                    
-                    break;
-
+              
                 default:
 
                     currentConvo = fullConvo;
@@ -141,14 +139,11 @@ namespace PointAndClick
                         if (maingame.iMenu.currentItem.path == @"Objects\bedroom-princessWhateverHand")
                         {
                             maingame.iMenu.DiscardItem();
-                            maingame.gameCursor.ResetTexture();
                             UpdateChickenState(ChickenState.Fed);
-                            maingame.iMenu.StartConversation(fullConvo2);                            
+                            maingame.iMenu.StartConversation(fullConvo2);
+                           
                         }
-                        else if (maingame.iMenu.currentItem.path == @"Objects\kitchen-panWithPerfectBacon") //fix and make it point to all the bacon
-                        {
-                            
-                        }
+                       
                     }
                     else
                         base.OnClick(state);
@@ -158,8 +153,15 @@ namespace PointAndClick
                     base.OnClick(state);
 
             }
-            else
-                maingame.iMenu.ShowDestinations();          
+            else if (maingame.iMenu.currentItem.path == @"Objects\kitchen-rawBaconPlate" || maingame.iMenu.currentItem.path == @"Objects\kitchen-perfectBaconPlate" || maingame.iMenu.currentItem.path == @"Objects\kitchen-burnedBaconPlate") //fix and make it point to all the bacon
+                  {
+                      
+                      maingame.iMenu.DiscardItem();
+                      maingame.iMenu.StartConversation(baconConvo);
+          
+                  }
+            else    
+            maingame.iMenu.ShowDestinations();          
                 
         }
 

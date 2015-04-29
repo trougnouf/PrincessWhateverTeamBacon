@@ -33,9 +33,15 @@ namespace PointAndClick
         }
 
         public Tuple<Texture2D, Texture2D, string, string> NextLine()
-        {   
-            used++;
-            return dialogList[(used - 1)];
+        {
+            if (!Done())
+            {
+                used++;
+                return dialogList[(used - 1)];
+            }
+            else
+                return dialogList[(used - 1)];
+            
         }
 
         public void Reset()

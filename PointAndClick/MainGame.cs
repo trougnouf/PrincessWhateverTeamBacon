@@ -154,11 +154,11 @@ namespace PointAndClick
                 if (!transitioning)
                     currentScreen.Update(gameTime);
             }
-
+            
             int newXCoordinate;
 
-            if (currentMouseState.X >= 15)
-                newXCoordinate = currentMouseState.X - 15;
+            if (currentMouseState.X >= 7)
+                newXCoordinate = currentMouseState.X - 7;
             else
                 newXCoordinate = currentMouseState.X;
 
@@ -181,28 +181,37 @@ namespace PointAndClick
             
             if (iMenu == null && state!=GameStates.StartMenu && state!=GameStates.TitleScreen)
                 iMenu = new InteractMenu(this);
-
-            if (scenes.ContainsKey(state)) // check if the scene is available and retrieve it.
+            // check if the scene is available and retrieve it.
+            if (scenes.ContainsKey(state)) 
                 currentScreen = scenes[state];
-            else // create the scene and save it to the dictionary.
+            // create the scene and save it to the dictionary.
+            else 
             {
                 switch (state)
                 {
                     case GameStates.StartMenu:
-                        currentScreen = new StartMenuScreen(this); break;
+                        currentScreen = new StartMenuScreen(this);
+                        break;
                     case GameStates.Bank:
-                        currentScreen = new BankScene(this); break;
+                        currentScreen = new BankScene(this); 
+                        break;
                     case GameStates.Bedroom:
-                        currentScreen = new BedRoomScene(this); break;
+                        currentScreen = new BedRoomScene(this); 
+                        break;
                     case GameStates.Kitchen:
-                        currentScreen = new KitchenScene(this); break;
+                        currentScreen = new KitchenScene(this);
+                        break;
                     case GameStates.ParkingLot:
-                        currentScreen = new ParkingLotScene(this); break;
+                        currentScreen = new ParkingLotScene(this); 
+                        break;
                     case GameStates.Market:
-                        currentScreen = new MarketScene(this); break;
+                        currentScreen = new MarketScene(this);
+                        break;
                     case GameStates.MarketBack:
-                        currentScreen = new MarketBackScene(this); break;
+                        currentScreen = new MarketBackScene(this); 
+                        break;
                 }
+
                 scenes.Add(state, currentScreen);
             }
 
@@ -327,190 +336,12 @@ namespace PointAndClick
         {
             return currentMouseState.LeftButton == ButtonState.Pressed && oldMouseState.LeftButton == ButtonState.Released;
         }
+
+        public GameScreen GetScene(GameStates Screen)
+        {
+            return scenes[Screen];
+        }
         
     }
 
 }
-
-
-/*
- *  protected override void Update(GameTime gameTime)
-        {
-            CheckMouseInput();
-
-            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
-
-
-            if (iMenu != null)
-            {
-                if (!transitioning && !iMenu.StateDialog())
-                    currentScreen.Update(gameTime);
-                if(!iMenu.transitioning)
-                    iMenu.Update(gameTime);
-            }
-            else
-            {
-                if (!transitioning)
-                    currentScreen.Update(gameTime);
-            }
-            
-
-            gameCursor.UpdatePosition(new Vector2(currentMouseState.X, currentMouseState.Y));
-
-            base.Update(gameTime);
-
-
-        }
-
-        public void UpdateState(GameStates newState)
-        {
-            state = newState;
-            UpdateScreens();
-        }
-
-        private void UpdateScreens()
-        {
-
-            previousScreen = currentScreen;
-
-            switch (state)
-            {
-                case GameStates.StartMenu:
-
-                    currentScreen = new StartMenuScreen(this);
-
-                    break;
-
-                case GameStates.Bedroom:
-                   
-                    iMenu = new InteractMenu(this);
-                    currentScreen = new BedRoomScene(this);
-
-                    break;
-
-            }
-
-            if (previousScreen != currentScreen)
-                transitioning = true;
-        }
-
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        protected override void Draw(GameTime gameTime)
-        {
-
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            spriteBatch.Begin();
-
-            if (iMenu != null)
-            {
-                if (transitioning || iMenu.transitioning)
-                    Transition(gameTime);
-                else
-                {
-
-                    currentScreen.Draw();             
-                    iMenu.Draw();  
-                
-                }
-       
-            }
-            else
-            {
-                if (transitioning)
-                    Transition(gameTime);
-                else
-                    currentScreen.Draw();
-            }
-            gameCursor.Draw();
-
-            spriteBatch.End();
-
-        }
-
-        //Checks mouse input and updates states 
-        private void CheckMouseInput()
-        {
-            oldMouseState = currentMouseState;
-
-            currentMouseState = Mouse.GetState();
-        }
-
-        private void Transition(GameTime gameTime)
-        {
-            bool trans = true;
-            //Subtract elasped time from set fading delay
-            FadeDelay -= gameTime.ElapsedGameTime.TotalSeconds;
-            
-            //Once the set amount of time has passed, the method fades/unfades further
-            if (FadeDelay <= 0)
-            {
-                //reset time
-                FadeDelay = .001;
-                
-                //Incremement the fade value
-                AlphaValue += FadeIncrement;
-
-                //Change direction of fading incrementation when Alpha has reached its minimum
-                if(AlphaValue < 0)
-                    FadeIncrement *= -1;
-                
-                //When new Screen is completely faded in, transitioning is done
-                if ( AlphaValue > 255)
-                {
-                    trans = false;
-                    AlphaValue = 255;
-                }
-            }
-
-            if(transitioning)
-            {
-                //If we are fading out, draw previous screen, otherwise we are drawing the new current State
-                if (FadeIncrement < 0)
-                    transitionScreen = previousScreen;
-
-                else
-                    transitionScreen = currentScreen;
-
-                transitionScreen.Transition(AlphaValue);
-
-                transitioning = trans;
-               
-            }
-
-            else
-                currentScreen.Draw();
-
-            if (iMenu != null)
-            {
-                if (iMenu.transitioning)
-                {
-                    //If we are fading out, draw previous screen, otherwise we are drawing the new current State
-                    if (FadeIncrement < 0)
-                        iMenu.transitionScreen = iMenu.previousScreen;
-
-                    else
-                        iMenu.transitionScreen = iMenu.currentScreen;
-
-                    iMenu.Transition(AlphaValue);
-
-                    iMenu.transitioning = trans;
-
-                }
-
-                else
-                {
-                    iMenu.Draw();
-                }
-
-             
-            }
-
-            if (!trans)
-                FadeIncrement *= -1;
-
-        }
-*/

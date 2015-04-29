@@ -112,7 +112,7 @@ namespace PointAndClick
         {
 
             UpdateState(iMenuStates.Interact);
-            iButtons.DisplayDestination();
+            iButtons.UpdateState(IbuttonState.Travel);
 
         }
 
@@ -139,8 +139,9 @@ namespace PointAndClick
         {
             if (currentItem.path == @"Objects\groceryStoreBack-baconPackBackground")
             {
-                ((MarketScene)mainGame.previousScreen).pickedUpBAcon = true;
+                //((MarketScene)mainGame.previousScreen).pickedUpBAcon = true;
                 bag.AddItemToInventory(currentItem);
+                mainGame.currentScreen.RemoveObject(currentItem);
                 ShowInventory();
             }
             else
@@ -160,26 +161,116 @@ namespace PointAndClick
             UpdateState(iMenuStates.Dialogue);
         }
 
-        public void NewItemOptions(Item item)
-        {   
+        /*
+         * 
+         *     public void CharacterOptions(Character newChar)
+        {
 
-            if(!usingItem)
+            if (!usingItem)
+            {
+                
+                ShowOptions(newChar);
+            }
+
+        }
+
+        public void NewItemOptions(Item item)
+        {
+
+            if (!usingItem)
             {
                 currentItem = item;
 
-                ShowOptions(true);
+                ShowOptions(item);
             }
-            else if(!item.inScene)
-                 {
-                    currentItem = item;
+            else if (!item.inScene)
+            {
+                currentItem = item;
 
-                    usingItem = false;
+                usingItem = false;
 
-                    mainGame.gameCursor.ResetTexture();    
+                mainGame.gameCursor.ResetTexture();
 
-                    ShowOptions(true);
-                 }
-           
+                ShowOptions(item);
+            }
+
+        }
+        public void Options(Item item)
+        {   
+         *  if(!usingItem)
+         *  {
+         *      currentItem = item;
+         *  }
+            
+            if (item is Character)
+            {
+                //System.Console.WriteLine("cHAR");
+                mainGame.iMenu.CharacterOptions((Character)item);
+            }
+            else
+                mainGame.iMenu.NewItemOptions(item);
+         * 
+         * ShowOptions(items);
+        }
+         * 
+         *   public void ShowOptions(Item item)
+        {
+
+            if ((item is Item))
+            {
+                iButtons.ItemOptions(currentItem);
+            }
+            else
+            {
+                if (item is Cat)
+                    iButtons.UpdateState(IbuttonState.Cat);
+                else
+                    iButtons.UpdateState(IbuttonState.Talk);
+            }
+
+            UpdateState(iMenuStates.Interact);
+        }
+         */
+        public void Options(Item item)
+        {
+
+            currentItem = item;
+
+            if (item is Character)
+            {
+                //System.Console.WriteLine("cHAR");
+               
+                currentChar = (Character)item;
+                
+                if(item is Cat)
+                    iButtons.UpdateState(IbuttonState.Cat);
+                else
+                    iButtons.UpdateState(IbuttonState.Talk);
+            }
+            else
+            {
+                 
+                if(currentItem != null)
+                iButtons.ItemOptions(currentItem);
+
+            }
+            if (usingItem)
+            {
+                usingItem = false;
+                mainGame.gameCursor.ResetTexture();
+
+            }
+            UpdateState(iMenuStates.Interact);
+        }
+
+      
+
+        public void ResetOptions()
+        {
+            if (currentItem != null)
+                Options(currentItem);
+            else
+                ShowInventory();
         }
 
         public void DiscardItem()
@@ -190,33 +281,40 @@ namespace PointAndClick
             ShowInventory();
         }
 
+        public void DiscardItem(Item item)
+        {
+           
+            bag.RemoveItem(item);
+            mainGame.gameCursor.ResetTexture();
+            ShowInventory();
+        }
+
         public bool ItemInBag(String itemPath)
         {
             return bag.CheckItem(itemPath);
         }
 
-        public void CharacterOptions(Character newChar)
-        {
-            
-            if (!usingItem)
-            {
-                currentItem = newChar;
-                currentChar = newChar;
-                ShowOptions(false);
-            }
-         
-        }
+       
 
         public void UseItem()
         {
-     
-            if (currentItem.takeable)
+            if (currentItem is Cat)
             {
-                usingItem = true;
-                mainGame.gameCursor.UpdateCurrentTexture(currentItem.currentTexture);
+                mainGame.Exit();
+            }
+            else
+            {
+
+                if (currentItem.takeable)
+                {
+                    usingItem = true;
+                    mainGame.gameCursor.UpdateCurrentTexture(currentItem.currentTexture);
+                }
+
+                ShowInventory();
+
             }
             
-            ShowInventory();
         }
 
         public void StartConversation(Conversation currentConvo)
@@ -225,16 +323,7 @@ namespace PointAndClick
             dBox.BeginDialog(currentConvo);
         }
 
-        public void Options(Item item)
-        {
-            
-            if (item is Character)
-            {
-                mainGame.iMenu.CharacterOptions((Character)item);
-            }
-            else
-                mainGame.iMenu.NewItemOptions(item);
-        }
+       
 
         public void PlayCurrentItemSound()
         {
@@ -246,26 +335,7 @@ namespace PointAndClick
             UpdateState(iMenuStates.Bag);
         }
 
-        public void ShowOptions(bool isItem)
-        {
-            if (isItem)
-            {
-                iButtons.ItemOptions(currentItem);
-            }
-            else
-                iButtons.ShowCharacterOptions();
-            
-
-            UpdateState(iMenuStates.Interact);
-        }
-
-        public void ResetOptions()
-        {
-            if (currentItem != null)
-                Options(currentItem);
-            else
-                ShowInventory();
-        }
+      
    
     }
 }

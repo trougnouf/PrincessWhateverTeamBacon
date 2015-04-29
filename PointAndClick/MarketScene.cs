@@ -23,7 +23,6 @@ namespace PointAndClick
         private Conversation thanks;
         private Texture2D heroIcon;
         private Texture2D clerkIcon;
-        private Hero hero;
         private Item cardMachine;
         private ArrowButton arrowRight;
         private ArrowButton arrowLeft;
@@ -57,7 +56,6 @@ namespace PointAndClick
             cardMachine = new Item(new Vector2(200, 400), @"Objects\groceryStore-creditCardTerminalBackground", mainGame, "", false); 
 
             drawingList.Add(background);
-            //AddObject(hero);
             AddObject(arrowLeft);
             AddObject(arrowRight);
             AddObject(cardMachine);
@@ -67,10 +65,21 @@ namespace PointAndClick
                                                                             "Excuse me sir! Have you payed for that bacon yet?",
                                                                             "We really frown upon all forms of stealing, especially our precious bacon..."
                                                                             ));
+            stopConversation.Addline(new Tuple<Texture2D, Texture2D, string, string>(clerkIcon,
+                                                                            clerkIcon,
+                                                                            "Excuse me sir! Have you payed for that bacon yet?",
+                                                                            "We really frown upon all forms of stealing, especially our precious bacon..."
+                                                                            ));
             Introduction.Addline(new Tuple<Texture2D, Texture2D, string, string>(clerkIcon,
                                                                             clerkIcon,
                                                                             "Welcome!",
                                                                             "Please check out our plentiful bacon selection in the back!"
+                             
+                                                                            ));
+            thanks.Addline(new Tuple<Texture2D, Texture2D, string, string>(clerkIcon,
+                                                                            clerkIcon,
+                                                                            "Thanks you for you Purchase.",
+                                                                            "Please come again! "
                                                                             ));
             thanks.Addline(new Tuple<Texture2D, Texture2D, string, string>(clerkIcon,
                                                                             clerkIcon,
@@ -81,10 +90,27 @@ namespace PointAndClick
             mainGame.iMenu.StartConversation(Introduction);
         }
 
+        public void WheretoGo()
+        {
+            if (!Payedfor && pickedUpBAcon)
+            {
+                
+                ((MarketBackScene)mainGame.GetScene(GameStates.MarketBack)).ResetBacon();
+                mainGame.iMenu.StartConversation(stopConversation);
+            }
+               
+            else
+            {
+                mainGame.iMenu.ShowInventory();
+                mainGame.UpdateState(GameStates.ParkingLot);
+            }
+                
+        }
+
         public void PayedFor()
         {
             Payedfor = true;
-            mainGame.gameCursor.ResetTexture();
+            mainGame.iMenu.DiscardItem();
             mainGame.iMenu.StartConversation(thanks);
         }
   
@@ -99,7 +125,7 @@ namespace PointAndClick
             if(caught)
             {
                 caught = false;
-                mainGame.iMenu.StartConversation(stopConversation);
+                
             }
         
             base.Update(gametime);

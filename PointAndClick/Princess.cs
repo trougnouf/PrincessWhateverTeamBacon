@@ -9,14 +9,16 @@ using Microsoft.Xna.Framework;
 
 namespace PointAndClick
 {
-    public enum PrincessState : short { Healthy, Injured};
+    public enum PrincessState : short { Healthy, Injured, Saved, Dead, Disgusted};
 
     class Princess : Character
     {
 
-        private PrincessState state;
+        public PrincessState state { get; private set;}
         private Texture2D healthyTexture;
         private Texture2D injuredTexture;
+        private Texture2D savedTexture;
+        private Texture2D deadTexture;
         private Texture2D dialogIcon;
 
         private Conversation fullConvo;
@@ -24,6 +26,8 @@ namespace PointAndClick
         private Conversation fullConvo2;
         private Conversation shortConvo2;
         private Conversation soggyBaconConvo, goodBaconConvo, burnedBaconConvo;
+        private Conversation savedConvo;
+        private Conversation deadConvo;
 
         public Princess(MainGame currentGame, Texture2D hIcon)
             : base(new Vector2(1265, 175), @"Objects\bedroom-princessWhateverHealthy", currentGame, @"Icons\bedroomPrincessWhateverIcon", hIcon)
@@ -31,6 +35,8 @@ namespace PointAndClick
 
             healthyTexture = initialTexture;
             injuredTexture = currentGame.Content.Load<Texture2D>(@"Objects\bedroom-princessWhateverArmless");
+            savedTexture = currentGame.Content.Load<Texture2D>(@"Objects\bedroom-princessWhateverSaved");
+            deadTexture = currentGame.Content.Load<Texture2D>(@"Objects\bedroom-princessWhateverDead");
             dialogIcon = inBagTexture;
         
             UpdatePrincessState(PrincessState.Healthy);
@@ -44,13 +50,25 @@ namespace PointAndClick
             soggyBaconConvo = new Conversation();
             goodBaconConvo = new Conversation();
             burnedBaconConvo = new Conversation();
+            savedConvo = new Conversation();
+            deadConvo = new Conversation();
 
 
-           shortConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+           deadConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
                                                                             heroIcon,
-                                                                            "Wheres that bacon at?",
-                                                                            "I'm on it!"
+                                                                            "The Princess didn't make it.",
+                                                                            "I did think the bacon looked a little crispy..."
                                                                             ));
+           savedConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+                                                                           heroIcon,
+                                                                           "Feel good as new. Even better really now that I have get access to bacon!",
+                                                                           "Happy to help. I somehow find you even more attractive than ever."
+                                                                           ));
+           shortConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+                                                                           heroIcon,
+                                                                           "Wheres that bacon at?",
+                                                                           "I'm on it!"
+                                                                           ));
 
            fullConvo2.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
                                                                             dialogIcon,
@@ -85,11 +103,28 @@ namespace PointAndClick
                                                                              "This is not crispy! I am leaving you!",
                                                                              "=(."
                                                                              ));
+            soggyBaconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+                                                                             heroIcon,
+                                                                             "This is not crispy! I am leaving you!",
+                                                                             "=(."
+                                                                             ));
 
             goodBaconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
                                                                             heroIcon,
                                                                             "=)",
                                                                             "Yatta!"
+                                                                            ));
+
+            goodBaconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+                                                                            heroIcon,
+                                                                            "=)",
+                                                                            "Yatta!"
+                                                                            ));
+
+            burnedBaconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
+                                                                            heroIcon,
+                                                                            "This burned bacon gave me cancer. Goodbye!",
+                                                                            "Kuso! (Crap!)"
                                                                             ));
 
             burnedBaconConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
@@ -119,6 +154,18 @@ namespace PointAndClick
                     talkedTo = false;
                     currentTexture = injuredTexture;
                     
+                    break;
+
+                case PrincessState.Saved:
+
+                    currentTexture = savedTexture;
+
+                    break;
+
+                case PrincessState.Dead:
+
+                    currentTexture = deadTexture;
+
                     break;
                
             }
@@ -155,6 +202,19 @@ namespace PointAndClick
                     }
                     break;
 
+                case PrincessState.Dead:
+
+                    currentConvo = deadConvo;
+
+                    break;
+
+                case PrincessState.Saved:
+
+                    currentConvo = savedConvo;
+
+                    break;
+
+
                 default:
 
                     currentConvo = shortConvo;
@@ -165,6 +225,40 @@ namespace PointAndClick
 
             return currentConvo;
 
+        }
+
+        protected override void OnClick(GameStates state)
+        {  
+            if (maingame.iMenu.currentItem != null && maingame.iMenu.usingItem)
+            {
+                if (maingame.iMenu.currentItem.path == @"Objects\kitchen-burnedBaconPlate")
+                {
+                    ((BedRoomScene)maingame.GetScene(GameStates.Bedroom)).princessFed = true;
+                    UpdatePrincessState(PrincessState.Dead);
+                    maingame.iMenu.StartConversation(burnedBaconConvo);
+
+                }
+                else if (maingame.iMenu.currentItem.path == @"Objects\kitchen-rawBaconPlate")
+                {
+                    ((BedRoomScene)maingame.GetScene(GameStates.Bedroom)).princessFed = true;
+                    UpdatePrincessState(PrincessState.Disgusted);
+                    maingame.iMenu.StartConversation(soggyBaconConvo);
+                   
+                   
+
+                }
+                else if (maingame.iMenu.currentItem.path == @"Objects\kitchen-perfectBaconPlate")
+                {
+                    ((BedRoomScene)maingame.GetScene(GameStates.Bedroom)).princessFed = true;
+                    UpdatePrincessState(PrincessState.Saved);
+                    maingame.iMenu.StartConversation(goodBaconConvo);
+                }
+                else
+                    base.OnClick(state);
+            }
+
+            else
+                base.OnClick(state);
         }
 
     }

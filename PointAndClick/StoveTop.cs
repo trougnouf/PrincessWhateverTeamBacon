@@ -54,83 +54,71 @@ namespace PointAndClick
 
         protected override void OnClick(GameStates state)
         {
-            /*if (cooking == true)
+            //Called when Pan is added to stovetop
+            if (maingame.iMenu.currentItem.path == @"Objects\kitchen-pan" && maingame.iMenu.usingItem)
             {
-                maingame.kitchen.beginCooking();
-            }*/
+                on = true;
+                UpdateStoveState(StoveState.pan);
 
-
-            if (maingame.iMenu.currentItem != null)
+                //kitchenScene.panCooking = true;
+                maingame.gameCursor.ResetTexture();
+                maingame.iMenu.DiscardItem();
+            }
+            //Called when bacon is added to pan
+            if (maingame.iMenu.currentItem.path == @"Objects\groceryStoreBack-baconPackBackground" && maingame.iMenu.usingItem && stoveState == StoveState.pan && kitchenScene.baconReady == false)
             {
-                //Called when Pan is added to stovetop
-                if (maingame.iMenu.currentItem.path == @"Objects\kitchen-pan" && maingame.iMenu.usingItem)
-                {
-                    on = true;
-                    UpdateStoveState(StoveState.pan);
 
-                    //kitchenScene.panCooking = true;
-                    maingame.gameCursor.ResetTexture();
-                    maingame.iMenu.DiscardItem();
-                }
-
-                //Called when bacon is added to pan
-                else if (maingame.iMenu.currentItem.path == @"Objects\groceryStore-baconPackBackground" && maingame.iMenu.usingItem && stoveState == StoveState.pan && kitchenScene.baconReady == false)
-                {
-                    // kitchenScene.baconInPan = true;
-                    UpdateStoveState(StoveState.bacon);
-                    maingame.gameCursor.ResetTexture();
-                    maingame.iMenu.ResetCurrentItem();
-
-                }
-
+                // kitchenScene.baconInPan = true;
+                UpdateStoveState(StoveState.bacon);
+                maingame.gameCursor.ResetTexture();
+                maingame.iMenu.ShowInventory();
 
             }
 
-            else
+            if (stoveState == StoveState.bacon)
             {
-                
-
-                if (stoveState == StoveState.bacon)
+                //stoveState = StoveState.empty;
+                //maingame.kitchen.resetPan();
+                System.Console.WriteLine("IN");
+                //Raw
+                if (2 < timeAccumulator && timeAccumulator < 5)
                 {
+                    System.Console.WriteLine("IN raw");
+                    //bacon = new Item(new Vector2(1, 1), @"Objects\testImage", maingame, @"Icons\inv-baconRawIcon", true);
+                    kitchenScene.addRawBacon = true;
                     stoveState = StoveState.empty;
-                    //maingame.kitchen.resetPan();
-
-                    //Raw
-                    if (timeAccumulator < 5)
-                    {
-                        //bacon = new Item(new Vector2(1, 1), @"Objects\testImage", maingame, @"Icons\inv-baconRawIcon", true);
-                        kitchenScene.addRawBacon = true;
-                        stoveState = StoveState.empty;
-                        UpdateCurrentTexture(emptyStoveTop);
-                        maingame.iMenu.ResetCurrentItem();
-                    }
-
-                    //Perfect
-                    if (timeAccumulator >= 10 && timeAccumulator <= 15)
-                    {
-                        //bacon = new Item(new Vector2(1, 1), @"Objects\testImage", maingame, @"Icons\inv-baconPerfectIcon", true);
-                        kitchenScene.addPerfectBacon = true;
-                        stoveState = StoveState.empty;
-                        UpdateCurrentTexture(emptyStoveTop);
-                        maingame.iMenu.ResetCurrentItem();
-                    }
-
-                    //Burned
-                    if (timeAccumulator > 20)
-                    {
-                        //bacon = new Item(new Vector2(1, 1), @"Objects\testImage", maingame, @"Icons\inv-baconBurnedIcon", true);
-                        kitchenScene.addBurnedBacon = true;
-                        stoveState = StoveState.empty;
-                        UpdateCurrentTexture(emptyStoveTop);
-                        maingame.iMenu.ResetCurrentItem();
-                    }
-
-
-                    Console.WriteLine("Got this far");
-                  
+                    UpdateCurrentTexture(emptyStoveTop);
+                    maingame.iMenu.ShowInventory();
+                    
                 }
 
+                //Perfect
+                if (timeAccumulator >= 10 && timeAccumulator <= 15)
+                {
+                    System.Console.WriteLine("IN");
+                    //bacon = new Item(new Vector2(1, 1), @"Objects\testImage", maingame, @"Icons\inv-baconPerfectIcon", true);
+                    kitchenScene.addPerfectBacon = true;
+                    stoveState = StoveState.empty;
+                    UpdateCurrentTexture(emptyStoveTop);
+                    
+                }
+
+                //Burned
+                if (timeAccumulator > 20)
+                {
+                    //bacon = new Item(new Vector2(1, 1), @"Objects\testImage", maingame, @"Icons\inv-baconBurnedIcon", true);
+                    kitchenScene.addBurnedBacon = true;
+                    stoveState = StoveState.empty;
+                    UpdateCurrentTexture(emptyStoveTop);
+                    maingame.iMenu.ShowInventory();
+                }
+
+
+
             }
+
+           
+                      
         }
 
         public void UpdateStoveState(StoveState newState)

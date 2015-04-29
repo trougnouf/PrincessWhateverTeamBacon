@@ -129,7 +129,7 @@ namespace PointAndClick
                         else
                         {
 
-                            mainGame.iMenu.ResetOptions();
+                            mainGame.iMenu.ShowInventory();
                             currentConversation.Reset();
 
                         }

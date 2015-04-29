@@ -38,10 +38,22 @@ namespace PointAndClick
             bacons = new Item(new Vector2(410, 10), @"Objects\groceryStoreBack-baconPackBackground", mainGame, @"Icons\inv-baconPackIcon", true);
             hero = new SceneImage(new Vector2(100, 550), @"Objects\bank-hero", mainGame);
 
+            AddObject(bacons);
             drawingList.Add(background);
             drawingList.Add(hero);
             AddObject(arrowLeft);
+            
+        }
+
+        public void ResetBacon()
+        {
+            bacons.PutBAckInScene();
+            ((MarketScene)mainGame.GetScene(GameStates.Market)).pickedUpBAcon = false;
+            mainGame.iMenu.DiscardItem(bacons);
+            bacons.UpdatePosition(new Vector2(410, 10));
             AddObject(bacons);
+            
+
         }
         
 

@@ -39,6 +39,7 @@
     <Compile Include="Background.cs" />
     <Compile Include="BankScene.cs" />
     <Compile Include="BedRoomScene.cs" />
+    <Compile Include="Cat.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="ArrowButton.cs" />
     <Compile Include="Chicken.cs" />

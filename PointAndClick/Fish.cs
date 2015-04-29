@@ -15,7 +15,7 @@ namespace PointAndClick
     class Fish : Character
     {
 
-        private FishState state;
+        public FishState state { get; private set; }
         private Texture2D healthyTexture;
         private Texture2D pottedTexture;
         private Texture2D deadTexture;
@@ -222,20 +222,14 @@ namespace PointAndClick
         {
             if (maingame.iMenu.currentItem != null)
             {
-                if (maingame.iMenu.usingItem)
+                if (maingame.iMenu.usingItem && maingame.iMenu.currentItem.path == @"Objects\bedroom-pottedPlant")
                 {
-                    if (maingame.iMenu.currentItem.path == @"Objects\bedroom-pottedPlant")
-                    {
+                    
                         UpdateFishState(FishState.Potted);
                         maingame.iMenu.StartConversation(pottingConvo);
                         bedroom.fishPotted = true;
-                        maingame.gameCursor.ResetTexture();
-                    }
-                    maingame.iMenu.PlayCurrentItemSound();
-                    UpdateFishState(FishState.Potted);     
-                    maingame.iMenu.StartConversation(pottingConvo);
-                    bedroom.fishPotted = true;
-                    maingame.gameCursor.ResetTexture();
+                        maingame.iMenu.PlayCurrentItemSound();
+                     
                 }
                 else
                     base.OnClick(state);

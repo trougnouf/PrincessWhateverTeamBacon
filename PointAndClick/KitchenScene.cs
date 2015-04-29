@@ -21,13 +21,14 @@ namespace PointAndClick
         private SceneText text;
         private Texture2D heroIcon;
         private Hero hero;
-//        private ArrowButton arrowUp;
-//        private ArrowButton arrowDown;
+        //        private ArrowButton arrowUp;
+        //        private ArrowButton arrowDown;
         private ArrowButton arrowRight;
         private ArrowButton arrowLeft;
         private Item pan;
         private Item jackhammer;
         private StoveTop stoveTop;
+        private Item bacons;
         private Item onLight;
         public Item rawBacon;
         public Item perfectBacon;
@@ -48,7 +49,7 @@ namespace PointAndClick
 
 
         public KitchenScene(MainGame game)
-            :base(game)
+            : base(game)
         {
             baconReady = false;
             addBurnedBacon = false;
@@ -60,15 +61,15 @@ namespace PointAndClick
         {
 
             background = new BackGround(new Vector2(0, 0), @"Backgrounds\kitchen", mainGame);
-//            arrowUp = new ArrowButton(new Vector2(150, 15), @"Objects\arrowUp", mainGame);
-//            arrowDown = new ArrowButton(new Vector2(150, 120), @"Objects\arrowDown", mainGame);
+            //            arrowUp = new ArrowButton(new Vector2(150, 15), @"Objects\arrowUp", mainGame);
+            //            arrowDown = new ArrowButton(new Vector2(150, 120), @"Objects\arrowDown", mainGame);
             arrowRight = new ArrowButton(new Vector2(250, 120), @"Objects\arrowRight", mainGame, GameStates.Bedroom);
             arrowLeft = new ArrowButton(new Vector2(50, 120), @"Objects\arrowLeft", mainGame, GameStates.ParkingLot);
-
+            bacons = new Item(new Vector2(410, 10), @"Objects\groceryStoreBack-baconPackBackground", mainGame, @"Icons\inv-baconPackIcon", true);
             heroIcon = mainGame.Content.Load<Texture2D>(@"Icons\heroIcon");
             pan = new Item(new Vector2(270, 340), @"Objects\kitchen-pan", mainGame, @"Icons\inv-pan", true);
             onLight = new Item(new Vector2(540, 360), @"Objects\kitchen-onLight", mainGame, "", false);
-            stoveTop = new StoveTop(mainGame,  this);
+            stoveTop = new StoveTop(mainGame, this);
 
             letter = new Item(new Vector2(300, 400), @"Objects\kitchen-mail", mainGame, @"Icons\inv-mailIcon", true);
 
@@ -85,8 +86,8 @@ namespace PointAndClick
             text = new SceneText(new Vector2(700, 750), "This is the kitchen!!!", segoe, mainGame);
 
             drawingList.Add(background);
-//            AddObject(arrowUp);
-//            AddObject(arrowDown);
+            //            AddObject(arrowUp);
+            //            AddObject(arrowDown);
             AddObject(arrowLeft);
             AddObject(arrowRight);
             AddObject(onLight);
@@ -95,18 +96,19 @@ namespace PointAndClick
             AddObject(jackhammer);
             AddObject(pan);
             AddObject(stoveTop);
+            AddObject(bacons);
             onLight.visible = false;
 
-            
+
         }
 
-        
-        
-         public override void Update(GameTime gametime)
+
+
+        public override void Update(GameTime gametime)
         {
             stoveTop.UpdateGameTime(gametime);
             base.Update(gametime);
-
+            
             if (baconReady == false)
             {
                 if (addRawBacon == true)
@@ -143,32 +145,23 @@ namespace PointAndClick
             }
 
             
+
         }
-        
-        
+
+
         public void beginCooking()
-         {
+        {
 
-         }
-
-
-
-
+        }
 
         public void resetPan()
         {
-            AddObject(pan);
+            pan.PutBAckInScene();
             pan.UpdatePosition(new Vector2(270, 340));
-            drawingList.Add(background);
-//            AddObject(arrowUp);
-//            AddObject(arrowDown);
-            AddObject(arrowLeft);
-            AddObject(arrowRight);
+            AddObject(pan);
+
         }
 
-
-
+     
     }
-
-    
 }

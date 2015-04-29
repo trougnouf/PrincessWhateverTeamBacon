@@ -81,6 +81,16 @@ namespace PointAndClick
 
        }
 
+       public void PrintDrawingList()
+       {
+
+           foreach (Drawable obj in drawingList)
+           {
+               System.Console.WriteLine(obj.ToString());
+           }
+
+       }
+
        public void RemoveObject(ClickableObject obj)
        {
            //remove item from scene drawing/update lists
@@ -94,6 +104,8 @@ namespace PointAndClick
            drawingList.Add(obj);
            objectList.Add(obj);
        }
+        
+       
     }
 
 }

@@ -143,7 +143,8 @@ namespace PointAndClick
         }
 
         public void PlayEffect()
-        {
+        {   
+            if(effect != null)
             effect.Play();
         }
  
@@ -152,13 +153,26 @@ namespace PointAndClick
             inScene = false;
             currentTexture = inBagTexture;
         }
-       
+
+        public void PutBAckInScene()
+        {
+            inScene = true;
+            ResetTexture();
+        }
+
         protected override void OnClick(GameStates state)
         {
             if (maingame.iMenu.currentItem != null)
-            if (path == @"Objects/groceryStore-creditCardTerminalBackground" && maingame.iMenu.currentItem.path == @"Objects\bank-creditCard" && maingame.iMenu.usingItem)
-                ((MarketScene)maingame.currentScreen).PayedFor();
+            {
+                if (path == @"Objects\groceryStore-creditCardTerminalBackground" && maingame.iMenu.currentItem.path == @"Objects\bank-creditCard" && maingame.iMenu.usingItem)
+                    ((MarketScene)maingame.currentScreen).PayedFor();
+                else
+                    maingame.iMenu.Options(this);
+                
+            }
+            else
             maingame.iMenu.Options(this);
+           
        
         }
         protected override void OnUnClick(GameStates state)
@@ -176,20 +190,34 @@ namespace PointAndClick
 
         public override void Draw()
         {
-            //If mouse is over the button, shade it
-            if (IsMouseOver && inScene)
-                maingame.spriteBatch.Draw(currentTexture,
-                                          new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
-                                          null,
-                                          Color.White,
-                                          0,
-                                          new Vector2(0, 0),
-                                          new Vector2((float)(maingame.ScalingFactor.X*1.2),(float)(maingame.ScalingFactor.Y*1.2)),
-                                          SpriteEffects.None,
-                                          0);
-            //maingame.spriteBatch.Draw(texture, drawRectangle, Color.Aqua);
-            else
-                base.Draw();
-        }
+            if (visible)
+            {
+
+                if (IsMouseOver && inScene)
+                    maingame.spriteBatch.Draw(currentTexture,
+                                              new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
+                                              null,
+                                              Color.White,
+                                              0,
+                                              new Vector2(0, 0),
+                                              new Vector2((float)(maingame.ScalingFactor.X * 1.2), (float)(maingame.ScalingFactor.Y * 1.2)),
+                                              SpriteEffects.None,
+                                              0);
+                else if (IsMouseOver && !inScene)
+                    maingame.spriteBatch.Draw(currentTexture,
+                                              new Vector2(position.X * maingame.ScalingFactor.X, position.Y * maingame.ScalingFactor.Y),
+                                              null,
+                                              Color.White,
+                                              0,
+                                              new Vector2(0, 0),
+                                              new Vector2((float)(maingame.ScalingFactor.X * 1.1), (float)(maingame.ScalingFactor.Y * 1.1)),
+                                              SpriteEffects.None,
+                                              0);
+                //maingame.spriteBatch.Draw(texture, drawRectangle, Color.Aqua);
+                else
+                    base.Draw();
+            }
+       }
+            
     }
 }

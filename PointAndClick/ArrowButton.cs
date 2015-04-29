@@ -70,9 +70,19 @@ namespace PointAndClick
         //based on unique path
         protected override void OnClick(GameStates state)
         {
-            Console.WriteLine("Current state is {0}, Arrow type is {1}", maingame.state, this.type);
-            
-            maingame.UpdateState(nextScene);
+            if (state == GameStates.Market && type == arrowType.left)
+            {
+
+               ((MarketScene)maingame.currentScreen).WheretoGo(); 
+        
+            }
+
+            else
+            {
+                maingame.iMenu.ShowInventory();
+                maingame.UpdateState(nextScene);
+            }
+           
         
             
         }

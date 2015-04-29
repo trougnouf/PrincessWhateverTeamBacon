@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace PointAndClick
 {
-    public enum IbuttonState: int { Use, Take, Talk, Travel };
+    public enum IbuttonState: int { Use, Take, Talk, Travel, Cat };
 
     class InteractButtons : GameScreen
     {
@@ -56,45 +56,22 @@ namespace PointAndClick
 
         }
 
-        public void DisplayDestination()
-        {
-            previousState = currentState;
-
-            currentState = IbuttonState.Travel;
-
-            UpdateLists();
-        }
-
-        public void ShowCharacterOptions()
-        {
-            previousState = currentState;
-
-            currentState = IbuttonState.Talk;
-
-            UpdateLists();
-        }
-
-        public void DisplayTravelOptions()
-        {
-            previousState = currentState;
-
-            currentState = IbuttonState.Travel;
-
-            UpdateLists();
-        }
-
+       
         public void ItemOptions(Item item)
         {   
-
-            previousState = currentState;
-
+           
             if (item.takeable && item.inScene)
-                currentState = IbuttonState.Take;
+                UpdateState(IbuttonState.Take);
             else
-                currentState = IbuttonState.Use;
+                UpdateState(IbuttonState.Use);
+               
+        }
 
+        public void UpdateState(IbuttonState newState)
+        {
+            previousState = currentState;
+            currentState = newState;
             UpdateLists();
-            
         }
 
         private void UpdateLists()
@@ -130,6 +107,15 @@ namespace PointAndClick
                     AddObject(bankButton);
                     AddObject(marketButton);
                     AddObject(homeButton);
+                    break;
+
+                case IbuttonState.Cat:
+
+                    AddObject(bagButton);
+                    AddObject(useButton);
+                    AddObject(examineButton);
+                    AddObject(talkButton);
+
                     break;
             }
           

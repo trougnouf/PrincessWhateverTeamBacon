@@ -27,7 +27,9 @@ namespace PointAndClick
         private Fish fish;
         private Item pottedPlant;
         private Item princessHand;
+        private Cat kitty;
         public bool fishPotted;
+        public bool princessFed;
         private ArrowButton arrowUp;
         private ArrowButton arrowDown;
         private ArrowButton arrowRight;
@@ -40,6 +42,8 @@ namespace PointAndClick
         {
             introduced = false;
             fishPotted = false;
+            princessFed = false;
+
         }
 
         public override void LoadContent()
@@ -57,6 +61,8 @@ namespace PointAndClick
             pottedPlant = new Item(new Vector2(425, 140), @"Objects\bedroom-pottedPlant", mainGame, @"Icons\inv-pottedPlantIcon", true);
             princessHand = new Item(new Vector2(1100, 725), @"Objects\bedroom-princessWhateverHand", mainGame, @"Icons\inv-princessWhateverHandIcon", true);
             hero = new Hero(mainGame, heroIcon);
+            kitty = new Cat(mainGame, heroIcon);
+
             princess = new Princess(mainGame, heroIcon);
             fish = new Fish(mainGame, heroIcon, princess, this);
 
@@ -67,12 +73,7 @@ namespace PointAndClick
             AddObject(socket);
             AddObject(princess);
             AddObject(hero);
-            //AddObject(arrowUp);
-            //AddObject(arrowDown);
             AddObject(arrowLeft);
-            AddObject(arrowRight);
-
-            //AddObject(princessHand);
             Introduction.Addline(new Tuple<Texture2D,Texture2D,string,string>(heroIcon,
                                                                             princess.examineTexture,
                                                                             "ZzZzzZzz... Wtf is this shit!", 
@@ -90,13 +91,32 @@ namespace PointAndClick
                 introduced = true;
                 hero.UpdateHeroState(HeroState.Awake);
             }
-            
+
             if(fishPotted)
             {
                 AddObject(princessHand);
                 princess.UpdatePrincessState(PrincessState.Injured);
                 mainGame.iMenu.DiscardItem();
                 fishPotted = false;
+            }
+
+            if (princessFed)
+            {
+                PrintDrawingList();
+ 
+                if(princess.state == PrincessState.Disgusted)
+                {
+                    princess.visible = false;
+                    objectList.RemoveAll((item => item is Princess));
+
+                }
+                    
+
+                AddObject(kitty);
+                mainGame.iMenu.DiscardItem();
+                princessFed = false;
+
+                PrintDrawingList();
             }
 
             base.Update(gametime);

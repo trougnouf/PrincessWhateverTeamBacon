@@ -37,9 +37,8 @@ namespace PointAndClick
         public ParkingLotScene(MainGame game)
             :base(game)
         {
-            //chickenFed = false;
-            dest = Destination.Home;
-            arrowLeftScene = GameStates.Kitchen;
+
+            UpdateDestination(Destination.Home);
 
         }
 
@@ -75,20 +74,12 @@ namespace PointAndClick
 
         public override void Update(GameTime gametime)
         {   
-
-            if(chic.fed)
-            {
-                mainGame.iMenu.DiscardItem();
-                chic.fed = false;
-            }
-
+        
             base.Update(gametime);
-
         }
 
         public void UpdateDestination(Destination newDest)
         {
-            Console.WriteLine("In update Destination");
             
             dest = newDest;
             if (dest == Destination.Home)
@@ -100,6 +91,7 @@ namespace PointAndClick
 
             arrowLeft.nextScene = arrowLeftScene;
 
+            if(chic.state == ChickenState.Fed)
             mainGame.iMenu.StartConversation(TravelDialog);
 
         }

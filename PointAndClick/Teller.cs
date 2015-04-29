@@ -52,6 +52,11 @@ namespace PointAndClick
                                                                                 "I have this letter from a Nigerian prince. He says if I send him money he will send me back 10 times as much. Any chance I could get some monies to send to him?",
                                                                                 "Hmm.. Seems legit. How about I give you a credit card. That should help you and the prince out!"
                                                                                 ));
+            ShowLetterConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(heroIcon,
+                                                                                dialogIcon,
+                                                                                "I have this letter from a Nigerian prince. He says if I send him money he will send me back 10 times as much. Any chance I could get some monies to send to him?",
+                                                                                "Hmm.. Seems legit. How about I give you a credit card. That should help you and the prince out!"
+                                                                                ));
 
             SeenLetterConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(dialogIcon,
                                                                                 heroIcon,
@@ -112,15 +117,20 @@ namespace PointAndClick
 
         protected override void OnClick(GameStates state)
         {
+
+          
             if (maingame.iMenu.currentItem != null && maingame.iMenu.usingItem)
             {
                 if (maingame.iMenu.currentItem.path == @"Objects\kitchen-mail") //show letter to teller
                 {
                     UpdateTellerState(TellerState.HasLetter);
                     maingame.iMenu.StartConversation(ShowLetterConvo);
+
+                    /*
+                    maingame.iMenu.StartConversation(ShowLetterConvo);
                     UpdateTellerState(TellerState.SeenLetter);
-                    maingame.gameCursor.ResetTexture();
-                    maingame.iMenu.DiscardItem(); //discard letter
+                    //discard letter
+                     */
                 }
             }
             else

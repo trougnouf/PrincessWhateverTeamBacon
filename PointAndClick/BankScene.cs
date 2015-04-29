@@ -19,7 +19,6 @@ namespace PointAndClick
         private BackGround background;
         
         private Texture2D heroIcon;
-        private Texture2D tellerIcon;
         
         private SceneImage hero;
         private Teller teller;
@@ -31,7 +30,7 @@ namespace PointAndClick
         public BankScene(MainGame game)
             :base(game)
         {
-            introduced = false;
+           
         }
 
         public override void LoadContent()
@@ -56,28 +55,34 @@ namespace PointAndClick
 
         public override void Update(GameTime gametime)
         {
-            if (!introduced)
+            if (teller.state == TellerState.HasLetter)
             {
-                introduced = true;
+               
+                AddObject(creditCard);
+                teller.UpdateTellerState(TellerState.SeenLetter);            
+                mainGame.iMenu.DiscardItem();
             }
-
+        
+            /*
             if (teller.state != TellerState.SeenLetter)
             {
                 if (mainGame.iMenu.ItemInBag(creditCard.path)) //Check to see if we have the credit card
                 {
                     teller.UpdateTellerState(TellerState.SeenLetter);
                 }
-                else //if (mainGame.iMenu.ItemInBag(@"Objects\kitchen-mail"))
-                {
-                    teller.UpdateTellerState(TellerState.UnHelpful);
-                }
+               
             }
             else if (!mainGame.iMenu.ItemInBag(creditCard.path))
-                    AddObject(creditCard); //this means that the gullible teller has read the letter and you have yet to take the credit card
+            {
+                mainGame.iMenu.StartConversation(teller.Chat());
+                AddObject(creditCard);          
+                mainGame.gameCursor.ResetTexture();
+                mainGame.iMenu.DiscardItem();
+            }
+             */
+       
+            base.Update(gametime); 
 
-
-            base.Update(gametime);
- 
         }
     }
 }
