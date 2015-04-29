@@ -16,7 +16,7 @@ namespace PointAndClick
         private Conversation shortConvo;
 
         public Cat(MainGame currentGame, Texture2D hIcon)
-            : base(new Vector2(425, 500), @"Objects\bedroom-cat", currentGame, @"Icons\bedroom-catIcon", hIcon)
+            : base(new Vector2(425, 700), @"Objects\bedroom-cat", currentGame, @"Icons\bedroom-catIcon", hIcon)
         {
 
         
@@ -33,14 +33,14 @@ namespace PointAndClick
 
             fullConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(examineTexture,
                                                                              heroIcon,
-                                                                             "I'm Larry, the magical cat from beyond the stars. Bask in my awe inspirining presence.",
+                                                                             "I'm Larry, the magical cat from beyond the stars. Bask in my awe inspiring presence.",
                                                                              "What style and pizazz!"
                                                                              ));
 
             fullConvo.Addline(new Tuple<Texture2D, Texture2D, string, string>(examineTexture,
                                                                             examineTexture,
-                                                                            "Your journey has ended mighty hero. Your bacon cooking skills where tested today like never before!",
-                                                                            "I bestow upon you the greasted honor possbile. I shall allow you to pet the great Larry!\nPet(Use) me to win, thats all there is to it."
+                                                                            "Your journey has ended, mighty hero. Your bacon cooking skills were tested today like never before!",
+                                                                            "I bestow upon you the greatest honor possible. I shall allow you to pet the great Larry!\nPet(Use) me to win, that's all there is to it."
                                                                             ));
 
 

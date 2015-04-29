@@ -174,6 +174,7 @@ namespace PointAndClick
 
         public override Conversation Chat()
         {
+            effect.Play();
             Conversation currentConvo;
 
             switch (state)

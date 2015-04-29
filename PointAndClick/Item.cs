@@ -78,7 +78,7 @@ namespace PointAndClick
                     break;
 
                 case @"Objects\bedroom-princessWhateverHealthy":
-
+                    effect = maingame.Content.Load<SoundEffect>(@"SFX\hello");
                     description = "The alluring Princess Whatever.";
                     break;
 
@@ -149,6 +149,21 @@ namespace PointAndClick
                 case @"Objects\bank-creditCard":
 
                     description = "A credit card... With no credit limit!!!";
+                    break;
+
+                case @"Objects\kitchen-rawBaconPlate":
+
+                    description = "Eww! It's so slimy!";
+                    break;
+
+                case @"Objects\kitchen-perfectBaconPlate":
+
+                    description = "Delicious, crispy bacon. Food of the gods.";
+                    break;
+
+                case @"Objects\kitchen-burnedBaconPlate":
+
+                    description = "The charred remains of what used to be delicious bacon.";
                     break;
 
                 default:

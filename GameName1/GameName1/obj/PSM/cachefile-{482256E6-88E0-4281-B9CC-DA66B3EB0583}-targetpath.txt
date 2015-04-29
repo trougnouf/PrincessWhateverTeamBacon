@@ -99,6 +99,10 @@ Content\Objects\bedroom-princessWhateverDead.xnb
 Content\Objects\bedroom-princessWhateverSaved.xnb
 Content\Objects\bedroom-cat.xnb
 Content\Icons\bedroom-catIcon.xnb
+Content\Backgrounds\pauseMenu.xnb
+Content\Icons\Exit.xnb
+Content\Icons\Return.xnb
+Content\Icons\toggle.xnb
 Content\StartMenu\MusisBoxTune.xnb
 Content\StartMenu\MusisBoxTune.wma
 Content\SFX\boom.xnb
